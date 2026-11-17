@@ -1,0 +1,23 @@
+# ==============================================================================
+# QUAD WISE TECHNOLOGIES (QWT.AE) - OFFICIAL ROBOTS POLICY
+# Sovereign Enterprise IT, AI Supercomputing & GCC Infrastructure
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+
+# Disallow internal admin consoles, telemetry endpoints, and private databases
+Disallow: /admin-crm.html
+Disallow: /admin/
+Disallow: /private/
+Disallow: /telemetry/
+Disallow: /*?preview=*
+
+# Host declaration
+Host: https://qwt.ae
+
+# XML Sitemaps
+Sitemap: https://qwt.ae/sitemap.xml

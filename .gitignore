@@ -1,0 +1,17 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local server / environment logs
+*.log
+.env
+.env.local
+
+# Build output (optional - un-comment if only deploying via CI)
+# dist/

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RFP BOQ Telemetry Dossier | Quad Wise Technologies (QWT.AE)</title>
+  <meta name="description" content="Sovereign internal RFP telemetry dossier and Bill of Quantities (BOQ) audit for Quad Wise Technologies.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://qwt.ae/admin-rfp-detail.html">
+
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#0A0D12">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              charcoal: '#0A0D12',
+              obsidian: '#0A0D14',
+              surface: '#0F141C',
+              surfaceLight: '#111827',
+              surfaceDeep: '#0E1522',
+              gold: '#C9A24D',
+              goldDark: '#A8842F',
+              goldDeep: '#B38E3F',
+              goldMuted: '#D9B76A',
+              slaGreen: '#10B981',
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Theme & Admin Mode Engine CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/admin-theme.css">
+
+  <style>
+    @media print {
+      body {
+        background-color: #FFFFFF !important;
+        color: #0F172A !important;
+      }
+      .no-print, header, nav, #admin-theme-switcher, button {
+        display: none !important;
+      }
+      .print-card {
+        border: 1px solid #CBD5E1 !important;
+        box-shadow: none !important;
+        background: #FFFFFF !important;
+      }
+      .print-break {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+
+  <!-- Theme Resolution Script -->
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('qwt_admin_theme');
+        if (t === 'white' || t === 'light') {
+          document.documentElement.classList.add('theme-white');
+          document.documentElement.setAttribute('data-admin-theme', 'white');
+        } else {
+          document.documentElement.classList.remove('theme-white');
+          document.documentElement.setAttribute('data-admin-theme', 'dark');
+        }
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body class="bg-[#0A0D12] text-slate-200 antialiased selection:bg-[#C9A24D] selection:text-black min-h-screen flex flex-col">
+
+  <!-- TOP REGULATORY BANNER -->
+  <div class="bg-[#0A0D14] border-b border-slate-800/80 text-[11px] font-mono text-slate-400 py-1.5 px-4 sm:px-8 no-print">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 sm:gap-3">
+      <div class="flex items-center gap-2 sm:gap-4 flex-wrap">
+        <span class="inline-flex items-center gap-1.5 text-slate-300 text-[10px] sm:text-[11px]">
+          <i data-lucide="shield" class="w-3.5 h-3.5 text-[#C9A24D] shrink-0"></i>
+          <span>QWT INTERNAL SOVEREIGN CRM &bull; TELEMETRY DOSSIER ENCLAVE</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-[9px] sm:text-[10px] font-semibold tracking-wider flex items-center gap-1">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> TELEMETRY LIVE
+        </span>
+        <span class="px-2 py-0.5 rounded bg-[#C9A24D]/10 text-[#C9A24D] border border-[#C9A24D]/30 text-[9px] sm:text-[10px] font-semibold tracking-wider">
+          FTA TRN: 100482910300003
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY ADMIN HEADER -->
+  <header id="main-header" class="sticky top-0 z-40 bg-[#0A0D14]/95 backdrop-blur-xl border-b border-slate-800 transition-colors duration-200 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-3">
+      
+      <!-- Brand & Return Link -->
+      <div class="flex items-center gap-3 shrink-0 min-w-0">
+        <a href="admin-crm.html" class="flex items-center gap-2 sm:gap-2.5 shrink-0 group select-none" title="Return to CRM Telemetry Dashboard">
+          <img src="assets/qwt-logo.png" alt="Quad Wise Technologies" class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl object-contain shadow-sm shrink-0">
+          <div class="shrink-0 leading-tight">
+            <div class="font-heading font-extrabold text-sm sm:text-base tracking-tight text-white flex items-center gap-1.5">
+              <span>QUAD WISE</span>
+              <span class="px-1.5 sm:px-2 py-0.5 rounded-md bg-[#C9A24D]/15 border border-[#C9A24D]/40 text-[#C9A24D] text-[10px] sm:text-[11px] font-mono font-bold">CRM</span>
+            </div>
+            <div class="text-[7.5px] sm:text-[8px] font-sans tracking-wide text-slate-400 font-medium">
+              Innovation with Integrity &bull; Sovereign Operations
+            </div>
+          </div>
+        </a>
+
+        <!-- Return to Dashboard Button -->
+        <a href="admin-crm.html" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-slate-200 text-xs font-mono font-semibold transition-colors">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5 text-[#C9A24D]"></i>
+          <span>Tender Pipeline</span>
+        </a>
+      </div>
+
+      <!-- Action Controls: Theme Switcher, Operator Badge, Print & Portal -->
+      <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+        <!-- Dual Mode Switcher -->
+        <div id="admin-theme-switcher" class="flex items-center p-0.5 sm:p-1 rounded-xl bg-[#0F141C] border border-slate-800 shrink-0 shadow-inner" role="group" aria-label="Theme Mode Selection">
+          <button type="button" id="theme-btn-dark" onclick="window.qwtAdminTheme.setTheme('dark')" class="theme-switch-btn flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-mono font-semibold transition-all" aria-pressed="true">
+            <i data-lucide="moon" class="w-3.5 h-3.5 text-[#C9A24D]"></i>
+            <span class="hidden md:inline text-[11px]">Dark</span>
+          </button>
+          <button type="button" id="theme-btn-white" onclick="window.qwtAdminTheme.setTheme('white')" class="theme-switch-btn flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-mono font-semibold transition-all" aria-pressed="false">
+            <i data-lucide="sun" class="w-3.5 h-3.5 text-amber-400"></i>
+            <span class="hidden md:inline text-[11px]">White</span>
+          </button>
+        </div>
+
+        <!-- Operator Badge -->
+        <div id="auth-user-badge" class="hidden sm:flex items-center gap-2 px-2.5 py-1.5 rounded-xl bg-[#0F141C] border border-slate-700/80">
+          <div class="w-6 h-6 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-[#C9A24D] shrink-0">
+            <i data-lucide="shield" class="w-3.5 h-3.5"></i>
+          </div>
+          <div class="text-left">
+            <div id="auth-user-name" class="text-xs font-bold text-white leading-tight">Super Admin</div>
+            <div class="text-[9px] font-mono text-purple-400 font-bold">SUPER ADMIN</div>
+          </div>
+        </div>
+
+        <!-- Print Action -->
+        <button onclick="window.print()" class="px-3 py-1.5 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-slate-200 text-xs font-mono font-semibold flex items-center gap-1.5 transition-colors" title="Print Official A4 BOQ Dossier">
+          <i data-lucide="printer" class="w-3.5 h-3.5 text-[#C9A24D]"></i>
+          <span class="hidden md:inline">Print A4</span>
+        </button>
+
+        <!-- Exit link -->
+        <a href="admin-crm.html" class="sm:hidden p-2 rounded-xl border border-slate-700 bg-[#0F141C] text-slate-300 hover:text-white" title="Return to Dashboard">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN TELEMETRY DOSSIER PAGE -->
+  <main class="flex-1 py-8 sm:py-10 bg-[#0A0D12]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-8">
+      
+      <!-- BREADCRUMBS & TOP HEADER -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+        <div>
+          <!-- Breadcrumb navigation -->
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <a href="admin-crm.html" class="hover:text-[#C9A24D] transition-colors">Admin CRM</a>
+            <span>&gt;</span>
+            <a href="admin-crm.html#crm" class="hover:text-[#C9A24D] transition-colors">Tender &amp; RFP Telemetry</a>
+            <span>&gt;</span>
+            <span id="breadcrumb-lead-id" class="text-[#C9A24D] font-bold">QWT-RFP-948211</span>
+          </div>
+
+          <div class="flex items-center gap-3 flex-wrap">
+            <h1 id="dossier-company-name" class="text-2xl sm:text-3xl font-extrabold font-heading text-white">
+              DIFC Sovereign Asset Mgmt
+            </h1>
+            <div id="dossier-status-pill" class="px-2.5 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span id="dossier-status-text">OEM APPROVED</span>
+            </div>
+          </div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1 font-mono flex items-center gap-2 flex-wrap">
+            <span id="dossier-solution-name" class="text-slate-300 font-semibold">AI Compute &amp; GPU</span>
+            <span>&bull;</span>
+            <span id="dossier-timestamp">Ingested: 2026-11-09 14:22 UTC</span>
+            <span>&bull;</span>
+            <span class="text-emerald-400 font-semibold">SIRA Audited Physical &amp; Cyber Spec</span>
+          </div>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="flex items-center gap-2.5 flex-wrap no-print">
+          <button id="btn-convert-quote" onclick="prepareCommercialQuote()" class="btn-gold px-4 py-2 rounded-xl text-xs font-bold text-black flex items-center gap-2 shadow-lg shadow-[#C9A24D]/20 hover:scale-[1.02] transition-transform">
+            <i data-lucide="receipt" class="w-4 h-4 text-black"></i>
+            <span>Prepare Commercial Quotation</span>
+          </button>
+          <button onclick="downloadJsonDossier()" class="px-3.5 py-2 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-slate-200 text-xs font-mono flex items-center gap-1.5 transition-colors">
+            <i data-lucide="download" class="w-3.5 h-3.5 text-[#C9A24D]"></i>
+            <span>Export JSON</span>
+          </button>
+          <a href="admin-crm.html" class="px-3.5 py-2 rounded-xl border border-slate-700 bg-[#0F141C] text-slate-300 hover:text-white text-xs font-mono flex items-center gap-1.5 transition-colors">
+            <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+            <span>Back</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- KEY PARAMETERS METRIC CARDS (4-GRID) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 print-break">
+        <div class="p-5 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-2 print-card">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>APPROVED BUDGET RANGE</span>
+            <i data-lucide="credit-card" class="w-4 h-4 text-[#C9A24D]"></i>
+          </div>
+          <div id="metric-budget" class="text-2xl sm:text-3xl font-extrabold font-mono text-[#C9A24D]">AED 1,850,000</div>
+          <div class="text-[10px] font-mono text-slate-400 flex items-center gap-1">
+            <i data-lucide="check" class="w-3 h-3 text-emerald-400"></i> Capital Expenditure Allocated
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-2 print-card">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>SERVICE LEVEL AGREEMENT</span>
+            <i data-lucide="clock" class="w-4 h-4 text-blue-400"></i>
+          </div>
+          <div id="metric-sla" class="text-lg sm:text-xl font-bold font-heading text-white">Tier-IV 24/7 SLA</div>
+          <div class="text-[10px] font-mono text-blue-400">&lt;15 min Guaranteed Onsite MTTR</div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-2 print-card">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>SIRA / MCC COMPLIANCE</span>
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+          </div>
+          <div id="metric-compliance" class="text-lg sm:text-xl font-bold font-heading text-emerald-400">SIRA REQ Active</div>
+          <div class="text-[10px] font-mono text-slate-400">Strict UAE Government Mandate</div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-2 print-card">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>DATA SOVEREIGNTY</span>
+            <i data-lucide="lock" class="w-4 h-4 text-purple-400"></i>
+          </div>
+          <div class="text-lg sm:text-xl font-bold font-heading text-white">100% UAE Onshore</div>
+          <div class="text-[10px] font-mono text-purple-400">Federal Decree No. 45 (PDPL)</div>
+        </div>
+      </div>
+
+      <!-- MAIN TWO-COLUMN CONTENT GRID -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- LEFT 2 COLUMNS: BOQ SPECIFICATION, SCOPE & AUDIT NOTES -->
+        <div class="lg:col-span-2 space-y-6 sm:space-y-8">
+          
+          <!-- ITEMISED BILL OF QUANTITIES (BOQ) TABLE -->
+          <div class="rounded-2xl bg-[#0F141C] border border-slate-800 overflow-hidden shadow-xl print-card">
+            <div class="p-5 border-b border-slate-800 flex items-center justify-between flex-wrap gap-2">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-lg bg-[#C9A24D]/15 border border-[#C9A24D]/40 text-[#C9A24D] flex items-center justify-center font-bold">
+                  <i data-lucide="list" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h2 class="font-heading font-bold text-base text-white">Itemised Bill of Quantities (BOQ)</h2>
+                  <div class="text-[10px] font-mono text-slate-400">Official Hardware Allocation &bull; Factory Authorized OEM Parts</div>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-[#0A0D12] text-[#C9A24D] text-xs font-mono border border-slate-700">
+                FTA TRN: 100482910300003
+              </span>
+            </div>
+
+            <!-- BOQ Table -->
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs">
+                <thead class="bg-[#0A0D14] border-b border-slate-800 text-[10px] font-mono text-slate-400 uppercase tracking-wider">
+                  <tr>
+                    <th class="py-3 px-4">#</th>
+                    <th class="py-3 px-4">Item &amp; Technical Description</th>
+                    <th class="py-3 px-4 text-center">Qty</th>
+                    <th class="py-3 px-4 text-right">Unit Rate (AED)</th>
+                    <th class="py-3 px-4 text-right">Subtotal (AED)</th>
+                  </tr>
+                </thead>
+                <tbody id="boq-line-items" class="divide-y divide-slate-800/60 font-mono">
+                  <!-- Populated dynamically via JS -->
+                </tbody>
+                <tfoot class="bg-[#0A0D14]/90 border-t-2 border-slate-800 font-mono text-xs">
+                  <tr>
+                    <td colspan="4" class="py-2.5 px-4 text-right text-slate-400 uppercase">Subtotal (Excl. VAT):</td>
+                    <td id="boq-subtotal" class="py-2.5 px-4 text-right font-bold text-white">AED 1,761,904.76</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" class="py-2 px-4 text-right text-slate-400 uppercase">UAE FTA VAT (5%):</td>
+                    <td id="boq-vat" class="py-2 px-4 text-right font-bold text-[#C9A24D]">AED 88,095.24</td>
+                  </tr>
+                  <tr class="border-t border-slate-700/80 bg-[#0F141C]">
+                    <td colspan="4" class="py-3 px-4 text-right font-heading font-extrabold text-white text-sm uppercase">Total Contract Value (Inc. VAT):</td>
+                    <td id="boq-total" class="py-3 px-4 text-right font-heading font-extrabold text-[#C9A24D] text-base">AED 1,850,000.00</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+
+          <!-- VERBATIM TECHNICAL SCOPE & ENGINEERING NOTES -->
+          <div class="p-6 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-4 print-card">
+            <div class="flex items-center gap-2 text-xs font-mono text-[#C9A24D] uppercase font-bold tracking-wider">
+              <i data-lucide="file-code-2" class="w-4 h-4"></i>
+              <span>Engineering Telemetry &bull; Scope Specifications</span>
+            </div>
+            <div class="p-4 rounded-xl bg-[#0A0D12] border border-slate-800/90 text-xs sm:text-sm text-slate-200 leading-relaxed font-mono whitespace-pre-wrap" id="dossier-notes-verbatim">
+              <!-- Verbatim scope loaded here -->
+            </div>
+          </div>
+
+          <!-- OPERATOR TRIAGE STATUS CHANGER -->
+          <div class="p-6 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-4 no-print">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <div class="flex items-center gap-2 text-xs font-mono text-slate-300 uppercase font-bold">
+                <i data-lucide="sliders" class="w-4 h-4 text-[#C9A24D]"></i>
+                <span>Lifecycle Triage Status Workflow</span>
+              </div>
+              <span class="text-[10px] font-mono text-slate-400">Updates live in sovereign telemetry bus</span>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+              <button onclick="updateLeadStatus('NEW_TRIAGE')" id="btn-status-NEW_TRIAGE" class="p-3 rounded-xl border border-slate-700 bg-[#0A0D12] hover:border-blue-500 text-left transition-all">
+                <div class="text-[11px] font-bold text-blue-400 font-mono">NEW TRIAGE</div>
+                <div class="text-[9px] text-slate-400 mt-0.5">&lt;15m Response Active</div>
+              </button>
+              <button onclick="updateLeadStatus('IN_AUDIT')" id="btn-status-IN_AUDIT" class="p-3 rounded-xl border border-slate-700 bg-[#0A0D12] hover:border-amber-500 text-left transition-all">
+                <div class="text-[11px] font-bold text-[#C9A24D] font-mono">IN AUDIT</div>
+                <div class="text-[9px] text-slate-400 mt-0.5">Engineering Verification</div>
+              </button>
+              <button onclick="updateLeadStatus('OEM_APPROVED')" id="btn-status-OEM_APPROVED" class="p-3 rounded-xl border border-slate-700 bg-[#0A0D12] hover:border-emerald-500 text-left transition-all">
+                <div class="text-[11px] font-bold text-emerald-400 font-mono">OEM APPROVED</div>
+                <div class="text-[9px] text-slate-400 mt-0.5">Factory Serialized</div>
+              </button>
+              <button onclick="updateLeadStatus('CLOSED_WON')" id="btn-status-CLOSED_WON" class="p-3 rounded-xl border border-slate-700 bg-[#0A0D12] hover:border-purple-500 text-left transition-all">
+                <div class="text-[11px] font-bold text-purple-400 font-mono">CLOSED / WON</div>
+                <div class="text-[9px] text-slate-400 mt-0.5">Contract Dispatched</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- INTERNAL OPERATOR AUDIT LOG & NOTES -->
+          <div class="p-6 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-4 print-card">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2 text-xs font-mono text-slate-300 uppercase font-bold">
+                <i data-lucide="message-square" class="w-4 h-4 text-[#C9A24D]"></i>
+                <span>Confidential Operator Notes &amp; Audit Trail</span>
+              </div>
+              <span class="text-[10px] font-mono text-slate-400">Encrypted Local Telemetry</span>
+            </div>
+
+            <div id="operator-notes-container" class="space-y-2.5 max-h-60 overflow-y-auto">
+              <!-- Operator notes list -->
+            </div>
+
+            <div class="pt-2 flex gap-2 no-print">
+              <input type="text" id="input-new-operator-note" placeholder="Add confidential triage note or engineering assessment..." class="flex-1 bg-[#0A0D12] border border-slate-700 rounded-xl px-3.5 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#C9A24D]">
+              <button onclick="addOperatorNote()" class="btn-gold px-4 py-2 rounded-xl text-xs font-bold text-black flex items-center gap-1.5 shrink-0">
+                <i data-lucide="plus" class="w-3.5 h-3.5 text-black"></i>
+                <span>Add Note</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT 1 COLUMN: CLIENT STAKEHOLDER DOSSIER & REGULATORY SEALS -->
+        <div class="space-y-6 sm:space-y-8">
+          
+          <!-- CLIENT & STAKEHOLDER CARD -->
+          <div class="p-6 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-5 print-card">
+            <div class="flex items-center gap-2 text-xs font-mono text-[#C9A24D] uppercase font-bold tracking-wider pb-3 border-b border-slate-800">
+              <i data-lucide="building-2" class="w-4 h-4"></i>
+              <span>Client Stakeholder Profile</span>
+            </div>
+
+            <div class="space-y-3.5 text-xs">
+              <div>
+                <div class="text-[10px] font-mono text-slate-400 uppercase">Enterprise Client Entity</div>
+                <div id="dossier-sidebar-company" class="font-heading font-bold text-white text-base mt-0.5">DIFC Sovereign Asset Mgmt</div>
+              </div>
+
+              <div>
+                <div class="text-[10px] font-mono text-slate-400 uppercase">Lead Decision Maker</div>
+                <div id="dossier-sidebar-contact" class="font-semibold text-slate-200 mt-0.5">Tariq Al-Maktoum</div>
+              </div>
+
+              <div>
+                <div class="text-[10px] font-mono text-slate-400 uppercase">Corporate Email</div>
+                <div class="flex items-center gap-2 mt-0.5">
+                  <a id="dossier-sidebar-email" href="mailto:t.maktoum@difc-capital.ae" class="text-blue-400 hover:underline font-mono truncate">t.maktoum@difc-capital.ae</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="text-[10px] font-mono text-slate-400 uppercase">Direct Telephone</div>
+                <div class="flex items-center gap-2 mt-0.5">
+                  <a id="dossier-sidebar-phone" href="tel:+97143627700" class="text-slate-200 hover:text-[#C9A24D] font-mono">+971 4 362 7700</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="text-[10px] font-mono text-slate-400 uppercase">Regional Jurisdiction</div>
+                <div class="text-slate-300 font-mono mt-0.5">Dubai Silicon Oasis (DSO) / DIFC, UAE</div>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-800 flex flex-col gap-2 no-print">
+              <button onclick="prepareCommercialQuote()" class="w-full btn-gold py-2.5 px-3 rounded-xl text-xs font-bold text-black flex items-center justify-center gap-2 shadow-md">
+                <i data-lucide="receipt" class="w-3.5 h-3.5 text-black"></i>
+                <span>Generate Official Quote</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- SOVEREIGN COMPLIANCE GUARANTEES -->
+          <div class="p-6 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-4 print-card">
+            <div class="flex items-center gap-2 text-xs font-mono text-[#C9A24D] uppercase font-bold tracking-wider pb-3 border-b border-slate-800">
+              <i data-lucide="award" class="w-4 h-4"></i>
+              <span>Sovereign Certifications</span>
+            </div>
+
+            <div class="space-y-3 text-xs">
+              <div class="p-3 rounded-xl bg-[#0A0D12] border border-emerald-500/30 flex items-start gap-2.5">
+                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <div class="font-bold text-white text-xs">Dubai SIRA Certified</div>
+                  <div class="text-[10px] text-slate-400">Electronic surveillance &amp; data retention standard compliant</div>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-xl bg-[#0A0D12] border border-[#C9A24D]/30 flex items-start gap-2.5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-[#C9A24D] shrink-0 mt-0.5"></i>
+                <div>
+                  <div class="font-bold text-white text-xs">Abu Dhabi MCC Authorized</div>
+                  <div class="text-[10px] text-slate-400">Monitoring &amp; Control Centre critical infrastructure spec</div>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-xl bg-[#0A0D12] border border-blue-500/30 flex items-start gap-2.5">
+                <i data-lucide="lock" class="w-4 h-4 text-blue-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <div class="font-bold text-white text-xs">UAE PDPL Decree 45</div>
+                  <div class="text-[10px] text-slate-400">Air-gapped on-premises sovereign data enclave isolation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUICK LINKS CARD -->
+          <div class="p-6 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-3 no-print">
+            <div class="text-xs font-mono text-slate-400 uppercase font-bold">Quick Navigation</div>
+            <a href="admin-crm.html#crm" class="w-full py-2 px-3 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 text-xs font-mono flex items-center justify-between transition-colors">
+              <span>← Telemetry Pipeline</span>
+              <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+            </a>
+            <a href="admin-crm.html#docs" class="w-full py-2 px-3 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 text-xs font-mono flex items-center justify-between transition-colors">
+              <span>Commercial Invoicing Suite</span>
+              <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+            </a>
+            <a href="index.html" class="w-full py-2 px-3 rounded-xl bg-slate-800/40 hover:bg-slate-800 text-slate-300 text-xs font-mono flex items-center justify-between transition-colors">
+              <span>Return to Public Portal</span>
+              <i data-lucide="external-link" class="w-4 h-4 text-[#C9A24D]"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script src="js/admin-theme.js"></script>
+  <script>
+    // Enforce authentication: only accessible with active session
+    (function enforceAuth() {
+      try {
+        const user = localStorage.getItem('qwt_admin_user');
+        if (!user) {
+          window.location.href = 'admin-crm.html';
+        }
+      } catch (e) {}
+    })();
+
+    let currentLead = null;
+
+    // Load lead from URL query parameter ?id=... or fallback to first lead
+    function loadLeadFromParams() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const leadId = urlParams.get('id') || 'QWT-RFP-948211';
+
+      let leads = [];
+      try {
+        const stored = localStorage.getItem('qwt_crm_leads');
+        if (stored) {
+          leads = JSON.parse(stored);
+        }
+      } catch (e) {
+        console.warn('Error reading stored leads:', e);
+      }
+
+      currentLead = leads.find(l => l.id === leadId) || leads[0] || {
+        id: 'QWT-RFP-948211',
+        timestamp: '2026-11-09T14:22:00Z',
+        fullName: 'Tariq Al-Maktoum',
+        workEmail: 't.maktoum@difc-capital.ae',
+        phone: '+971 4 362 7700',
+        company: 'DIFC Sovereign Asset Mgmt',
+        solution: 'AI Compute & GPU',
+        slaRequirement: 'Mission-Critical 24/7 (Tier IV)',
+        estimatedBudget: 'AED 1,850,000',
+        siraCompliant: true,
+        notes: 'Requires 4x Dell XE9680 (32x H100 SXM5) with InfiniBand NDR spine-leaf and air-gapped on-premise LLM fine-tuning enclave.',
+        status: 'OEM_APPROVED'
+      };
+
+      renderLeadDossier(currentLead);
+    }
+
+    // Render lead telemetry dossier
+    function renderLeadDossier(lead) {
+      document.title = `${lead.id} - ${lead.company} | QWT BOQ Dossier`;
+
+      // Header elements
+      document.getElementById('breadcrumb-lead-id').textContent = lead.id;
+      document.getElementById('dossier-company-name').textContent = lead.company;
+      document.getElementById('dossier-solution-name').textContent = lead.solution;
+      document.getElementById('dossier-timestamp').textContent = `Ingested: ${new Date(lead.timestamp || Date.now()).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })}`;
+
+      // Status pill
+      const statusText = document.getElementById('dossier-status-text');
+      const statusPill = document.getElementById('dossier-status-pill');
+      statusText.textContent = (lead.status || 'NEW_TRIAGE').replace('_', ' ');
+
+      // Metric cards
+      document.getElementById('metric-budget').textContent = lead.estimatedBudget || 'AED 1,850,000';
+      document.getElementById('metric-sla').textContent = lead.slaRequirement || 'Tier-IV 24/7 SLA';
+      document.getElementById('metric-compliance').textContent = lead.siraCompliant ? 'SIRA REQ Verified' : 'Standard Compliance';
+
+      // Scope verbatim
+      document.getElementById('dossier-notes-verbatim').textContent = lead.notes || 'No technical notes recorded.';
+
+      // Sidebar
+      document.getElementById('dossier-sidebar-company').textContent = lead.company;
+      document.getElementById('dossier-sidebar-contact').textContent = lead.fullName;
+      const emailEl = document.getElementById('dossier-sidebar-email');
+      emailEl.textContent = lead.workEmail;
+      emailEl.href = `mailto:${lead.workEmail}`;
+      const phoneEl = document.getElementById('dossier-sidebar-phone');
+      phoneEl.textContent = lead.phone;
+      phoneEl.href = `tel:${lead.phone.replace(/\s+/g, '')}`;
+
+      // Render BOQ line items
+      renderBoqTable(lead);
+
+      // Highlight active status button
+      highlightStatusBtn(lead.status);
+
+      // Render operator notes
+      renderOperatorNotes(lead.id);
+
+      if (window.lucide) window.lucide.createIcons();
+    }
+
+    // Generate realistic itemised BOQ based on solution domain & budget
+    function renderBoqTable(lead) {
+      const tbody = document.getElementById('boq-line-items');
+      let items = [];
+
+      const solution = (lead.solution || '').toLowerCase();
+
+      if (solution.includes('ai') || solution.includes('gpu')) {
+        items = [
+          { name: 'Dell PowerEdge XE9680 AI Supercomputing Node (8x NVIDIA H100 80GB SXM5, Dual Intel Xeon Platinum 8480+, 2TB DDR5)', qty: 4, rate: 370000 },
+          { name: 'NVIDIA Quantum-2 QM9700 64-Port 800Gb/s NDR InfiniBand Switch Fabric', qty: 2, rate: 95000 },
+          { name: 'Mellanox LinkX 800G OSFP Direct Attach Copper Twinax Cabling Array', qty: 32, rate: 2500 },
+          { name: 'Air-Gapped Sovereign AI Enclave Orchestration, SLURM Cluster & Onshore LLM Tuning Stack', qty: 1, rate: 100000 }
+        ];
+      } else if (solution.includes('storage') || solution.includes('hci')) {
+        items = [
+          { name: 'Pure Storage FlashBlade //S500 (24x DirectFlash 48TB NVMe Modules, 1.15PB Usable)', qty: 1, rate: 640000 },
+          { name: 'Cisco Nexus 9336C-FX2 100GbE SAN Fabric High-Availability Switches', qty: 2, rate: 85000 },
+          { name: 'ActiveCluster Synchronous Zero-Downtime Metro Replication License Pack', qty: 1, rate: 70000 },
+          { name: 'PACS Medical Imaging Archive Zero-Downtime Migration & Tier-IV Validation', qty: 1, rate: 60000 }
+        ];
+      } else if (solution.includes('elv') || solution.includes('security') || solution.includes('cctv')) {
+        items = [
+          { name: 'Axis Communications 4K Ultra-HD SIRA Certified Explosion-Proof IP Surveillance Array', qty: 48, rate: 4500 },
+          { name: 'NetApp E-Series E2860 31-Day Video Retention SAN SAN Storage Array (360TB Raw)', qty: 2, rate: 130000 },
+          { name: 'Gunnebo SpeedStile FP Optical Biometric Speed Gates with AI Facial Recognition', qty: 4, rate: 21000 },
+          { name: 'Dubai SIRA & Abu Dhabi MCC Inspection, Regulatory Audit & Engineering Handover', qty: 1, rate: 60000 }
+        ];
+      } else {
+        // Cybersecurity & SOC or generic
+        items = [
+          { name: 'Fortinet FortiGate 3000F Next-Generation Enterprise HA Firewall Pair', qty: 2, rate: 920000 },
+          { name: 'Fortinet FortiSwitch 1048E Data Centre Distribution Switch Fabric (48x 10GE, 6x 100GE)', qty: 8, rate: 35000 },
+          { name: 'Post-Quantum Key Exchange Protocol Acceleration & NESA Sovereign Compliance Suite', qty: 1, rate: 150000 },
+          { name: '24/7 Sovereign SOC Telemetry Connector, SIEM Integration & Threat Hunting Handover', qty: 1, rate: 130000 }
+        ];
+      }
+
+      let subtotal = 0;
+      tbody.innerHTML = items.map((item, idx) => {
+        const itemTotal = item.qty * item.rate;
+        subtotal += itemTotal;
+        return `
+          <tr class="hover:bg-slate-800/20 transition-colors">
+            <td class="py-3 px-4 text-slate-500 font-bold">${idx + 1}</td>
+            <td class="py-3 px-4 font-sans text-slate-200">
+              <div class="font-bold text-white text-xs">${item.name}</div>
+            </td>
+            <td class="py-3 px-4 text-center font-bold text-slate-300">${item.qty}</td>
+            <td class="py-3 px-4 text-right text-slate-300">AED ${item.rate.toLocaleString()}</td>
+            <td class="py-3 px-4 text-right font-bold text-emerald-400">AED ${itemTotal.toLocaleString()}</td>
+          </tr>
+        `;
+      }).join('');
+
+      const vat = subtotal * 0.05;
+      const total = subtotal + vat;
+
+      document.getElementById('boq-subtotal').textContent = `AED ${subtotal.toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
+      document.getElementById('boq-vat').textContent = `AED ${vat.toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
+      document.getElementById('boq-total').textContent = `AED ${total.toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
+    }
+
+    // Status management
+    function updateLeadStatus(newStatus) {
+      if (!currentLead) return;
+      currentLead.status = newStatus;
+
+      // Update in localStorage
+      try {
+        const stored = localStorage.getItem('qwt_crm_leads');
+        let leads = stored ? JSON.parse(stored) : [];
+        const idx = leads.findIndex(l => l.id === currentLead.id);
+        if (idx !== -1) {
+          leads[idx].status = newStatus;
+          localStorage.setItem('qwt_crm_leads', JSON.stringify(leads));
+        }
+      } catch (e) {
+        console.warn('Failed to persist status:', e);
+      }
+
+      // Update UI
+      document.getElementById('dossier-status-text').textContent = newStatus.replace('_', ' ');
+      highlightStatusBtn(newStatus);
+
+      // Add to audit notes
+      addOperatorNoteSystem(`Triage status updated to: ${newStatus.replace('_', ' ')}`);
+    }
+
+    function highlightStatusBtn(activeStatus) {
+      ['NEW_TRIAGE', 'IN_AUDIT', 'OEM_APPROVED', 'CLOSED_WON'].forEach(st => {
+        const btn = document.getElementById(`btn-status-${st}`);
+        if (!btn) return;
+        if (st === activeStatus) {
+          btn.classList.add('ring-2', 'ring-[#C9A24D]', 'bg-slate-800');
+        } else {
+          btn.classList.remove('ring-2', 'ring-[#C9A24D]', 'bg-slate-800');
+        }
+      });
+    }
+
+    // Operator Notes Engine
+    function renderOperatorNotes(leadId) {
+      const container = document.getElementById('operator-notes-container');
+      const storageKey = `qwt_notes_${leadId}`;
+      let notes = [];
+
+      try {
+        const stored = localStorage.getItem(storageKey);
+        notes = stored ? JSON.parse(stored) : [
+          { author: 'System Telemetry', timestamp: '2026-11-09T14:22:00Z', text: 'RFP submitted via sovereign enterprise portal. reCAPTCHA v2 token verified.' },
+          { author: 'Tariq (Super Admin)', timestamp: '2026-11-09T15:05:00Z', text: 'Pre-qualified technical architecture. Vendor BOM matched with local tier-IV distributor inventory.' }
+        ];
+      } catch (e) {
+        notes = [];
+      }
+
+      container.innerHTML = notes.map(n => `
+        <div class="p-3 rounded-xl bg-[#0A0D12] border border-slate-800 text-xs">
+          <div class="flex items-center justify-between text-[10px] font-mono text-slate-400 mb-1">
+            <span class="font-bold text-[#C9A24D]">${n.author}</span>
+            <span>${new Date(n.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
+          </div>
+          <div class="text-slate-300 font-sans">${n.text}</div>
+        </div>
+      `).join('');
+    }
+
+    function addOperatorNote() {
+      const input = document.getElementById('input-new-operator-note');
+      const text = input.value.trim();
+      if (!text || !currentLead) return;
+
+      const storageKey = `qwt_notes_${currentLead.id}`;
+      let notes = [];
+      try {
+        const stored = localStorage.getItem(storageKey);
+        notes = stored ? JSON.parse(stored) : [];
+      } catch (e) {
+        notes = [];
+      }
+
+      notes.push({
+        author: 'Super Admin Operator',
+        timestamp: new Date().toISOString(),
+        text: text
+      });
+
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(notes));
+      } catch (e) {}
+
+      input.value = '';
+      renderOperatorNotes(currentLead.id);
+    }
+
+    function addOperatorNoteSystem(text) {
+      if (!currentLead) return;
+      const storageKey = `qwt_notes_${currentLead.id}`;
+      let notes = [];
+      try {
+        const stored = localStorage.getItem(storageKey);
+        notes = stored ? JSON.parse(stored) : [];
+      } catch (e) {
+        notes = [];
+      }
+
+      notes.push({
+        author: 'CRM Audit Engine',
+        timestamp: new Date().toISOString(),
+        text: text
+      });
+
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(notes));
+      } catch (e) {}
+
+      renderOperatorNotes(currentLead.id);
+    }
+
+    // Bridge: Convert Lead to Commercial Quote
+    function prepareCommercialQuote() {
+      if (!currentLead) return;
+      // Store current lead to convert in localStorage
+      localStorage.setItem('qwt_convert_lead', JSON.stringify(currentLead));
+      // Navigate to admin-crm.html with docs view active
+      window.location.href = `admin-crm.html?action=quote_from_lead&leadId=${encodeURIComponent(currentLead.id)}`;
+    }
+
+    // Export raw JSON dossier
+    function downloadJsonDossier() {
+      if (!currentLead) return;
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(currentLead, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", `${currentLead.id}-Telemetry-BOQ.json`);
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    }
+
+    // Initialize on DOM ready
+    document.addEventListener('DOMContentLoaded', () => {
+      loadLeadFromParams();
+    });
+  </script>
+</body>
+</html>

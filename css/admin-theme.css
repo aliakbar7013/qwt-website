@@ -1,0 +1,1088 @@
+/* ==========================================================================
+   QUAD WISE TECHNOLOGIES (QWT.AE) - ADMIN CONSOLE THEME ENGINE
+   Dual Mode: Sovereign Dark ("Current Mode") & Executive White ("White Mode")
+   ========================================================================== */
+
+/* Strict Enforce Authenticated vs Unauthenticated Screen Isolation */
+#admin-login-screen.hidden,
+#admin-authenticated-app.hidden,
+.hidden {
+  display: none !important;
+}
+
+#admin-login-screen:not(.hidden) {
+  display: flex !important;
+}
+
+#admin-authenticated-app:not(.hidden) {
+  display: block !important;
+}
+
+/* Smooth theme transitions on root containers */
+body,
+#main-header,
+main,
+.enterprise-card,
+.glass-panel,
+table,
+th,
+td,
+input,
+select,
+textarea {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* --------------------------------------------------------------------------
+   THEME SWITCHER TOGGLE COMPONENT
+   -------------------------------------------------------------------------- */
+.theme-switch-btn {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* When in Dark Mode (Default) */
+html:not(.theme-white) #theme-btn-dark,
+html:not(.theme-white) #mobile-theme-btn-dark,
+html:not(.theme-white) #login-theme-btn-dark {
+  background-color: #0A0D12;
+  color: #C9A24D;
+  border: 1px solid rgba(201, 162, 77, 0.45);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+}
+
+html:not(.theme-white) #theme-btn-white,
+html:not(.theme-white) #mobile-theme-btn-white,
+html:not(.theme-white) #login-theme-btn-white {
+  background-color: transparent;
+  color: #94A3B8;
+  border: 1px solid transparent;
+}
+
+html:not(.theme-white) #theme-btn-white:hover,
+html:not(.theme-white) #mobile-theme-btn-white:hover,
+html:not(.theme-white) #login-theme-btn-white:hover {
+  color: #FFFFFF;
+}
+
+/* When in White Mode */
+html.theme-white #theme-btn-white,
+html.theme-white #mobile-theme-btn-white,
+html.theme-white #login-theme-btn-white {
+  background-color: #FFFFFF;
+  color: #0F172A;
+  border: 1px solid #C9A24D;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12);
+  font-weight: 700;
+}
+
+html.theme-white #theme-btn-dark,
+html.theme-white #mobile-theme-btn-dark,
+html.theme-white #login-theme-btn-dark {
+  background-color: transparent;
+  color: #64748B;
+  border: 1px solid transparent;
+}
+
+html.theme-white #theme-btn-dark:hover,
+html.theme-white #mobile-theme-btn-dark:hover,
+html.theme-white #login-theme-btn-dark:hover {
+  color: #0F172A;
+}
+
+/* --------------------------------------------------------------------------
+   WHITE MODE STYLES (html.theme-white)
+   -------------------------------------------------------------------------- */
+
+/* 1. Base Canvas & Backgrounds */
+html.theme-white {
+  color-scheme: light;
+}
+
+html.theme-white body {
+  background-color: #F8FAFC !important;
+  color: #1E293B !important;
+}
+
+html.theme-white #admin-authenticated-app,
+html.theme-white main {
+  background-color: #F8FAFC !important;
+}
+
+/* Login screen in White Mode */
+html.theme-white #admin-login-screen {
+  background-color: #F8FAFC !important;
+  color: #1E293B !important;
+}
+
+html.theme-white #login-bg-glow {
+  background: radial-gradient(ellipse at top, rgba(201, 162, 77, 0.12), rgba(241, 245, 249, 0.75), #F8FAFC) !important;
+  opacity: 0.85 !important;
+}
+
+html.theme-white #login-bg-grid {
+  background-image: linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px) !important;
+  mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, #000 70%, transparent 100%) !important;
+  -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, #000 70%, transparent 100%) !important;
+  opacity: 0.75 !important;
+}
+
+html.theme-white #login-theme-switcher {
+  background-color: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.08) !important;
+}
+
+html.theme-white #admin-login-screen h1 {
+  color: #0F172A !important;
+  font-weight: 800 !important;
+}
+
+html.theme-white #admin-login-screen p {
+  color: #475569 !important;
+}
+
+html.theme-white #admin-login-screen .font-heading.text-xl {
+  color: #0F172A !important;
+}
+
+html.theme-white #admin-login-screen .text-emerald-400 {
+  color: #047857 !important;
+  font-weight: 700 !important;
+}
+
+html.theme-white #admin-login-screen .bg-\[\#0F141C\] {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 25px 35px -5px rgba(15, 23, 42, 0.1), 0 10px 15px -6px rgba(15, 23, 42, 0.05) !important;
+}
+
+html.theme-white #admin-login-screen label {
+  color: #334155 !important;
+  font-weight: 700 !important;
+}
+
+html.theme-white #admin-login-screen input:not([type="checkbox"]) {
+  background-color: #F8FAFC !important;
+  border: 1.5px solid #CBD5E1 !important;
+  color: #0F172A !important;
+  font-weight: 600 !important;
+}
+
+html.theme-white #admin-login-screen input:not([type="checkbox"]):focus {
+  background-color: #FFFFFF !important;
+  border-color: #C9A24D !important;
+  box-shadow: 0 0 0 3px rgba(201, 162, 77, 0.2) !important;
+}
+
+html.theme-white #admin-login-screen input::placeholder {
+  color: #64748B !important;
+}
+
+html.theme-white #admin-login-screen .text-slate-500 {
+  color: #64748B !important;
+}
+
+html.theme-white #admin-login-screen .border-t.border-slate-800 {
+  border-color: #E2E8F0 !important;
+}
+
+html.theme-white #admin-login-screen .grid button {
+  background-color: #F8FAFC !important;
+  border: 1px solid #CBD5E1 !important;
+}
+
+html.theme-white #admin-login-screen .grid button:hover {
+  background-color: #F1F5F9 !important;
+  border-color: #94A3B8 !important;
+}
+
+html.theme-white #admin-login-screen .grid button .text-slate-400 {
+  color: #475569 !important;
+  font-weight: 600 !important;
+}
+
+html.theme-white #admin-login-screen a {
+  color: #475569 !important;
+  font-weight: 600 !important;
+}
+
+html.theme-white #admin-login-screen a:hover {
+  color: #0F172A !important;
+}
+
+/* 2. Top Regulatory Banner */
+html.theme-white .bg-\[\#0A0D14\],
+html.theme-white .bg-\[\#0A0D14\]\/95,
+html.theme-white .bg-\[\#0A0D14\]\/90,
+html.theme-white .bg-\[\#0A0D14\]\/80,
+html.theme-white .bg-\[\#0A0D14\]\/70 {
+  background-color: #F1F5F9 !important;
+  border-color: #E2E8F0 !important;
+  color: #334155 !important;
+}
+
+/* 3. Sticky Navigation Header */
+html.theme-white #main-header {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+html.theme-white #main-header .text-white {
+  color: #0F172A !important;
+}
+
+html.theme-white #main-header .text-slate-300 {
+  color: #475569 !important;
+}
+
+html.theme-white #main-header nav a.nav-link {
+  color: #334155 !important;
+}
+
+html.theme-white #main-header nav a.nav-link:hover {
+  color: #C9A24D !important;
+}
+
+html.theme-white #auth-user-badge {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06) !important;
+}
+
+html.theme-white #auth-user-badge .text-white {
+  color: #0F172A !important;
+}
+
+html.theme-white #auth-user-badge .bg-slate-800 {
+  background-color: #F1F5F9 !important;
+  border-color: #E2E8F0 !important;
+}
+
+html.theme-white #admin-theme-switcher {
+  background-color: #F1F5F9 !important;
+  border-color: #CBD5E1 !important;
+}
+
+/* 4. Navigation Tabs */
+html.theme-white .border-b.border-slate-800 {
+  border-color: #E2E8F0 !important;
+}
+
+html.theme-white #admin-tab-crm:not(.bg-\[\#C9A24D\]),
+html.theme-white #admin-tab-docs:not(.bg-\[\#C9A24D\]),
+html.theme-white #admin-tab-contact:not(.bg-\[\#C9A24D\]),
+html.theme-white #admin-tab-blog:not(.bg-\[\#C9A24D\]),
+html.theme-white #admin-tab-channels:not(.bg-\[\#C9A24D\]),
+html.theme-white #admin-tab-users:not(.bg-\[\#C9A24D\]) {
+  background-color: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #334155 !important;
+}
+
+html.theme-white #admin-tab-crm:not(.bg-\[\#C9A24D\]):hover,
+html.theme-white #admin-tab-docs:not(.bg-\[\#C9A24D\]):hover,
+html.theme-white #admin-tab-contact:not(.bg-\[\#C9A24D\]):hover,
+html.theme-white #admin-tab-blog:not(.bg-\[\#C9A24D\]):hover,
+html.theme-white #admin-tab-channels:not(.bg-\[\#C9A24D\]):hover,
+html.theme-white #admin-tab-users:not(.bg-\[\#C9A24D\]):hover {
+  border-color: #C9A24D !important;
+  color: #0F172A !important;
+  background-color: #F8FAFC !important;
+}
+
+/* Mobile & Tablet Header Controls in White Mode */
+html.theme-white #mobile-menu-btn {
+  background-color: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #0F172A !important;
+}
+
+/* Active Gold Tab */
+html.theme-white .bg-\[\#C9A24D\] {
+  background-color: #C9A24D !important;
+  color: #0A0D12 !important;
+  border-color: #C9A24D !important;
+}
+
+/* 5. Cards & Elevated Surfaces */
+html.theme-white .bg-\[\#0F141C\],
+html.theme-white .bg-\[\#0F141C\]\/95,
+html.theme-white .bg-\[\#0F141C\]\/90,
+html.theme-white .bg-\[\#0F141C\]\/80,
+html.theme-white .bg-\[\#0F141C\]\/70 {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05) !important;
+}
+
+html.theme-white .bg-\[\#0A0D12\],
+html.theme-white .bg-\[\#0A0D12\]\/95,
+html.theme-white .bg-\[\#0A0D12\]\/90,
+html.theme-white .bg-\[\#0A0D12\]\/80,
+html.theme-white .bg-\[\#0A0D12\]\/70 {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+html.theme-white .border-slate-800,
+html.theme-white .border-slate-800\/80,
+html.theme-white .border-slate-800\/60,
+html.theme-white .border-slate-700,
+html.theme-white .border-slate-700\/80,
+html.theme-white .border-slate-700\/60 {
+  border-color: #E2E8F0 !important;
+}
+
+/* 6. Text Elements in White Mode */
+html.theme-white .text-white {
+  color: #0F172A !important;
+}
+
+html.theme-white .text-slate-200 {
+  color: #1E293B !important;
+}
+
+html.theme-white .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.theme-white .text-slate-400 {
+  color: #475569 !important; /* Higher contrast, WCAG AAA */
+}
+
+html.theme-white .text-slate-500 {
+  color: #64748B !important; /* Legible secondary metadata */
+}
+
+/* 7. Tables & Badges in White Mode */
+html.theme-white table thead,
+html.theme-white table thead tr,
+html.theme-white table thead th {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  border-bottom: 2px solid #E2E8F0 !important;
+}
+
+html.theme-white table tbody tr {
+  background-color: #FFFFFF !important;
+  border-bottom: 1px solid #F1F5F9 !important;
+}
+
+html.theme-white table tbody tr:hover,
+html.theme-white tr.hover\:bg-slate-800\/25:hover,
+html.theme-white tr.hover\:bg-slate-800\/30:hover,
+html.theme-white tr.hover\:bg-slate-800\/20:hover {
+  background-color: #F8FAFC !important;
+}
+
+html.theme-white table tbody td {
+  color: #1E293B !important;
+}
+
+html.theme-white table tbody td .text-white {
+  color: #0F172A !important;
+}
+
+html.theme-white table tbody td .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.theme-white table tbody td .text-slate-500 {
+  color: #64748B !important;
+}
+
+/* Category & Slate Badges in White Mode (Prevents dark-on-dark pill bug) */
+html.theme-white .category-pill,
+html.theme-white table td .bg-slate-800,
+html.theme-white table td .bg-slate-800\/80,
+html.theme-white table td .bg-slate-800\/60,
+html.theme-white .status-pill-draft,
+html.theme-white .bg-slate-800,
+html.theme-white .bg-slate-800\/95,
+html.theme-white .bg-slate-800\/90,
+html.theme-white .bg-slate-800\/80,
+html.theme-white .bg-slate-800\/70,
+html.theme-white .bg-slate-800\/60,
+html.theme-white .bg-slate-800\/50,
+html.theme-white .bg-slate-800\/40,
+html.theme-white .bg-slate-800\/30,
+html.theme-white .bg-slate-800\/20,
+html.theme-white .bg-slate-800\/10 {
+  background-color: #F1F5F9 !important;
+  border-color: #CBD5E1 !important;
+  color: #1E293B !important;
+}
+
+html.theme-white .category-pill,
+html.theme-white table td .bg-slate-800 {
+  color: #0F172A !important;
+  font-weight: 600 !important;
+}
+
+/* Secondary Action Buttons & Pills in White Mode (Re-seed, Public Portal, Back links) */
+html.theme-white #crm-clear-btn,
+html.theme-white #contact-sub-reset-btn,
+html.theme-white a[href="index.html"].rounded-xl,
+html.theme-white a[href*="admin-crm.html"].rounded-xl,
+html.theme-white button[onclick="window.print()"],
+html.theme-white button[onclick="downloadJsonDossier()"],
+html.theme-white button[onclick*="saveManualArticle"],
+html.theme-white button[data-campaign-tab],
+html.theme-white button[data-angle-btn],
+html.theme-white #preview-linkedin-btn,
+html.theme-white #preview-email-btn,
+html.theme-white #preview-whatsapp-btn {
+  background-color: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #1E293B !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05) !important;
+}
+
+html.theme-white #crm-clear-btn:hover,
+html.theme-white #contact-sub-reset-btn:hover,
+html.theme-white a[href="index.html"].rounded-xl:hover,
+html.theme-white a[href*="admin-crm.html"].rounded-xl:hover,
+html.theme-white button[onclick="window.print()"]:hover,
+html.theme-white button[onclick="downloadJsonDossier()"]:hover,
+html.theme-white button[onclick*="saveManualArticle"]:hover,
+html.theme-white button[data-campaign-tab]:hover,
+html.theme-white button[data-angle-btn]:hover,
+html.theme-white #preview-linkedin-btn:hover,
+html.theme-white #preview-email-btn:hover,
+html.theme-white #preview-whatsapp-btn:hover {
+  background-color: #F1F5F9 !important;
+  border-color: #94A3B8 !important;
+  color: #0F172A !important;
+}
+
+html.theme-white #crm-clear-btn i,
+html.theme-white #crm-clear-btn span,
+html.theme-white #contact-sub-reset-btn i,
+html.theme-white #contact-sub-reset-btn span,
+html.theme-white a[href="index.html"].rounded-xl i,
+html.theme-white a[href="index.html"].rounded-xl span,
+html.theme-white a[href*="admin-crm.html"].rounded-xl i,
+html.theme-white a[href*="admin-crm.html"].rounded-xl span {
+  color: #1E293B !important;
+}
+
+html.theme-white #crm-clear-btn:hover i,
+html.theme-white #crm-clear-btn:hover span,
+html.theme-white #contact-sub-reset-btn:hover i,
+html.theme-white #contact-sub-reset-btn:hover span,
+html.theme-white a[href="index.html"].rounded-xl:hover i,
+html.theme-white a[href="index.html"].rounded-xl:hover span,
+html.theme-white a[href*="admin-crm.html"].rounded-xl:hover i,
+html.theme-white a[href*="admin-crm.html"].rounded-xl:hover span {
+  color: #0F172A !important;
+}
+
+/* Inactive Tab Badges in White Mode */
+html.theme-white #blog-pending-badge,
+html.theme-white #contact-badge-count,
+html.theme-white #docs-badge-count,
+html.theme-white #queue-subtab-badge,
+html.theme-white .status-badge-inactive {
+  background-color: #F1F5F9 !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #475569 !important;
+  font-weight: 600 !important;
+}
+
+/* Table Action Buttons in White Mode */
+html.theme-white table td button.bg-slate-800,
+html.theme-white table td button.bg-slate-800\/80 {
+  background-color: #F1F5F9 !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #334155 !important;
+}
+
+html.theme-white table td button.bg-slate-800:hover,
+html.theme-white table td button.bg-slate-800\/80:hover {
+  background-color: #E2E8F0 !important;
+  color: #0F172A !important;
+}
+
+/* Comprehensive Status Badge Enhancements in White Mode */
+html.theme-white .bg-emerald-500\/10,
+html.theme-white .bg-emerald-500\/15,
+html.theme-white .bg-emerald-500\/20 {
+  background-color: #ECFDF5 !important;
+  border: 1px solid #A7F3D0 !important;
+  color: #065F46 !important;
+}
+
+html.theme-white .text-emerald-400,
+html.theme-white .text-emerald-300 {
+  color: #047857 !important;
+  font-weight: 700 !important;
+}
+
+html.theme-white .bg-blue-500\/10,
+html.theme-white .bg-blue-500\/15,
+html.theme-white .bg-blue-500\/20 {
+  background-color: #EFF6FF !important;
+  border: 1px solid #BFDBFE !important;
+  color: #1E40AF !important;
+}
+
+html.theme-white .text-blue-400,
+html.theme-white .text-blue-300 {
+  color: #1D4ED8 !important;
+  font-weight: 700 !important;
+}
+
+html.theme-white .bg-purple-500\/10,
+html.theme-white .bg-purple-500\/15,
+html.theme-white .bg-purple-500\/20 {
+  background-color: #FAF5FF !important;
+  border: 1px solid #E9D5FF !important;
+  color: #6B21A8 !important;
+}
+
+html.theme-white .text-purple-400,
+html.theme-white .text-purple-300 {
+  color: #6B21A8 !important;
+  font-weight: 700 !important;
+}
+
+html.theme-white .bg-amber-500\/10,
+html.theme-white .bg-amber-500\/15,
+html.theme-white .bg-amber-500\/20 {
+  background-color: #FFFBEB !important;
+  border: 1px solid #FCD34D !important;
+  color: #92400E !important;
+}
+
+html.theme-white .text-amber-400,
+html.theme-white .text-amber-300 {
+  color: #B45309 !important;
+  font-weight: 700 !important;
+}
+
+html.theme-white .bg-red-500\/10,
+html.theme-white .bg-red-500\/15 {
+  background-color: #FEF2F2 !important;
+  border: 1px solid #FECACA !important;
+  color: #B91C1C !important;
+}
+
+html.theme-white .text-red-400,
+html.theme-white .text-red-300 {
+  color: #B91C1C !important;
+  font-weight: 700 !important;
+}
+
+html.theme-white .bg-teal-500\/10,
+html.theme-white .bg-teal-500\/15 {
+  background-color: #F0FDFA !important;
+  border: 1px solid #99F6E4 !important;
+  color: #0F766E !important;
+}
+
+html.theme-white .text-teal-400,
+html.theme-white .text-teal-300 {
+  color: #0F766E !important;
+  font-weight: 700 !important;
+}
+
+html.theme-white .bg-indigo-500\/10,
+html.theme-white .bg-indigo-500\/15 {
+  background-color: #EEF2FF !important;
+  border: 1px solid #C7D2FE !important;
+  color: #3730A3 !important;
+}
+
+html.theme-white .text-indigo-400,
+html.theme-white .text-indigo-300 {
+  color: #3730A3 !important;
+  font-weight: 700 !important;
+}
+
+/* Gold Accents & Badges in White Mode */
+html.theme-white .bg-\[\#C9A24D\]\/10,
+html.theme-white .bg-\[\#C9A24D\]\/15,
+html.theme-white .bg-\[\#C9A24D\]\/20 {
+  background-color: #FEF3C7 !important;
+  border: 1px solid #FCD34D !important;
+  color: #92400E !important;
+}
+
+/* Detail Page Lifecycle Status Buttons in White Mode */
+html.theme-white [id^="btn-status-"] {
+  background-color: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+}
+
+html.theme-white [id^="btn-status-"]:hover {
+  background-color: #F8FAFC !important;
+  border-color: #94A3B8 !important;
+}
+
+/* Table Footers in White Mode */
+html.theme-white table tfoot,
+html.theme-white table tfoot tr,
+html.theme-white table tfoot td {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+  border-color: #E2E8F0 !important;
+}
+
+html.theme-white table tfoot .text-white {
+  color: #0F172A !important;
+}
+
+/* 8. Form Inputs, Selects & Textareas */
+html.theme-white input:not([type="checkbox"]):not([type="radio"]),
+html.theme-white select,
+html.theme-white textarea {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border: 1px solid #CBD5E1 !important;
+}
+
+html.theme-white select option {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+}
+
+html.theme-white input::placeholder,
+html.theme-white textarea::placeholder {
+  color: #64748B !important;
+}
+
+html.theme-white input:focus,
+html.theme-white select:focus,
+html.theme-white textarea:focus {
+  border-color: #C9A24D !important;
+  box-shadow: 0 0 0 2px rgba(201, 162, 77, 0.2) !important;
+  outline: none !important;
+}
+
+/* 9. Filter Buttons & Pills */
+html.theme-white .filter-btn:not(.active),
+html.theme-white [data-crm-filter]:not(.bg-\[\#C9A24D\]),
+html.theme-white [data-queue-filter]:not(.bg-\[\#C9A24D\]) {
+  background-color: #F1F5F9 !important;
+  border-color: #E2E8F0 !important;
+  color: #475569 !important;
+}
+
+html.theme-white .filter-btn:not(.active):hover,
+html.theme-white [data-crm-filter]:not(.bg-\[\#C9A24D\]):hover,
+html.theme-white [data-queue-filter]:not(.bg-\[\#C9A24D\]):hover {
+  background-color: #E2E8F0 !important;
+  color: #0F172A !important;
+}
+
+/* 10. Modals & Overlays */
+html.theme-white .modal-card,
+html.theme-white #rfp-detail-modal .bg-\[\#0F141C\],
+html.theme-white #contact-detail-modal .bg-\[\#0F141C\],
+html.theme-white #user-create-modal .bg-\[\#0F141C\],
+html.theme-white #user-edit-modal .bg-\[\#0F141C\] {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25) !important;
+  color: #1E293B !important;
+}
+
+html.theme-white .modal-backdrop {
+  background-color: rgba(15, 23, 42, 0.65) !important;
+}
+
+/* 11. Blog Studio Specific Enhancements */
+/* Sovereign Dark Mode Guardrail Banner */
+html:not(.theme-white) #blog-guardrail-banner {
+  background: rgba(245, 158, 11, 0.08) !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+}
+html:not(.theme-white) #blog-guardrail-icon-box {
+  background-color: rgba(245, 158, 11, 0.15) !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  color: #F59E0B !important;
+}
+html:not(.theme-white) #blog-guardrail-title {
+  color: #FFFFFF !important;
+}
+html:not(.theme-white) #blog-guardrail-badge {
+  background-color: rgba(245, 158, 11, 0.2) !important;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  color: #FCD34D !important;
+}
+html:not(.theme-white) #blog-guardrail-desc {
+  color: #CBD5E1 !important;
+}
+html:not(.theme-white) #blog-guardrail-desc strong {
+  color: #FFFFFF !important;
+}
+html:not(.theme-white) #blog-guardrail-desc code {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  color: #FCD34D !important;
+}
+
+/* Executive White Mode Guardrail Banner */
+html.theme-white #blog-guardrail-banner {
+  background: #FFFBEB !important;
+  background-color: #FFFBEB !important;
+  background-image: none !important;
+  border: 1px solid #FCD34D !important;
+  box-shadow: 0 4px 14px -2px rgba(217, 119, 6, 0.08) !important;
+  color: #78350F !important;
+}
+
+html.theme-white #blog-guardrail-icon-box {
+  background-color: #FEF3C7 !important;
+  border: 1px solid #FDE68A !important;
+  color: #D97706 !important;
+}
+
+html.theme-white #blog-guardrail-title,
+html.theme-white #blog-guardrail-title span {
+  color: #78350F !important;
+}
+
+html.theme-white #blog-guardrail-badge {
+  background-color: #FEF3C7 !important;
+  border: 1px solid #FCD34D !important;
+  color: #B45309 !important;
+}
+
+html.theme-white #blog-guardrail-desc {
+  color: #92400E !important;
+}
+
+html.theme-white #blog-guardrail-desc strong {
+  color: #78350F !important;
+  font-weight: 700 !important;
+}
+
+html.theme-white #blog-guardrail-desc code {
+  background-color: #FEF3C7 !important;
+  border: 1px solid #FCD34D !important;
+  color: #92400E !important;
+}
+
+/* Fallback for any other amber/review callouts in White Mode */
+html.theme-white .bg-amber-500\/10 {
+  background-color: #FFFBEB !important;
+  border-color: #FCD34D !important;
+}
+
+html.theme-white .bg-amber-500\/15,
+html.theme-white .bg-amber-500\/20 {
+  background-color: #FEF3C7 !important;
+  border-color: #FDE68A !important;
+}
+
+/* Channels Footer Live Preview Card in White Mode */
+html.theme-white #channels-footer-preview-card {
+  background-image: none !important;
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+}
+
+html.theme-white #channels-footer-preview-card .bg-\[\#0A0D12\] {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* Live SERP Snippet Preview Box in White Mode */
+html.theme-white #google-serp-preview {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* Live Reader Rendering Box in White Mode */
+html.theme-white #live-rendered-preview {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* SEO Scorecard Box in White Mode */
+html.theme-white #seo-audit-scorecard {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* Social Generator Canvas Preview Container in White Mode */
+html.theme-white #social-canvas-container {
+  background-color: #F1F5F9 !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* 12. Mobile Slide-out Drawer in White Mode */
+html.theme-white #mobile-drawer {
+  background-color: #FFFFFF !important;
+  border-left: 1px solid #E2E8F0 !important;
+}
+
+html.theme-white #mobile-drawer .border-b.border-slate-800,
+html.theme-white #mobile-drawer .border-t.border-slate-800\/80 {
+  border-color: #E2E8F0 !important;
+}
+
+html.theme-white #mobile-drawer nav a,
+html.theme-white #mobile-drawer nav button {
+  color: #334155 !important;
+}
+
+html.theme-white #mobile-drawer nav a:hover,
+html.theme-white #mobile-drawer nav button:hover {
+  background-color: #F1F5F9 !important;
+  color: #0F172A !important;
+}
+
+/* 13. Preserve Mandatory Golden Buttons & Accents */
+.btn-gold {
+  border: 1px solid #FFE494 !important;
+}
+
+html.theme-white .text-\[\#C9A24D\] {
+  color: #A16207 !important; /* Deep rich amber/gold for maximum WCAG AAA contrast */
+  font-weight: 600 !important;
+}
+
+/* --------------------------------------------------------------------------
+   GLOBAL TOAST NOTIFICATIONS (SOVEREIGN DARK & EXECUTIVE WHITE)
+   -------------------------------------------------------------------------- */
+#qwt-toast-container {
+  z-index: 999999 !important;
+}
+
+/* Sovereign Dark Mode Toasts */
+html:not(.theme-white) #qwt-toast-container > div,
+html:not(.theme-white) .admin-toast {
+  background-color: rgba(15, 20, 28, 0.98) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(201, 162, 77, 0.45) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+html:not(.theme-white) #qwt-toast-container > div div,
+html:not(.theme-white) .admin-toast div {
+  color: #FFFFFF !important;
+}
+
+html:not(.theme-white) #qwt-toast-container > div button,
+html:not(.theme-white) .admin-toast button {
+  color: #94A3B8 !important;
+}
+
+html:not(.theme-white) #qwt-toast-container > div button:hover,
+html:not(.theme-white) .admin-toast button:hover {
+  color: #FFFFFF !important;
+}
+
+/* Executive White Mode Toasts - Crisp White Floating Card with Dark Slate Text */
+html.theme-white #qwt-toast-container > div,
+html.theme-white .admin-toast {
+  background-color: #FFFFFF !important;
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #0F172A !important;
+  box-shadow: 0 12px 28px -5px rgba(15, 23, 42, 0.15), 0 8px 10px -6px rgba(15, 23, 42, 0.08) !important;
+}
+
+html.theme-white #qwt-toast-container > div div,
+html.theme-white .admin-toast div {
+  color: #0F172A !important;
+  font-weight: 600 !important;
+}
+
+html.theme-white #qwt-toast-container > div button,
+html.theme-white .admin-toast button {
+  color: #64748B !important;
+}
+
+html.theme-white #qwt-toast-container > div button:hover,
+html.theme-white .admin-toast button:hover {
+  color: #0F172A !important;
+}
+
+html.theme-white #qwt-toast-container .text-\[\#10B981\],
+html.theme-white .admin-toast .text-\[\#10B981\] {
+  color: #047857 !important;
+}
+
+html.theme-white #qwt-toast-container .text-\[\#C9A24D\],
+html.theme-white .admin-toast .text-\[\#C9A24D\] {
+  color: #A16207 !important;
+}
+
+/* 14. Minimizable Navigation Menu Controls */
+html.nav-minimized #desktop-nav-links {
+  display: none !important;
+}
+
+html.nav-minimized #desktop-nav-compact {
+  display: block !important;
+}
+
+#nav-minimize-btn {
+  transition: all 0.2s ease;
+}
+
+#nav-minimize-btn:hover {
+  transform: scale(1.05);
+}
+
+#desktop-nav-links {
+  transition: opacity 0.25s ease, max-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.theme-white #nav-minimize-btn {
+  background-color: #FFFFFF !important;
+  border-color: #CBD5E1 !important;
+  color: #475569 !important;
+}
+
+html.theme-white #nav-minimize-btn:hover {
+  border-color: #C9A24D !important;
+  color: #0F172A !important;
+}
+
+html.theme-white #compact-menu-trigger {
+  background-color: #FFFFFF !important;
+  border-color: #CBD5E1 !important;
+  color: #0F172A !important;
+}
+
+html.theme-white #compact-menu-dropdown {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.12), 0 8px 10px -6px rgba(15, 23, 42, 0.08) !important;
+}
+
+html.theme-white #compact-menu-dropdown a {
+  color: #334155 !important;
+}
+
+html.theme-white #compact-menu-dropdown a:hover {
+  background-color: #F1F5F9 !important;
+  color: #0F172A !important;
+}
+
+
+/* ==========================================================================
+   COMMERCIAL DOCUMENT MANAGEMENT SUITE & PRINT ENGINE
+   ========================================================================== */
+
+/* White Mode theme adjustments for Commercial Docs */
+html.theme-white #admin-view-docs .bg-\[\#0F141C\] {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+html.theme-white #admin-view-docs .bg-\[\#0A0D12\] {
+  background-color: #F8FAFC !important;
+  border-color: #CBD5E1 !important;
+  color: #0F172A !important;
+}
+
+html.theme-white #admin-view-docs input,
+html.theme-white #admin-view-docs select,
+html.theme-white #admin-view-docs textarea {
+  background-color: #FFFFFF !important;
+  border-color: #CBD5E1 !important;
+  color: #0F172A !important;
+}
+
+html.theme-white #admin-view-docs input:focus,
+html.theme-white #admin-view-docs select:focus,
+html.theme-white #admin-view-docs textarea:focus {
+  border-color: #C9A24D !important;
+}
+
+html.theme-white #line-items-body tr:hover {
+  background-color: rgba(241, 245, 249, 0.6) !important;
+}
+
+/* --------------------------------------------------------------------------
+   PIXEL-PERFECT A4 PRINT / PDF EXPORT RULES
+   Strictly hides navigation, background, admin controls, and prints clean A4
+   -------------------------------------------------------------------------- */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm 10mm 12mm;
+  }
+
+  body {
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide entire page shell except modal content */
+  #admin-header,
+  #main-header,
+  header,
+  nav,
+  #admin-tab-bar,
+  #mobile-drawer,
+  #admin-authenticated-app > header,
+  #admin-view-crm,
+  #admin-view-contact,
+  #admin-view-blog,
+  #admin-view-channels,
+  #admin-view-users,
+  #docs-view-register,
+  #docs-view-editor,
+  .print-hide,
+  #doc-print-close,
+  #doc-print-btn,
+  #admin-toast-container {
+    display: none !important;
+  }
+
+  #doc-print-modal {
+    position: static !important;
+    display: block !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    opacity: 1 !important;
+    z-index: 999999 !important;
+  }
+
+  #doc-print-modal .modal-card {
+    position: static !important;
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+    overflow: visible !important;
+  }
+
+  #doc-print-content {
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+  }
+
+  #doc-print-content table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+
+  #doc-print-content th,
+  #doc-print-content td {
+    border-color: #CBD5E1 !important;
+  }
+}
