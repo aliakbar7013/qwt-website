@@ -3,7 +3,7 @@ import socketserver
 import os
 
 PORT = 8080
-DIRECTORY = r"C:\Users\aliak\.gemini\antigravity\scratch\qwt-enterprise\dist"
+DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 
 class NoCacheHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
@@ -21,5 +21,5 @@ class ThreadingTCPServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
 
 if __name__ == '__main__':
     with ThreadingTCPServer(("", PORT), NoCacheHTTPRequestHandler) as httpd:
-        print(f"Serving production website at http://localhost:{PORT}")
+        print(f"Serving QWT Enterprise at http://localhost:{PORT} from {DIRECTORY}")
         httpd.serve_forever()
