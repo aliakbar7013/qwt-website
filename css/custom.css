@@ -28,40 +28,96 @@
   --color-gold-tint: rgba(81, 77, 235, 0.12);
 }
 
-/* QuadWise Brand Typography Dual-Mode Engine */
+/* ==========================================================================
+   QUADWISE TECHNOLOGIES (QWT.AE) - OFFICIAL BRAND IDENTITY SYSTEM (OPTION B)
+   Emblem: 4-Quadrant Precision Geometric Vector
+   Typography: Dual-Theme Contrast Engine
+   Tagline: "Innovating with integrity"
+   ========================================================================== */
+
+/* 1. Emblem Dual-Theme Vector Engine */
+/* Dark Mode Emblem (Glowing Soft Periwinkle & Cyber Sky) */
+.brand-emblem-q1 {
+  fill: #9390F9 !important;
+  transition: fill 0.25s ease;
+}
+.brand-emblem-q2 {
+  fill: #8397F9 !important;
+  transition: fill 0.25s ease;
+}
+.brand-emblem-q3 {
+  fill: #8396F9 !important;
+  transition: fill 0.25s ease;
+}
+.brand-emblem-q4 {
+  fill: #6AA0FA !important;
+  transition: fill 0.25s ease;
+}
+
+/* White Mode Emblem (Royal Iris & Cobalt Fills) */
+html.theme-white .brand-emblem-q1 {
+  fill: #6345EC !important;
+}
+html.theme-white .brand-emblem-q2 {
+  fill: #514DEB !important;
+}
+html.theme-white .brand-emblem-q3 {
+  fill: #514DEB !important;
+}
+html.theme-white .brand-emblem-q4 {
+  fill: #325CEB !important;
+}
+
+/* 2. Brand Wordmark Dual-Theme Engine */
+/* Dark Mode Brand Typography */
 .brand-wordmark-quad {
   color: #8A95FA !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em;
 }
 .brand-wordmark-wise {
   color: #FFFFFF !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em;
 }
 .brand-wordmark-sub {
   color: #CBD5E1 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.32em !important;
 }
 .brand-tagline-title {
   color: #FFFFFF !important;
+  font-weight: 600 !important;
 }
 .brand-tagline-sub {
   color: #94A3B8 !important;
+  font-weight: 500 !important;
 }
 .brand-tagline-divider {
   border-color: rgba(255, 255, 255, 0.25) !important;
 }
 
+/* White Mode Brand Typography */
 html.theme-white .brand-wordmark-quad {
   color: #514DEB !important;
+  font-weight: 800 !important;
 }
 html.theme-white .brand-wordmark-wise {
   color: #0D0A2E !important;
+  font-weight: 800 !important;
 }
 html.theme-white .brand-wordmark-sub {
-  color: #0D0A2E !important;
+  color: #334155 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.32em !important;
 }
 html.theme-white .brand-tagline-title {
   color: #0D0A2E !important;
+  font-weight: 600 !important;
 }
 html.theme-white .brand-tagline-sub {
   color: #475569 !important;
+  font-weight: 500 !important;
 }
 html.theme-white .brand-tagline-divider {
   border-color: #CBD5E1 !important;

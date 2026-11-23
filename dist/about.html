@@ -131,12 +131,12 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Custom Theme CSS -->
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/custom.css?v=2.2">
   <!-- Immediate Theme Initialization (Instant Mode Resolution & Zero FOUC) -->
   <script>
     (function() {
       try {
-        const stored = localStorage.getItem('qwt_admin_theme') || localStorage.getItem('qwt_theme');
+        const stored = localStorage.getItem('qwt_theme') || localStorage.getItem('qwt_admin_theme');
         if (stored === 'white' || stored === 'light') {
           document.documentElement.classList.add('theme-white');
           document.documentElement.setAttribute('data-theme', 'white');
@@ -189,24 +189,24 @@
   <header id="main-header" class="sticky top-0 z-40 bg-[#0D0A2E]/95 backdrop-blur-md border-b border-indigo-900/30 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 sm:gap-4">
       
-      <!-- Brand Logo Lockup -->
-      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 select-none">
-        <!-- SVG Vector Emblem -->
-        <svg class="w-9 h-9 sm:w-10 sm:h-10 shrink-0 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
-          <path d="M 48,48 L 6,48 A 42,42 0 0,1 48,6 Z" fill="#6345EC"/>
-          <path d="M 52,48 L 52,6 A 42,42 0 0,1 94,48 Z" fill="#514DEB"/>
-          <path d="M 48,52 L 48,94 A 42,42 0 0,1 6,52 Z" fill="#514DEB"/>
-          <path d="M 94,52 L 94,94 L 52,94 A 42,42 0 0,0 94,52 Z" fill="#325CEB"/>
+            <!-- Brand Logo Lockup (Official Option B: Capitals with Tagline Lockup) -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 select-none" aria-label="QuadWise Technologies Home">
+        <!-- SVG Vector Emblem with Dual-Theme Quadrants -->
+        <svg class="brand-emblem-svg w-9 h-9 sm:w-10 sm:h-10 shrink-0 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
+          <path class="brand-emblem-q1" d="M 48,48 L 6,48 A 42,42 0 0,1 48,6 Z" fill="#9390F9"/>
+          <path class="brand-emblem-q2" d="M 52,48 L 52,6 A 42,42 0 0,1 94,48 Z" fill="#8397F9"/>
+          <path class="brand-emblem-q3" d="M 48,52 L 48,94 A 42,42 0 0,1 6,52 Z" fill="#8396F9"/>
+          <path class="brand-emblem-q4" d="M 94,52 L 94,94 L 52,94 A 42,42 0 0,0 94,52 Z" fill="#6AA0FA"/>
         </svg>
 
         <div class="flex flex-col">
           <div class="flex items-baseline font-heading font-extrabold text-lg sm:text-xl tracking-tight leading-none">
             <span class="brand-wordmark-quad">QUAD</span><span class="brand-wordmark-wise">WISE</span>
           </div>
-          <span class="text-[8px] sm:text-[9px] font-mono tracking-[0.3em] brand-wordmark-sub font-bold mt-1">TECHNOLOGIES</span>
+          <span class="text-[8px] sm:text-[9px] font-mono tracking-[0.32em] brand-wordmark-sub font-bold mt-1">TECHNOLOGIES</span>
         </div>
 
-        <div class="hidden xl:flex items-center gap-2.5 pl-3 border-l brand-tagline-divider ml-1.5">
+        <div class="hidden lg:flex items-center gap-2.5 pl-3 border-l brand-tagline-divider ml-1.5">
           <div class="text-[11px] font-medium leading-tight">
             <span class="brand-tagline-title block font-semibold">Innovating</span>
             <span class="brand-tagline-sub">with integrity</span>
@@ -609,18 +609,24 @@
         
         <!-- Brand Column -->
         <div class="lg:col-span-2 space-y-4">
-          <a href="index.html" class="flex items-center gap-3">
-            <svg class="w-9 h-9 shrink-0" viewBox="0 0 100 100" fill="none">
-              <path d="M 48,48 L 6,48 A 42,42 0 0,1 48,6 Z" fill="#6345EC"/>
-              <path d="M 52,48 L 52,6 A 42,42 0 0,1 94,48 Z" fill="#514DEB"/>
-              <path d="M 48,52 L 48,94 A 42,42 0 0,1 6,52 Z" fill="#514DEB"/>
-              <path d="M 94,52 L 94,94 L 52,94 A 42,42 0 0,0 94,52 Z" fill="#325CEB"/>
+          <a href="index.html" class="flex items-center gap-3 group shrink-0 select-none" aria-label="QuadWise Technologies Home">
+            <svg class="brand-emblem-svg w-9 h-9 shrink-0 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
+              <path class="brand-emblem-q1" d="M 48,48 L 6,48 A 42,42 0 0,1 48,6 Z" fill="#9390F9"/>
+              <path class="brand-emblem-q2" d="M 52,48 L 52,6 A 42,42 0 0,1 94,48 Z" fill="#8397F9"/>
+              <path class="brand-emblem-q3" d="M 48,52 L 48,94 A 42,42 0 0,1 6,52 Z" fill="#8396F9"/>
+              <path class="brand-emblem-q4" d="M 94,52 L 94,94 L 52,94 A 42,42 0 0,0 94,52 Z" fill="#6AA0FA"/>
             </svg>
             <div class="flex flex-col">
-              <div class="font-heading font-extrabold text-xl tracking-tight leading-none text-white">
-                <span class="text-[#8A95FA]">QUAD</span>WISE
+              <div class="flex items-baseline font-heading font-extrabold text-xl tracking-tight leading-none">
+                <span class="brand-wordmark-quad">QUAD</span><span class="brand-wordmark-wise">WISE</span>
               </div>
-              <span class="text-[9px] font-mono tracking-[0.3em] text-slate-400 font-bold mt-1">TECHNOLOGIES</span>
+              <span class="text-[9px] font-mono tracking-[0.32em] brand-wordmark-sub font-bold mt-1">TECHNOLOGIES</span>
+            </div>
+            <div class="hidden sm:flex items-center gap-2.5 pl-3 border-l brand-tagline-divider ml-1.5">
+              <div class="text-[10px] font-medium leading-tight">
+                <span class="brand-tagline-title block font-semibold">Innovating</span>
+                <span class="brand-tagline-sub">with integrity</span>
+              </div>
             </div>
           </a>
 
@@ -707,7 +713,7 @@
   </footer>
 
   <!-- JavaScript Engines -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2.2"></script>
   <!-- FLOATING WHATSAPP BUTTON (Screenshot 3 Reference) -->
   <a href="https://wa.me/97142889488" target="_blank" rel="noopener noreferrer" id="floating-whatsapp-btn" class="fixed bottom-6 left-6 z-40 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group" title="Chat on WhatsApp with Senior Architect">
     <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-white" viewBox="0 0 24 24">
