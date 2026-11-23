@@ -145,6 +145,21 @@
 
   <!-- Custom Theme CSS -->
   <link rel="stylesheet" href="css/custom.css">
+  <!-- Immediate Theme Initialization (Instant Mode Resolution & Zero FOUC) -->
+  <script>
+    (function() {
+      try {
+        const stored = localStorage.getItem('qwt_admin_theme') || localStorage.getItem('qwt_theme');
+        if (stored === 'white' || stored === 'light') {
+          document.documentElement.classList.add('theme-white');
+          document.documentElement.setAttribute('data-theme', 'white');
+        } else {
+          document.documentElement.classList.remove('theme-white');
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body class="bg-[#0D0A2E] text-slate-200 antialiased selection:bg-[#C9A24D] selection:text-black">
 
@@ -271,73 +286,6 @@
       </div>
     </div>
   </header>
-
-  <!-- MOBILE SLIDE-OUT DRAWER -->
-  <div id="mobile-overlay" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300"></div>
-  <aside id="mobile-drawer" class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-[#090724] border-l border-indigo-900/40 z-50 transform translate-x-full transition-transform duration-300 flex flex-col justify-between p-6 overflow-y-auto">
-    <div>
-      <div class="flex items-center justify-between pb-6 border-b border-indigo-900/40">
-        <div class="flex items-center gap-2.5">
-          <img src="assets/qwt-logo.png" alt="QuadWise Technologies" class="w-8 h-8 rounded-lg object-contain shrink-0">
-          <div class="leading-tight">
-            <div class="font-heading font-bold text-white text-base leading-none">QUAD WISE</div>
-            <div class="text-[9px] font-sans text-slate-300 font-medium tracking-wide mt-0.5">Innovating with integrity</div>
-          </div>
-        </div>
-        <button id="mobile-menu-close" class="p-2 text-slate-400 hover:text-white" aria-label="Close Menu">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-      </div>
-
-            <nav class="flex flex-col gap-2 py-4 text-sm font-medium">
-        <a href="index.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/40 flex items-center justify-between">
-          <span>Home</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-        <div class="pt-2 pb-1 border-t border-indigo-900/40/80">
-          <div class="px-3 text-[10px] font-mono text-[#C9A24D] uppercase font-bold">Services &amp; Solutions</div>
-        </div>
-        <a href="solutions.html#it-infrastructure" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/40 flex items-center justify-between">
-          <span>IT Infrastructure &amp; Data Centre</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-        <a href="solutions.html#cyber-security" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/40 flex items-center justify-between">
-          <span>Cyber Security</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-        <a href="solutions.html#digital-transformation" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/40 flex items-center justify-between">
-          <span>Digital Transformation</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-        <a href="solutions.html#erpnext-frappe" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/40 flex items-center justify-between">
-          <span>ERPNext &amp; Frappe</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-        <a href="solutions.html#digital-business-cards" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/40 flex items-center justify-between">
-          <span>Digital Business Cards</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-        <div class="pt-2 pb-1 border-t border-indigo-900/40/80">
-          <div class="px-3 text-[10px] font-mono text-slate-500 uppercase font-bold">Company</div>
-        </div>
-        <a href="hardware.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/40 flex items-center justify-between">
-          <span>Hardware Catalog</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-        <a href="case-studies.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/40 flex items-center justify-between">
-          <span>UAE Deployments</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-        <a href="insights.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/40 flex items-center justify-between">
-          <span>Engineering Insights</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-        <a href="about.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/40 flex items-center justify-between">
-          <span>About QWT</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-        <a href="contact.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/40 flex items-center justify-between">
-          <span>Contact</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-      </nav>
-    </div>
-
-    <div class="pt-6 border-t border-indigo-900/40 space-y-4">
-      <button data-open-quote data-quote-category="Enterprise Infrastructure" class="btn-gold w-full py-3 rounded-xl text-xs font-bold text-black flex items-center justify-center gap-2">
-        <i data-lucide="file-text" class="w-4 h-4 text-black"></i> Request Engineering Quote
-      </button>
-    </div>
-  </aside>
 
   <!-- PAGE HERO -->
   <section class="py-16 bg-[#090724] border-b border-indigo-900/40/80 tech-grid relative">

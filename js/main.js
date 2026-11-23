@@ -4,6 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeOnLoad();
   initMobileMenu();
   initQuoteModal();
   initHeaderScroll();
@@ -18,6 +19,76 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqAccordion();
   initChannelsSync();
 });
+
+/* --------------------------------------------------------------------------
+   GLOBAL THEME ENGINE (Dark / White Mode)
+   -------------------------------------------------------------------------- */
+window.qwtToggleTheme = function(theme) {
+  if (theme === 'white') {
+    document.documentElement.classList.add('theme-white');
+    document.documentElement.setAttribute('data-theme', 'white');
+    document.documentElement.setAttribute('data-admin-theme', 'white');
+    try {
+      localStorage.setItem('qwt_theme', 'white');
+      localStorage.setItem('qwt_admin_theme', 'white');
+    } catch(e) {}
+  } else {
+    document.documentElement.classList.remove('theme-white');
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.documentElement.setAttribute('data-admin-theme', 'dark');
+    try {
+      localStorage.setItem('qwt_theme', 'dark');
+      localStorage.setItem('qwt_admin_theme', 'dark');
+    } catch(e) {}
+  }
+  updateThemeSwitcherUI(theme);
+};
+
+function updateThemeSwitcherUI(theme) {
+  const darkBtns = document.querySelectorAll('#theme-btn-dark, [data-theme-btn="dark"]');
+  const whiteBtns = document.querySelectorAll('#theme-btn-white, [data-theme-btn="white"]');
+
+  if (theme === 'white') {
+    darkBtns.forEach(btn => {
+      btn.classList.remove('text-[#8A95FA]');
+      btn.classList.add('text-slate-400');
+    });
+    whiteBtns.forEach(btn => {
+      btn.classList.remove('text-slate-400');
+      btn.classList.add('text-amber-500', 'font-bold');
+    });
+  } else {
+    whiteBtns.forEach(btn => {
+      btn.classList.remove('text-amber-500', 'font-bold');
+      btn.classList.add('text-slate-400');
+    });
+    darkBtns.forEach(btn => {
+      btn.classList.remove('text-slate-400');
+      btn.classList.add('text-[#8A95FA]');
+    });
+  }
+}
+
+function initThemeOnLoad() {
+  let theme = 'dark';
+  try {
+    const stored = localStorage.getItem('qwt_theme') || localStorage.getItem('qwt_admin_theme');
+    if (stored === 'white' || stored === 'light') {
+      theme = 'white';
+    }
+  } catch(e) {}
+
+  if (theme === 'white') {
+    document.documentElement.classList.add('theme-white');
+    document.documentElement.setAttribute('data-theme', 'white');
+    document.documentElement.setAttribute('data-admin-theme', 'white');
+  } else {
+    document.documentElement.classList.remove('theme-white');
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.documentElement.setAttribute('data-admin-theme', 'dark');
+  }
+  updateThemeSwitcherUI(theme);
+}
 
 /* --------------------------------------------------------------------------
    LUCIDE ICONS INITIALIZATION
@@ -37,11 +108,9 @@ function initHeaderScroll() {
 
   const handleScroll = () => {
     if (window.scrollY > 20) {
-      header.classList.add('shadow-2xl', 'shadow-black/70', 'bg-[#0A0D14]/95');
-      header.classList.remove('bg-[#0A0D12]/90');
+      header.classList.add('is-scrolled');
     } else {
-      header.classList.remove('shadow-2xl', 'shadow-black/70', 'bg-[#0A0D14]/95');
-      header.classList.add('bg-[#0A0D12]/90');
+      header.classList.remove('is-scrolled');
     }
   };
 
@@ -81,16 +150,10 @@ function initActiveNav() {
       isActive = isExactPath && (!linkHash || (currentHash && linkHash === currentHash));
     }
 
-    // Remove any legacy indicator spans
-    const legacy = link.querySelectorAll('.nav-indicator, .nav-dot');
-    legacy.forEach(el => el.remove());
-
     if (isActive) {
-      link.classList.add('active', 'is-active', 'text-[#C9A24D]', 'font-semibold', 'border-[#C9A24D]');
-      link.classList.remove('text-slate-300', 'border-transparent');
+      link.classList.add('active', 'is-active');
     } else {
-      link.classList.remove('active', 'is-active', 'text-[#C9A24D]', 'font-semibold', 'border-[#C9A24D]');
-      link.classList.add('text-slate-300', 'border-transparent');
+      link.classList.remove('active', 'is-active');
     }
   });
 
