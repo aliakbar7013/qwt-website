@@ -88,7 +88,6 @@
 
   <!-- Custom Theme CSS -->
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/admin-theme.css">
 
   <script>
     // Immediate Theme Initialization
@@ -145,14 +144,14 @@
     </div>
   </div>
 
-  <!-- STICKY NAVIGATION HEADER -->
-  <header id="main-header" class="sticky top-0 z-40 bg-[#0D0A2E]/90 backdrop-blur-md border-b border-indigo-900/30 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+    <!-- STICKY NAVIGATION HEADER -->
+  <header id="main-header" class="sticky top-0 z-40 bg-[#0D0A2E]/95 backdrop-blur-md border-b border-indigo-900/30 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 sm:gap-4">
       
-      <!-- Brand Logo Lockup (Row B Vector Lockup) -->
-      <a href="index.html" class="flex items-center gap-3.5 group shrink-0 select-none">
+      <!-- Brand Logo Lockup -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 select-none">
         <!-- SVG Vector Emblem -->
-        <svg class="w-10 h-10 shrink-0 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
+        <svg class="w-9 h-9 sm:w-10 sm:h-10 shrink-0 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
           <path d="M 48,48 L 6,48 A 42,42 0 0,1 48,6 Z" fill="#6345EC"/>
           <path d="M 52,48 L 52,6 A 42,42 0 0,1 94,48 Z" fill="#514DEB"/>
           <path d="M 48,52 L 48,94 A 42,42 0 0,1 6,52 Z" fill="#514DEB"/>
@@ -160,14 +159,13 @@
         </svg>
 
         <div class="flex flex-col">
-          <div class="flex items-baseline font-heading font-extrabold text-xl tracking-tight leading-none">
+          <div class="flex items-baseline font-heading font-extrabold text-lg sm:text-xl tracking-tight leading-none">
             <span class="brand-wordmark-quad">QUAD</span><span class="brand-wordmark-wise">WISE</span>
           </div>
-          <span class="text-[9px] font-mono tracking-[0.32em] brand-wordmark-sub font-bold mt-1">TECHNOLOGIES</span>
-          <span class="text-[8px] font-mono tracking-wider brand-tagline-sub block sm:hidden mt-0.5">&ldquo;Innovating with integrity&rdquo;</span>
+          <span class="text-[8px] sm:text-[9px] font-mono tracking-[0.3em] brand-wordmark-sub font-bold mt-1">TECHNOLOGIES</span>
         </div>
 
-        <div class="hidden sm:flex items-center gap-2.5 pl-3 border-l brand-tagline-divider ml-1.5">
+        <div class="hidden xl:flex items-center gap-2.5 pl-3 border-l brand-tagline-divider ml-1.5">
           <div class="text-[11px] font-medium leading-tight">
             <span class="brand-tagline-title block font-semibold">Innovating</span>
             <span class="brand-tagline-sub">with integrity</span>
@@ -175,51 +173,51 @@
         </div>
       </a>
 
-      <!-- Desktop Nav Menu -->
-      <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
-        <a href="index.html" class="nav-link active px-3 py-2 text-sm font-medium text-[#8A95FA] border-b-2 border-[#514DEB]">Home</a>
-        <a href="solutions.html" class="nav-link px-3 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">Solutions</a>
-        <a href="hardware.html" class="nav-link px-3 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">Hardware</a>
-        <a href="case-studies.html" class="nav-link px-3 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">Deployments</a>
-        <a href="insights.html" class="nav-link px-3 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">Insights</a>
-        <a href="about.html" class="nav-link px-3 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">About</a>
-        <a href="contact.html" class="nav-link px-3 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">Contact</a>
+      <!-- Desktop & Tablet Navigation Menu (Always visible from 768px / md upwards) -->
+      <nav class="hidden md:flex items-center gap-0.5 lg:gap-1.5 xl:gap-2 text-xs lg:text-sm">
+        <a href="index.html" class="nav-link active px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-semibold text-[#8A95FA] bg-[#514DEB]/15 border border-[#8A95FA]/30 rounded-lg">Home</a>
+        <a href="solutions.html" class="nav-link px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 rounded-lg transition-colors">Solutions</a>
+        <a href="hardware.html" class="nav-link px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 rounded-lg transition-colors">Hardware</a>
+        <a href="case-studies.html" class="nav-link px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 rounded-lg transition-colors">Deployments</a>
+        <a href="insights.html" class="nav-link px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 rounded-lg transition-colors">Insights</a>
+        <a href="about.html" class="nav-link px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 rounded-lg transition-colors">About</a>
+        <a href="contact.html" class="nav-link px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 rounded-lg transition-colors">Contact</a>
       </nav>
 
       <!-- Right Header Actions -->
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-2 sm:gap-3">
         <!-- Theme Mode Switcher -->
         <div class="flex items-center p-0.5 rounded-xl bg-[#120E3D] border border-indigo-900/40 shrink-0" role="group" aria-label="Theme Selection">
-          <button type="button" id="theme-btn-dark" onclick="window.qwtToggleTheme('dark')" class="theme-switch-btn px-2.5 py-1.5 rounded-lg text-xs font-mono font-semibold flex items-center gap-1 text-[#8A95FA]" title="Dark Mode">
-            <i data-lucide="moon" class="w-3.5 h-3.5"></i> <span class="hidden sm:inline">Dark</span>
+          <button type="button" id="theme-btn-dark" onclick="window.qwtToggleTheme('dark')" class="theme-switch-btn p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg text-xs font-mono font-semibold flex items-center gap-1 text-[#8A95FA]" title="Dark Mode">
+            <i data-lucide="moon" class="w-3.5 h-3.5"></i> <span class="hidden 2xl:inline">Dark</span>
           </button>
-          <button type="button" id="theme-btn-white" onclick="window.qwtToggleTheme('white')" class="theme-switch-btn px-2.5 py-1.5 rounded-lg text-xs font-mono font-semibold flex items-center gap-1 text-slate-400 hover:text-white" title="White Mode">
-            <i data-lucide="sun" class="w-3.5 h-3.5 text-amber-400"></i> <span class="hidden sm:inline">White</span>
+          <button type="button" id="theme-btn-white" onclick="window.qwtToggleTheme('white')" class="theme-switch-btn p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg text-xs font-mono font-semibold flex items-center gap-1 text-slate-400 hover:text-white" title="White Mode">
+            <i data-lucide="sun" class="w-3.5 h-3.5 text-amber-400"></i> <span class="hidden 2xl:inline">White</span>
           </button>
         </div>
 
-        <!-- CRM Link -->
-        <a href="admin-crm.html" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-mono text-slate-300 bg-indigo-950/40 hover:bg-indigo-900/60 border border-indigo-800/40 transition-colors" title="Internal CRM Operations">
+        <!-- Sovereign CRM Portal Link -->
+        <a href="admin-crm.html" class="hidden 2xl:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-mono text-slate-300 bg-indigo-950/40 hover:bg-indigo-900/60 border border-indigo-800/40 transition-colors" title="Internal CRM Operations">
           <i data-lucide="shield" class="w-3.5 h-3.5 text-[#8A95FA]"></i>
           <span>CRM</span>
         </a>
 
-        <!-- Initiate RFP CTA Button -->
-        <button data-open-quote class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-[#514DEB] to-[#4338CA] hover:from-[#6345EC] hover:to-[#514DEB] shadow-lg shadow-indigo-600/30 transition-all hover:scale-[1.02] active:scale-[0.98]">
-          <span>Book Free Consultation</span>
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        <!-- Consultation Request CTA Button -->
+        <button data-open-quote class="inline-flex items-center gap-1.5 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-[#514DEB] to-[#4338CA] hover:from-[#6345EC] hover:to-[#514DEB] shadow-md transition-all whitespace-nowrap">
+          <span>Book Consultation</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
         </button>
 
-        <!-- Mobile Menu Hamburger -->
-        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-indigo-950/50 border border-indigo-800/30" aria-label="Toggle Navigation">
+        <!-- Mobile Menu Hamburger Button (Hidden on md and desktop, visible only on mobile < 768px) -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-indigo-950/50 border border-indigo-800/30" aria-label="Toggle Navigation">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
       </div>
 
     </div>
 
-    <!-- Mobile Drawer Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-indigo-900/40 bg-[#0D0A2E]/98 px-4 pt-3 pb-6 space-y-2">
+    <!-- Mobile Drawer Menu (< 768px) -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-indigo-900/40 bg-[#0D0A2E]/98 px-4 pt-3 pb-6 space-y-2">
       <a href="index.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-[#8A95FA] bg-indigo-950/60">Home</a>
       <a href="solutions.html" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40">Solutions</a>
       <a href="hardware.html" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40">Hardware</a>

@@ -5,8 +5,7 @@
 
 /* Strict Enforce Authenticated vs Unauthenticated Screen Isolation */
 #admin-login-screen.hidden,
-#admin-authenticated-app.hidden,
-.hidden {
+#admin-authenticated-app.hidden {
   display: none !important;
 }
 
