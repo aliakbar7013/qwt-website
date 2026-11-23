@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="520" height="120" fill="none">
+  <!-- Emblem at left -->
+  <g transform="translate(10, 15) scale(0.9)">
+    <path d="M 48,48 L 6,48 A 42,42 0 0,1 48,6 Z" fill="#9390F9"/>
+    <path d="M 52,48 L 52,6 A 42,42 0 0,1 94,48 Z" fill="#8397F9"/>
+    <path d="M 48,52 L 48,94 A 42,42 0 0,1 6,52 Z" fill="#8396F9"/>
+    <path d="M 94,52 L 94,94 L 52,94 A 42,42 0 0,0 94,52 Z" fill="#6AA0FA"/>
+  </g>
+  
+  <!-- Brand Text -->
+  <text x="120" y="66" font-family="'Plus Jakarta Sans', 'Outfit', sans-serif" font-size="44" font-weight="800" letter-spacing="-0.02em">
+    <tspan fill="#8A95FA">QUAD</tspan><tspan fill="#FFFFFF">WISE</tspan>
+  </text>
+  
+  <!-- Subtitle TECHNOLOGIES -->
+  <text x="122" y="92" font-family="'Plus Jakarta Sans', 'Outfit', sans-serif" font-size="13.5" font-weight="700" fill="#FFFFFF" letter-spacing="0.32em">TECHNOLOGIES</text>
+  
+  <!-- Vertical Hairline Divider -->
+  <line x1="375" y1="36" x2="375" y2="92" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  
+  <!-- Tagline: Innovating with integrity -->
+  <text x="395" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="600" fill="#FFFFFF">Innovating</text>
+  <text x="395" y="78" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="500" fill="#94A3B8">with integrity</text>
+</svg>

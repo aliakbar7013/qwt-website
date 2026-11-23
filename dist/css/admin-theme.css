@@ -44,8 +44,8 @@ textarea {
 html:not(.theme-white) #theme-btn-dark,
 html:not(.theme-white) #mobile-theme-btn-dark,
 html:not(.theme-white) #login-theme-btn-dark {
-  background-color: #0A0D12;
-  color: #C9A24D;
+  background-color: #0D0A2E;
+  color: #514DEB;
   border: 1px solid rgba(201, 162, 77, 0.45);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   font-weight: 700;
@@ -71,7 +71,7 @@ html.theme-white #mobile-theme-btn-white,
 html.theme-white #login-theme-btn-white {
   background-color: #FFFFFF;
   color: #0F172A;
-  border: 1px solid #C9A24D;
+  border: 1px solid #514DEB;
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12);
   font-weight: 700;
 }
@@ -171,7 +171,7 @@ html.theme-white #admin-login-screen input:not([type="checkbox"]) {
 
 html.theme-white #admin-login-screen input:not([type="checkbox"]):focus {
   background-color: #FFFFFF !important;
-  border-color: #C9A24D !important;
+  border-color: #514DEB !important;
   box-shadow: 0 0 0 3px rgba(201, 162, 77, 0.2) !important;
 }
 
@@ -212,11 +212,11 @@ html.theme-white #admin-login-screen a:hover {
 }
 
 /* 2. Top Regulatory Banner */
-html.theme-white .bg-\[\#0A0D14\],
-html.theme-white .bg-\[\#0A0D14\]\/95,
-html.theme-white .bg-\[\#0A0D14\]\/90,
-html.theme-white .bg-\[\#0A0D14\]\/80,
-html.theme-white .bg-\[\#0A0D14\]\/70 {
+html.theme-white .bg-\[\#090724\],
+html.theme-white .bg-\[\#090724\]\/95,
+html.theme-white .bg-\[\#090724\]\/90,
+html.theme-white .bg-\[\#090724\]\/80,
+html.theme-white .bg-\[\#090724\]\/70 {
   background-color: #F1F5F9 !important;
   border-color: #E2E8F0 !important;
   color: #334155 !important;
@@ -242,7 +242,7 @@ html.theme-white #main-header nav a.nav-link {
 }
 
 html.theme-white #main-header nav a.nav-link:hover {
-  color: #C9A24D !important;
+  color: #514DEB !important;
 }
 
 html.theme-white #auth-user-badge {
@@ -270,24 +270,24 @@ html.theme-white .border-b.border-slate-800 {
   border-color: #E2E8F0 !important;
 }
 
-html.theme-white #admin-tab-crm:not(.bg-\[\#C9A24D\]),
-html.theme-white #admin-tab-docs:not(.bg-\[\#C9A24D\]),
-html.theme-white #admin-tab-contact:not(.bg-\[\#C9A24D\]),
-html.theme-white #admin-tab-blog:not(.bg-\[\#C9A24D\]),
-html.theme-white #admin-tab-channels:not(.bg-\[\#C9A24D\]),
-html.theme-white #admin-tab-users:not(.bg-\[\#C9A24D\]) {
+html.theme-white #admin-tab-crm:not(.bg-\[\#514DEB\]),
+html.theme-white #admin-tab-docs:not(.bg-\[\#514DEB\]),
+html.theme-white #admin-tab-contact:not(.bg-\[\#514DEB\]),
+html.theme-white #admin-tab-blog:not(.bg-\[\#514DEB\]),
+html.theme-white #admin-tab-channels:not(.bg-\[\#514DEB\]),
+html.theme-white #admin-tab-users:not(.bg-\[\#514DEB\]) {
   background-color: #FFFFFF !important;
   border: 1px solid #CBD5E1 !important;
   color: #334155 !important;
 }
 
-html.theme-white #admin-tab-crm:not(.bg-\[\#C9A24D\]):hover,
-html.theme-white #admin-tab-docs:not(.bg-\[\#C9A24D\]):hover,
-html.theme-white #admin-tab-contact:not(.bg-\[\#C9A24D\]):hover,
-html.theme-white #admin-tab-blog:not(.bg-\[\#C9A24D\]):hover,
-html.theme-white #admin-tab-channels:not(.bg-\[\#C9A24D\]):hover,
-html.theme-white #admin-tab-users:not(.bg-\[\#C9A24D\]):hover {
-  border-color: #C9A24D !important;
+html.theme-white #admin-tab-crm:not(.bg-\[\#514DEB\]):hover,
+html.theme-white #admin-tab-docs:not(.bg-\[\#514DEB\]):hover,
+html.theme-white #admin-tab-contact:not(.bg-\[\#514DEB\]):hover,
+html.theme-white #admin-tab-blog:not(.bg-\[\#514DEB\]):hover,
+html.theme-white #admin-tab-channels:not(.bg-\[\#514DEB\]):hover,
+html.theme-white #admin-tab-users:not(.bg-\[\#514DEB\]):hover {
+  border-color: #514DEB !important;
   color: #0F172A !important;
   background-color: #F8FAFC !important;
 }
@@ -300,10 +300,10 @@ html.theme-white #mobile-menu-btn {
 }
 
 /* Active Gold Tab */
-html.theme-white .bg-\[\#C9A24D\] {
-  background-color: #C9A24D !important;
-  color: #0A0D12 !important;
-  border-color: #C9A24D !important;
+html.theme-white .bg-\[\#514DEB\] {
+  background-color: #514DEB !important;
+  color: #0D0A2E !important;
+  border-color: #514DEB !important;
 }
 
 /* 5. Cards & Elevated Surfaces */
@@ -317,11 +317,11 @@ html.theme-white .bg-\[\#0F141C\]\/70 {
   box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05) !important;
 }
 
-html.theme-white .bg-\[\#0A0D12\],
-html.theme-white .bg-\[\#0A0D12\]\/95,
-html.theme-white .bg-\[\#0A0D12\]\/90,
-html.theme-white .bg-\[\#0A0D12\]\/80,
-html.theme-white .bg-\[\#0A0D12\]\/70 {
+html.theme-white .bg-\[\#0D0A2E\],
+html.theme-white .bg-\[\#0D0A2E\]\/95,
+html.theme-white .bg-\[\#0D0A2E\]\/90,
+html.theme-white .bg-\[\#0D0A2E\]\/80,
+html.theme-white .bg-\[\#0D0A2E\]\/70 {
   background-color: #F8FAFC !important;
   border-color: #E2E8F0 !important;
 }
@@ -604,9 +604,9 @@ html.theme-white .text-indigo-300 {
 }
 
 /* Gold Accents & Badges in White Mode */
-html.theme-white .bg-\[\#C9A24D\]\/10,
-html.theme-white .bg-\[\#C9A24D\]\/15,
-html.theme-white .bg-\[\#C9A24D\]\/20 {
+html.theme-white .bg-\[\#514DEB\]\/10,
+html.theme-white .bg-\[\#514DEB\]\/15,
+html.theme-white .bg-\[\#514DEB\]\/20 {
   background-color: #FEF3C7 !important;
   border: 1px solid #FCD34D !important;
   color: #92400E !important;
@@ -658,23 +658,23 @@ html.theme-white textarea::placeholder {
 html.theme-white input:focus,
 html.theme-white select:focus,
 html.theme-white textarea:focus {
-  border-color: #C9A24D !important;
+  border-color: #514DEB !important;
   box-shadow: 0 0 0 2px rgba(201, 162, 77, 0.2) !important;
   outline: none !important;
 }
 
 /* 9. Filter Buttons & Pills */
 html.theme-white .filter-btn:not(.active),
-html.theme-white [data-crm-filter]:not(.bg-\[\#C9A24D\]),
-html.theme-white [data-queue-filter]:not(.bg-\[\#C9A24D\]) {
+html.theme-white [data-crm-filter]:not(.bg-\[\#514DEB\]),
+html.theme-white [data-queue-filter]:not(.bg-\[\#514DEB\]) {
   background-color: #F1F5F9 !important;
   border-color: #E2E8F0 !important;
   color: #475569 !important;
 }
 
 html.theme-white .filter-btn:not(.active):hover,
-html.theme-white [data-crm-filter]:not(.bg-\[\#C9A24D\]):hover,
-html.theme-white [data-queue-filter]:not(.bg-\[\#C9A24D\]):hover {
+html.theme-white [data-crm-filter]:not(.bg-\[\#514DEB\]):hover,
+html.theme-white [data-queue-filter]:not(.bg-\[\#514DEB\]):hover {
   background-color: #E2E8F0 !important;
   color: #0F172A !important;
 }
@@ -787,7 +787,7 @@ html.theme-white #channels-footer-preview-card {
   border-color: #E2E8F0 !important;
 }
 
-html.theme-white #channels-footer-preview-card .bg-\[\#0A0D12\] {
+html.theme-white #channels-footer-preview-card .bg-\[\#0D0A2E\] {
   background-color: #F8FAFC !important;
   border-color: #E2E8F0 !important;
 }
@@ -843,7 +843,7 @@ html.theme-white #mobile-drawer nav button:hover {
   border: 1px solid #FFE494 !important;
 }
 
-html.theme-white .text-\[\#C9A24D\] {
+html.theme-white .text-\[\#514DEB\] {
   color: #A16207 !important; /* Deep rich amber/gold for maximum WCAG AAA contrast */
   font-weight: 600 !important;
 }
@@ -910,8 +910,8 @@ html.theme-white .admin-toast .text-\[\#10B981\] {
   color: #047857 !important;
 }
 
-html.theme-white #qwt-toast-container .text-\[\#C9A24D\],
-html.theme-white .admin-toast .text-\[\#C9A24D\] {
+html.theme-white #qwt-toast-container .text-\[\#514DEB\],
+html.theme-white .admin-toast .text-\[\#514DEB\] {
   color: #A16207 !important;
 }
 
@@ -943,7 +943,7 @@ html.theme-white #nav-minimize-btn {
 }
 
 html.theme-white #nav-minimize-btn:hover {
-  border-color: #C9A24D !important;
+  border-color: #514DEB !important;
   color: #0F172A !important;
 }
 
@@ -980,7 +980,7 @@ html.theme-white #admin-view-docs .bg-\[\#0F141C\] {
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
 }
 
-html.theme-white #admin-view-docs .bg-\[\#0A0D12\] {
+html.theme-white #admin-view-docs .bg-\[\#0D0A2E\] {
   background-color: #F8FAFC !important;
   border-color: #CBD5E1 !important;
   color: #0F172A !important;
@@ -997,7 +997,7 @@ html.theme-white #admin-view-docs textarea {
 html.theme-white #admin-view-docs input:focus,
 html.theme-white #admin-view-docs select:focus,
 html.theme-white #admin-view-docs textarea:focus {
-  border-color: #C9A24D !important;
+  border-color: #514DEB !important;
 }
 
 html.theme-white #line-items-body tr:hover {
