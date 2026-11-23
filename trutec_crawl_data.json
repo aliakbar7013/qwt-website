@@ -1,0 +1,72 @@
+{
+  "https://trutecme.com/": {
+    "url": "https://trutecme.com/",
+    "title": "TruTecME — IT Infrastructure &amp; Cybersecurity Technologies | UAE",
+    "description": "TruTecME is the UAE",
+    "h1": [
+      "Architect the Digital Future of Your Enterprise"
+    ],
+    "h2": [
+      "Three Pillars of Enterprise Technology",
+      "Built Different. Proven Reliable.",
+      "Our Proven Delivery Process",
+      "Trusted Across the Globe",
+      "Frequently Asked Questions",
+      "Ready to Build Your Digital Backbone?"
+    ],
+    "h3": [],
+    "h4": [
+      "Understand",
+      "Design",
+      "Supply",
+      "Deploy",
+      "Support"
+    ],
+    "paragraphs": [
+      "Data Centre Servers &amp; Compute Storage Solutions Virtualisation &amp; HCI Backup &amp; Disaster Recovery Workspace &amp; Facilities End User Computing ELV &amp; Physical Security Cyber Security Protection Endpoint Security (EDR/XDR) Network Security Data Security &amp; DLP Operations Security Operations (SOC) Identity &amp; Access Management Security Awareness Training Digital Solutions ERP Systems (SAP, Dynamics) ERPNext &amp; Frappe CRM Platforms Web Application Dev AI Solutions Digital Business Cards Contact Book Consultation Home About TruTecME IT Infrastructure Servers &amp; Compute Storage Solutions Virtualisation &amp; HCI Backup &amp; DR End User Computing ELV &amp; Physical Security Cyber Security Endpoint Security Network Security Data Security &amp; DLP Security Operations Identity &amp; Access Security Awareness Digital Transformation ERP Systems ERPNext &amp; Frappe CRM Platforms Web Application Dev AI Solutions Digital Business Cards Book a Free Consultation → UAE's Premier IT Integration Partner Architect the Digital Future of Your Enterprise TruTecME delivers end-to-end IT infrastructure, cybersecurity, and digital transformation — engineered for the Middle East's most demanding environments by leaders with 15+ years of enterprise-scale experience.",
+      "End-to-end capabilities covering every layer of your digital infrastructure — hardware to AI.",
+      "Dell Cisco HPE Pure Storage NVIDIA Cyber Security Multi-layered protection — endpoint EDR/XDR, network defence, data loss prevention, DSPM, security operations, identity management, and UAE PDPL compliance. Explore Services CrowdStrike Palo Alto Varonis Darktrace Digital Transformation ERP (SAP, ERPNext/Frappe), CRM, web applications, and AI solutions — plus NFC Digital Business Cards with Apple &amp; Google Wallet integration, built to modernise how your business operates and connects. Explore Services SAP ERPNext Salesforce Azure AI NFC Cards ERPNext &amp; Frappe Open-source enterprise ERP with zero per-user licensing — covering finance, HR, payroll, inventory, and manufacturing. Full UAE VAT, WPS payroll, and Arabic UI included. Explore ERPNext ERPNext v15 Frappe UAE VAT WPS Payroll Digital Business Cards NFC-enabled smart cards that share your full profile with one tap — and let contacts add it directly to Apple Wallet, Google Wallet, or their phone contacts. No app needed. Explore Digital Cards NFC Apple Wallet Google Wallet Analytics Authorised Partner &amp; Certified — Leading Global Vendors",
+      "CrowdStrike Palo Alto Networks Microsoft Veeam NVIDIA Nutanix Darktrace SAP Salesforce HONEYWELL Commvault Backup &amp; Recovery Varonis Forcepoint CyberArk B Bosch Hikvision KnowBe4 Zerto Why TruTecME Built Different. Proven Reliable. 01 Tailored, Not Templated Every engagement starts with understanding your business — goals, constraints, and risk tolerance — before any solution is designed or proposed. 02 Integrity-First Approach We recommend only what you genuinely need. No inflated scopes, no vendor bias — honest guidance, transparent pricing, and clean delivery every time. 03 End-to-End Ownership From scoping through deployment to ongoing support — one partner, one point of accountability, zero handover gaps or cost surprises. 04 UAE &amp; Regional Expertise Deep knowledge of UAE civil defence regulations, PDPL, DIFC, and the local procurement and project environment — no learning curve on your time. 05 Certified Engineering Team Our engineers hold vendor certifications across Dell, Cisco, HPE, VMware, and leading cybersecurity platforms — real expertise, not just resale relationships. 06 Air-Gap &amp; Dark-Site Ready Proven experience deploying IT in air-gapped, classified, and dark-site conditions — from multi-node GPU clusters to fully isolated SOC environments. How We Work Our Proven Delivery Process Understand Deep discovery of your workloads, goals, budget, and risk before any solution is proposed.",
+      "Design Right-sized architecture with full BOM, performance benchmarks, and TCO analysis.",
+      "Supply Procurement via authorised channels — genuine product, valid warranty, manufacturer support.",
+      "Deploy Full installation, firmware, OS config, security hardening, and environment integration.",
+      "Support Ongoing managed support, proactive monitoring, and SLA-backed vendor escalation.",
+      "\"TruTecMe has been a reliable technology partner, bringing strong attention to detail and smooth coordination throughout our engagement. The results have consistently met our operational needs.\"",
+      "\"TruTecMe provided clear, well-structured technical proposals and remained responsive throughout the process. A dependable partner to work with.\"",
+      "\"TruTecMe's team understood our requirements quickly and proposed solutions that balanced performance, security, and budget. A dependable technology partner.\"",
+      "\"TruTecMe's planning and coordination gave us confidence throughout our engagement. Their attention to detail stood out at every stage.\"",
+      "\"TruTecMe brought clarity and technical depth to our requirements, delivering solutions tailored to our business needs with minimal disruption to our operations.\"",
+      "\"TruTecMe demonstrated strong technical expertise and professionalism throughout our engagement.\"",
+      "\"Working with TruTecMe has been straightforward — clear communication, competitive proposals, and a team that follows through on commitments.\"",
+      "\"TruTecMe's technical knowledge and responsiveness make them easy to work with. We'd recommend them for similar IT/AV requirements.\"",
+      "\"TruTecMe brought a thoughtful, well-planned approach to our engagement, balancing technical requirements with practical operational constraints.\"",
+      "Got Questions? Frequently Asked Questions Answers to the questions we hear most from UAE enterprises exploring IT partnerships.",
+      "We are authorised partners for Dell Technologies, HPE, Cisco, Pure Storage, and NetApp — among others. We procure exclusively through authorised distribution channels, ensuring genuine products, valid manufacturer warranties, and full UAE in-country support. We do not source grey-market hardware.",
+      "Yes. Our team has hands-on experience deploying complex IT infrastructure — including multi-node GPU clusters and large-scale storage — in fully air-gapped, dark-site, and classified environments. We understand the additional logistics, security protocols, and documentation requirements these projects demand.",
+      "Timelines vary by project scale. A straightforward rack server deployment with standard configuration can be completed in 3–5 business days from procurement. Complex multi-node environments — including cabling, firmware, OS configuration, and integration — typically take 2–4 weeks. We provide a detailed project schedule at proposal stage.",
+      "Yes. We provide structured AMC packages covering preventive maintenance, firmware and patch management, break-fix support, loaner device provision, and SLA-backed response times (4-hour, next business day, or custom). AMCs can be tailored to cover specific equipment or your entire IT estate.",
+      "EDR (Endpoint Detection and Response) focuses specifically on protecting endpoints — laptops, desktops, and servers — using behavioural analysis, threat hunting, and MITRE ATT&CK-aligned detection. XDR (Extended Detection and Response) goes further by correlating telemetry across endpoints, the network, email, identity, and cloud — giving your security team a unified view of threats across the entire environment. We assess your environment and recommend the right level of coverage.",
+      "Yes. We have deep familiarity with the UAE Personal Data Protection Law (Federal Decree-Law No. 45 of 2021), the DIFC Data Protection Law No. 5 of 2020 (as amended by Law No. 1 of 2025 effective July 2025), ADGM Data Protection Regulations 2021, and GDPR. We help organisations map their data flows, identify compliance gaps, and implement both technical controls and procedural frameworks to meet their obligations.",
+      "Response times depend on your contracted SLA. We offer managed support with 1-hour, 4-hour, and next-business-day response options. For clients with active SOC managed services, we provide continuous monitoring with automated alerting — meaning suspicious activity is flagged and investigated around the clock, not just during business hours.",
+      "ERPNext is a fully open-source ERP platform built on the Frappe framework. It covers accounting, HR, payroll, inventory, manufacturing, CRM, and project management in one system. Unlike SAP or Dynamics, ERPNext has no per-user licensing fees — you pay only for implementation, customisation, and hosting. It's an excellent choice for UAE SMEs and mid-market companies that need enterprise-grade functionality without six-figure annual licence costs. We implement, customise, and host ERPNext with full UAE VAT compliance, WPS payroll, and Arabic language support.",
+      "A standard ERPNext implementation for a mid-sized company (50–200 users) typically takes 8–16 weeks from kickoff to go-live, depending on the number of modules, data migration complexity, and custom development required. SAP S/4HANA and Microsoft Dynamics 365 implementations for larger organisations typically run 4–9 months. We provide a phased project plan with clear milestones at proposal stage.",
+      "Our Digital Business Card solution replaces printed cards with an NFC-enabled physical card or a QR code that instantly shares your professional profile. When someone taps your card or scans your QR code, they see your name, role, company, phone, email, and links — and with one tap they can add it to Apple Wallet or Google Wallet as a pass, or save it directly to their phone contacts. Your details are managed through an online dashboard, so any changes you make (new phone number, new title) are reflected on everyone's saved cards instantly.",
+      "We serve organisations from 20-person SMEs deploying their first proper IT infrastructure, through to 3,000+ employee enterprises managing complex multi-site environments. Solutions are always designed and priced to match your actual requirements — we don't upsell enterprise products to businesses that don't need them.",
+      "Our primary market is the UAE and wider GCC. For remote-deliverable services — including ERP/CRM implementation, AI solutions, cybersecurity consulting, and digital business cards — we serve clients across the Middle East and internationally. For hardware deployment projects, we work within the UAE and can coordinate regional projects through trusted partners.",
+      "The easiest way is to use the contact form on this site or call us directly on +971 6 746 4596 / +971 50 348 8680. We'll schedule a free 30-minute discovery call to understand your requirements, then provide a clear, no-obligation scoping proposal within 3–5 business days. No jargon, no hard sell — just an honest assessment of how we can help.",
+      "Still have questions? Our team is ready to help.",
+      "Book a free 30-minute consultation. No obligations — just a clear, honest assessment of how TruTecME can strengthen your technology foundation and security posture.",
+      "+971 6 746 4596 ★ No commitment required ★ Response within 24 hours ★ UAE-based engineers on-site --> TRUTEC ME A technology integration firm delivering enterprise IT infrastructure, cybersecurity, and digital transformation across the UAE and Middle East.",
+      "Sharjah Publishing City · Sharjah · UAE info@trutecme.com · +971 6 746 4596"
+    ],
+    "links": {
+      "https://trutecme.com/index.html": "Home",
+      "https://trutecme.com/about.html": "About TruTecME",
+      "https://trutecme.com/it-infrastructure.html": "IT Infrastructure &amp; Data Centre Enterprise servers, storage, virtualisation, HCI, backup, DR, end user computing, and ELV systems — deployed and supported end-to-end by certified engineers. Explore Services Dell Cisco HPE Pure Storage NVIDIA",
+      "https://trutecme.com/cybersecurity.html": "Cyber Security Multi-layered protection — endpoint EDR/XDR, network defence, data loss prevention, DSPM, security operations, identity management, and UAE PDPL compliance. Explore Services CrowdStrike Palo Alto Varonis Darktrace",
+      "https://trutecme.com/digital-transformation.html": "Digital Transformation",
+      "https://trutecme.com/contact.html": "Book a Consultation",
+      "mailto:info@trutecme.com": "info@trutecme.com"
+    }
+  }
+}

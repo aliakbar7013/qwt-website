@@ -582,3 +582,284 @@ html, body {
     transform: none !important;
   }
 }
+
+
+/* ==========================================================================
+   ENHANCED EXECUTIVE WHITE MODE OVERRIDES FOR TRUTEC SECTIONS & CARDS
+   ========================================================================== */
+
+/* 1. Global text and section backgrounds in white mode */
+html.theme-white #vendors {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+}
+html.theme-white #vendors .bg-\[\#120E3D\]\/40 {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+html.theme-white #vendors .text-slate-300 {
+  color: #0D0A2E !important;
+}
+html.theme-white #vendors .text-slate-400 {
+  color: #64748B !important;
+}
+
+/* 2. Three Pillars Section in White Mode */
+html.theme-white #three-pillars h2 {
+  color: #0D0A2E !important;
+}
+html.theme-white #three-pillars p {
+  color: #475569 !important;
+}
+html.theme-white #three-pillars .text-white {
+  color: #0D0A2E !important;
+}
+html.theme-white #three-pillars .text-slate-300 {
+  color: #334155 !important;
+}
+html.theme-white #three-pillars .text-slate-400 {
+  color: #64748B !important;
+}
+html.theme-white #three-pillars .border-indigo-900\/50,
+html.theme-white #three-pillars .border-indigo-900\/30,
+html.theme-white #three-pillars .border-indigo-800\/40 {
+  border-color: #E2E8F0 !important;
+}
+html.theme-white #three-pillars .bg-indigo-950\/40,
+html.theme-white #three-pillars .bg-\[\#120E3D\],
+html.theme-white #three-pillars .bg-\[\#100D36\] {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* 3. Differentiators Section in White Mode */
+html.theme-white #differentiators {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+html.theme-white #differentiators h2 {
+  color: #0D0A2E !important;
+}
+html.theme-white #differentiators p {
+  color: #475569 !important;
+}
+html.theme-white .differentiator-card,
+html.theme-white .enterprise-subcard {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 4px 15px -3px rgba(13, 10, 46, 0.05) !important;
+}
+html.theme-white .differentiator-card:hover {
+  border-color: #514DEB !important;
+  box-shadow: 0 10px 25px -5px rgba(81, 77, 235, 0.12) !important;
+}
+html.theme-white .differentiator-card h3 {
+  color: #0D0A2E !important;
+}
+html.theme-white .differentiator-card p {
+  color: #475569 !important;
+}
+
+/* 4. Process Section in White Mode */
+html.theme-white #process {
+  background-color: #FFFFFF !important;
+}
+html.theme-white #process h2 {
+  color: #0D0A2E !important;
+}
+html.theme-white #process p {
+  color: #475569 !important;
+}
+html.theme-white .process-card {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+html.theme-white .process-card:hover {
+  border-color: #514DEB !important;
+  background-color: #FFFFFF !important;
+  box-shadow: 0 8px 20px -4px rgba(81, 77, 235, 0.1) !important;
+}
+html.theme-white .process-card h3 {
+  color: #0D0A2E !important;
+}
+html.theme-white .process-card p {
+  color: #475569 !important;
+}
+
+/* 5. ERPNext Spotlight in White Mode */
+html.theme-white #erpnext {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+html.theme-white #erpnext .bg-\[\#120E3D\] {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 10px 30px -5px rgba(13, 10, 46, 0.08) !important;
+}
+html.theme-white #erpnext h2 {
+  color: #0D0A2E !important;
+}
+html.theme-white #erpnext p {
+  color: #475569 !important;
+}
+html.theme-white #erpnext .text-white {
+  color: #0D0A2E !important;
+}
+html.theme-white #erpnext .text-slate-300 {
+  color: #334155 !important;
+}
+html.theme-white #erpnext .bg-\[\#090724\] {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+html.theme-white #erpnext .border-indigo-900\/50,
+html.theme-white #erpnext .border-indigo-800\/40,
+html.theme-white #erpnext .border-indigo-700\/50 {
+  border-color: #E2E8F0 !important;
+}
+
+/* 6. NFC Cards Spotlight in White Mode */
+html.theme-white #nfc-cards {
+  background-color: #FFFFFF !important;
+}
+html.theme-white #nfc-cards h2 {
+  color: #0D0A2E !important;
+}
+html.theme-white #nfc-cards p {
+  color: #475569 !important;
+}
+html.theme-white #nfc-cards .text-white {
+  color: #0D0A2E !important;
+}
+html.theme-white #nfc-cards .text-slate-300 {
+  color: #334155 !important;
+}
+html.theme-white #nfc-cards .bg-\[\#120E3D\] {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+html.theme-white #nfc-cards .border-indigo-900\/40,
+html.theme-white #nfc-cards .border-indigo-800\/40 {
+  border-color: #E2E8F0 !important;
+}
+
+/* 7. FAQ Accordions in White Mode */
+html.theme-white #faq {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+html.theme-white #faq h2 {
+  color: #0D0A2E !important;
+}
+html.theme-white #faq p {
+  color: #475569 !important;
+}
+html.theme-white .enterprise-faq-card {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 2px 8px rgba(13, 10, 46, 0.04) !important;
+}
+html.theme-white .enterprise-faq-card:hover {
+  border-color: #514DEB !important;
+  box-shadow: 0 6px 18px rgba(81, 77, 235, 0.1) !important;
+}
+html.theme-white .enterprise-faq-card summary {
+  color: #0D0A2E !important;
+}
+html.theme-white .enterprise-faq-card summary div {
+  background-color: #EEF2FF !important;
+  color: #514DEB !important;
+}
+html.theme-white .enterprise-faq-card div[class*="border-t"] {
+  border-color: #E2E8F0 !important;
+  color: #475569 !important;
+}
+
+/* 8. Floating pills in Hero White Mode */
+html.theme-white .floating-pill,
+html.theme-white .floating-pill-reverse {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 10px 25px -5px rgba(13, 10, 46, 0.1) !important;
+}
+html.theme-white .floating-pill .text-white,
+html.theme-white .floating-pill-reverse .text-white {
+  color: #0D0A2E !important;
+}
+
+/* 9. Perspective Hero Card in White Mode */
+html.theme-white .perspective-card-hero {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 25px 50px -12px rgba(13, 10, 46, 0.12) !important;
+}
+html.theme-white .perspective-card-hero .text-white {
+  color: #0D0A2E !important;
+}
+html.theme-white .perspective-card-hero .text-slate-300 {
+  color: #334155 !important;
+}
+html.theme-white .perspective-card-hero .border-indigo-900\/50,
+html.theme-white .perspective-card-hero .border-indigo-800\/40 {
+  border-color: #E2E8F0 !important;
+}
+html.theme-white .perspective-card-hero .bg-\[\#161248\],
+html.theme-white .perspective-card-hero .bg-\[\#090724\] {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+
+/* ==========================================================================
+   WHITE MODE CONTRAST FIXES FOR HERO H1 AND GLOBAL FOOTER
+   ========================================================================== */
+
+/* 1. Hero H1 Gradient in White Mode - Fixes text blending into white background */
+html.theme-white h1 span.bg-clip-text,
+html.theme-white .bg-gradient-to-r.from-white,
+html.theme-white [class*="from-white"] {
+  background-image: linear-gradient(135deg, #0D0A2E 0%, #514DEB 55%, #325CEB 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+}
+
+html.theme-white h1 {
+  color: #0D0A2E !important;
+}
+
+/* 2. Global Footer in White Mode */
+html.theme-white footer {
+  background-color: #FFFFFF !important;
+  border-top-color: #E2E8F0 !important;
+  color: #475569 !important;
+}
+
+html.theme-white footer h4 {
+  color: #0D0A2E !important;
+}
+
+html.theme-white footer a {
+  color: #64748B !important;
+}
+
+html.theme-white footer a:hover {
+  color: #514DEB !important;
+}
+
+html.theme-white footer .text-white {
+  color: #0D0A2E !important;
+}
+
+html.theme-white footer .text-slate-300 {
+  color: #1E293B !important;
+}
+
+html.theme-white footer .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.theme-white footer .border-indigo-950,
+html.theme-white footer .border-indigo-900\/30 {
+  border-color: #E2E8F0 !important;
+}
