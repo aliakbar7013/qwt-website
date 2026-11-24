@@ -164,12 +164,12 @@
 <body class="bg-[#0D0A2E] text-slate-200 antialiased selection:bg-[#C9A24D] selection:text-black">
 
 <!-- STICKY NAVIGATION HEADER -->
+    <!-- STICKY NAVIGATION HEADER -->
   <header id="main-header" class="sticky top-0 z-40 bg-[#0D0A2E]/95 backdrop-blur-md border-b border-indigo-900/30 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 sm:gap-4">
       
-            <!-- Brand Logo Lockup (Official Option B: Capitals with Tagline Lockup) -->
+      <!-- Brand Logo Lockup (Official Option B: Capitals with Tagline Lockup) -->
       <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 select-none" aria-label="QuadWise Technologies Home">
-        <!-- SVG Vector Emblem with Dual-Theme Quadrants -->
         <svg class="brand-emblem-svg w-9 h-9 sm:w-10 sm:h-10 shrink-0 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
           <path class="brand-emblem-q1" d="M 48,48 L 6,48 A 42,42 0 0,1 48,6 Z" fill="#9390F9"/>
           <path class="brand-emblem-q2" d="M 52,48 L 52,6 A 42,42 0 0,1 94,48 Z" fill="#8397F9"/>
@@ -192,15 +192,70 @@
         </div>
       </a>
 
-      <!-- Desktop & Tablet Navigation Menu (Always visible from 768px / md upwards) -->
-      <nav class="hidden md:flex items-center gap-0.5 lg:gap-1.5 xl:gap-2 text-xs lg:text-sm">
-        <a href="index.html" class="nav-link px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 rounded-lg transition-colors">Home</a>
-        <a href="solutions.html" class="nav-link active px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-semibold text-[#8A95FA] bg-[#514DEB]/15 border border-[#8A95FA]/30 rounded-lg">Solutions</a>
-        <a href="hardware.html" class="nav-link px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 rounded-lg transition-colors">Hardware</a>
-        <a href="case-studies.html" class="nav-link px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 rounded-lg transition-colors">Deployments</a>
-        <a href="insights.html" class="nav-link px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 rounded-lg transition-colors">Insights</a>
-        <a href="about.html" class="nav-link px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 rounded-lg transition-colors">About</a>
-        <a href="contact.html" class="nav-link px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 rounded-lg transition-colors">Contact</a>
+      <!-- Desktop & Tablet Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-1.5 xl:gap-2 text-xs lg:text-sm">
+        <a href="index.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">Home</a>
+        <a href="about.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">About</a>
+        
+        <!-- IT Infrastructure Dropdown -->
+        <div class="relative group">
+          <a href="it-infrastructure.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg flex items-center gap-1 font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">
+            <span>IT Infrastructure</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform"></i>
+          </a>
+          <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50 min-w-[240px]">
+            <div class="p-2 rounded-xl bg-[#0F141C] border border-indigo-900/60 shadow-2xl space-y-1">
+              <div class="px-2.5 py-1 text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-wider">Data Centre</div>
+              <a href="it-infrastructure.html#servers" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Servers &amp; Compute</a>
+              <a href="it-infrastructure.html#storage" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Storage Solutions</a>
+              <a href="it-infrastructure.html#virtualisation" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Virtualisation &amp; HCI</a>
+              <a href="it-infrastructure.html#backup" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Backup &amp; Disaster Recovery</a>
+              <div class="px-2.5 py-1 text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-wider pt-1 border-t border-slate-800">Workspace &amp; Facilities</div>
+              <a href="it-infrastructure.html#euc" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">End User Computing</a>
+              <a href="it-infrastructure.html#elv" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">ELV &amp; Physical Security</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cyber Security Dropdown -->
+        <div class="relative group">
+          <a href="cybersecurity.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg flex items-center gap-1 font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">
+            <span>Cyber Security</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform"></i>
+          </a>
+          <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50 min-w-[240px]">
+            <div class="p-2 rounded-xl bg-[#0F141C] border border-indigo-900/60 shadow-2xl space-y-1">
+              <div class="px-2.5 py-1 text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-wider">Protection</div>
+              <a href="cybersecurity.html#endpoint" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Endpoint Security (EDR/XDR)</a>
+              <a href="cybersecurity.html#network" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Network Security</a>
+              <a href="cybersecurity.html#data" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Data Security &amp; DLP</a>
+              <div class="px-2.5 py-1 text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-wider pt-1 border-t border-slate-800">Operations</div>
+              <a href="cybersecurity.html#soc" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Security Operations (SOC)</a>
+              <a href="cybersecurity.html#identity" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Identity &amp; Access Management</a>
+              <a href="cybersecurity.html#training" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Security Awareness Training</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital Transformation Dropdown -->
+        <div class="relative group">
+          <a href="digital-transformation.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg flex items-center gap-1 font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">
+            <span>Digital Transformation</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform"></i>
+          </a>
+          <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50 min-w-[240px]">
+            <div class="p-2 rounded-xl bg-[#0F141C] border border-indigo-900/60 shadow-2xl space-y-1">
+              <a href="digital-transformation.html#erp" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">ERP Systems (SAP, Dynamics)</a>
+              <a href="digital-transformation.html#erpnext" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">ERPNext &amp; Frappe Framework</a>
+              <a href="digital-transformation.html#crm" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">CRM Platforms (Salesforce, Zoho)</a>
+              <a href="digital-transformation.html#web" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Web Application Dev</a>
+              <a href="digital-transformation.html#ai" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">AI Solutions &amp; LLMs</a>
+              <a href="digital-transformation.html#cards" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">NFC Digital Business Cards</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="contact.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">Contact</a>
       </nav>
 
       <!-- Right Header Actions -->
@@ -215,19 +270,13 @@
           </button>
         </div>
 
-        <!-- Sovereign CRM Portal Link -->
-        <a href="admin-crm.html" class="hidden 2xl:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-mono text-slate-300 bg-indigo-950/40 hover:bg-indigo-900/60 border border-indigo-800/40 transition-colors" title="Internal CRM Operations">
-          <i data-lucide="shield" class="w-3.5 h-3.5 text-[#8A95FA]"></i>
-          <span>CRM</span>
-        </a>
-
         <!-- Consultation Request CTA Button -->
         <button data-open-quote class="inline-flex items-center gap-1.5 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-[#514DEB] to-[#4338CA] hover:from-[#6345EC] hover:to-[#514DEB] shadow-md transition-all whitespace-nowrap">
           <span>Book Consultation</span>
           <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
         </button>
 
-        <!-- Mobile Menu Hamburger Button (Hidden on md and desktop, visible only on mobile < 768px) -->
+        <!-- Mobile Menu Hamburger Button -->
         <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-indigo-950/50 border border-indigo-800/30" aria-label="Toggle Navigation">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
@@ -235,19 +284,16 @@
 
     </div>
 
-    <!-- Mobile Drawer Menu (< 768px) -->
+    <!-- Mobile Drawer -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-indigo-900/40 bg-[#0D0A2E]/98 px-4 pt-3 pb-6 space-y-2">
-      <a href="index.html" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40">Home</a>
-      <a href="solutions.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-[#8A95FA] bg-indigo-950/60">Solutions</a>
-      <a href="hardware.html" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40">Hardware</a>
-      <a href="case-studies.html" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40">Deployments</a>
-      <a href="insights.html" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40">Insights</a>
-      <a href="about.html" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40">About</a>
-      <a href="contact.html" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40">Contact</a>
-      <a href="admin-crm.html" class="block px-3 py-2 rounded-lg text-sm font-medium text-amber-400 bg-amber-500/10 border border-amber-500/20">Sovereign CRM Console</a>
-      <div class="pt-3 px-3 border-t border-indigo-950/60 text-[11px] font-mono text-slate-400 flex items-center justify-between">
-        <span>QUADWISE TECHNOLOGIES</span>
-        <span class="text-[#8A95FA] font-medium">&ldquo;Innovating with integrity&rdquo;</span>
+      <a href="index.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">Home</a>
+      <a href="about.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">About</a>
+      <a href="it-infrastructure.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">IT Infrastructure</a>
+      <a href="cybersecurity.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">Cyber Security</a>
+      <a href="digital-transformation.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">Digital Transformation</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">Contact</a>
+      <div class="pt-2 border-t border-indigo-900/30 flex items-center justify-between">
+        <button data-open-quote class="w-full py-2.5 rounded-xl text-xs font-bold text-white bg-[#514DEB] text-center">Book Consultation</button>
       </div>
     </div>
   </header>
@@ -654,7 +700,7 @@
           </a>
 
           <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
-            QuadWise Technologies (incorporating TruTec ME capabilities) is the UAE's premier technology integration firm delivering enterprise IT infrastructure, cybersecurity, ERPNext, and digital transformation across the Middle East.
+            QuadWise Technologies is the UAE's premier technology integration firm delivering enterprise IT infrastructure, cybersecurity, ERPNext, and digital transformation across the Middle East.
           </p>
 
           <p class="text-xs text-slate-400 italic">
@@ -711,7 +757,7 @@
             <div class="pt-1 font-mono text-[11px] text-slate-300 space-y-0.5">
               <div>Office: <a href="tel:+97167464596" class="text-[#8A95FA] hover:underline">+971 6 746 4596</a></div>
               <div>Sales: <a href="tel:+971503488680" class="text-[#8A95FA] hover:underline">+971 50 348 8680</a></div>
-              <div>Email: <a href="mailto:info@trutecme.com" class="text-[#8A95FA] hover:underline">info@trutecme.com</a></div>
+              <div>Email: <a href="mailto:contact@qwt.ae" class="text-[#8A95FA] hover:underline">contact@qwt.ae</a></div>
             </div>
           </div>
         </div>
@@ -720,7 +766,7 @@
 
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400">
         <div>
-          &copy; 2026 QuadWise Technologies &amp; TruTec Middle East. All Rights Reserved.
+          &copy; 2026 QuadWise Technologies. All Rights Reserved.
         </div>
         <div class="flex items-center gap-4">
           <a href="contact.html" class="hover:text-slate-300">Privacy Policy</a>

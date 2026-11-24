@@ -18,6 +18,30 @@
     </image:image>
   </url>
 
+  <!-- IT Infrastructure & Data Centre Solutions -->
+  <url>
+    <loc>https://qwt.ae/it-infrastructure.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Cybersecurity Solutions -->
+  <url>
+    <loc>https://qwt.ae/cybersecurity.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Digital Transformation Solutions -->
+  <url>
+    <loc>https://qwt.ae/digital-transformation.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Enterprise Solutions & Engineering Disciplines -->
   <url>
     <loc>https://qwt.ae/solutions.html</loc>

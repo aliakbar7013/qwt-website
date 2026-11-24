@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Solutions UAE — EDR, DLP, SOC, PDPL Compliance | QuadWise Technologies</title>
+  <meta name="description" content="Multi-layered cybersecurity for UAE enterprises — endpoint EDR/XDR, network security, data loss prevention, security operations, identity management, and PDPL/DIFC compliance.">
+  <meta name="keywords" content="QuadWise Technologies, QWT, IT infrastructure UAE, cybersecurity Dubai, ERPNext UAE VAT, digital transformation, cloud storage, enterprise networking, servers UAE">
+  <meta name="author" content="QuadWise Technologies">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Inter & Plus Jakarta Sans Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN with Official Clearbit Theme Extensions -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#F0EFFF',
+              100: '#E4E2FE',
+              200: '#C7D2FE',
+              300: '#A5B4FC',
+              400: '#818CF8',
+              500: '#514DEB',
+              600: '#5B49EC',
+              700: '#4338CA',
+              800: '#3730A3',
+              900: '#1E1B4B',
+              accent: '#8A95FA',
+              deep: '#090724',
+              surface: '#120E3D'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Theme CSS -->
+  <link rel="stylesheet" href="css/custom.css?v=2.2">
+
+  <script>
+    (function() {
+      try {
+        const stored = localStorage.getItem('qwt_theme') || localStorage.getItem('qwt_admin_theme');
+        if (stored === 'white' || stored === 'light') {
+          document.documentElement.classList.add('theme-white');
+          document.documentElement.setAttribute('data-theme', 'white');
+        } else {
+          document.documentElement.classList.remove('theme-white');
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="bg-[#0D0A2E] text-slate-200 antialiased selection:bg-[#514DEB] selection:text-white">
+  <div id="page-scroll-progress"></div>
+  <!-- STICKY NAVIGATION HEADER -->
+  <header id="main-header" class="sticky top-0 z-40 bg-[#0D0A2E]/95 backdrop-blur-md border-b border-indigo-900/30 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 sm:gap-4">
+      
+      <!-- Brand Logo Lockup (Official Option B: Capitals with Tagline Lockup) -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 select-none" aria-label="QuadWise Technologies Home">
+        <svg class="brand-emblem-svg w-9 h-9 sm:w-10 sm:h-10 shrink-0 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
+          <path class="brand-emblem-q1" d="M 48,48 L 6,48 A 42,42 0 0,1 48,6 Z" fill="#9390F9"/>
+          <path class="brand-emblem-q2" d="M 52,48 L 52,6 A 42,42 0 0,1 94,48 Z" fill="#8397F9"/>
+          <path class="brand-emblem-q3" d="M 48,52 L 48,94 A 42,42 0 0,1 6,52 Z" fill="#8396F9"/>
+          <path class="brand-emblem-q4" d="M 94,52 L 94,94 L 52,94 A 42,42 0 0,0 94,52 Z" fill="#6AA0FA"/>
+        </svg>
+
+        <div class="flex flex-col">
+          <div class="flex items-baseline font-heading font-extrabold text-lg sm:text-xl tracking-tight leading-none">
+            <span class="brand-wordmark-quad">QUAD</span><span class="brand-wordmark-wise">WISE</span>
+          </div>
+          <span class="text-[8px] sm:text-[9px] font-mono tracking-[0.32em] brand-wordmark-sub font-bold mt-1">TECHNOLOGIES</span>
+        </div>
+
+        <div class="hidden lg:flex items-center gap-2.5 pl-3 border-l brand-tagline-divider ml-1.5">
+          <div class="text-[11px] font-medium leading-tight">
+            <span class="brand-tagline-title block font-semibold">Innovating</span>
+            <span class="brand-tagline-sub">with integrity</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop & Tablet Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-1.5 xl:gap-2 text-xs lg:text-sm">
+        <a href="index.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">Home</a>
+        <a href="about.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">About</a>
+        
+        <!-- IT Infrastructure Dropdown -->
+        <div class="relative group">
+          <a href="it-infrastructure.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg flex items-center gap-1 font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">
+            <span>IT Infrastructure</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform"></i>
+          </a>
+          <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50 min-w-[240px]">
+            <div class="p-2 rounded-xl bg-[#0F141C] border border-indigo-900/60 shadow-2xl space-y-1">
+              <div class="px-2.5 py-1 text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-wider">Data Centre</div>
+              <a href="it-infrastructure.html#servers" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Servers &amp; Compute</a>
+              <a href="it-infrastructure.html#storage" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Storage Solutions</a>
+              <a href="it-infrastructure.html#virtualisation" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Virtualisation &amp; HCI</a>
+              <a href="it-infrastructure.html#backup" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Backup &amp; Disaster Recovery</a>
+              <div class="px-2.5 py-1 text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-wider pt-1 border-t border-slate-800">Workspace &amp; Facilities</div>
+              <a href="it-infrastructure.html#euc" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">End User Computing</a>
+              <a href="it-infrastructure.html#elv" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">ELV &amp; Physical Security</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cyber Security Dropdown -->
+        <div class="relative group">
+          <a href="cybersecurity.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg flex items-center gap-1 font-semibold text-[#8A95FA] bg-[#514DEB]/15 border border-[#8A95FA]/30">
+            <span>Cyber Security</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform"></i>
+          </a>
+          <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50 min-w-[240px]">
+            <div class="p-2 rounded-xl bg-[#0F141C] border border-indigo-900/60 shadow-2xl space-y-1">
+              <div class="px-2.5 py-1 text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-wider">Protection</div>
+              <a href="cybersecurity.html#endpoint" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Endpoint Security (EDR/XDR)</a>
+              <a href="cybersecurity.html#network" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Network Security</a>
+              <a href="cybersecurity.html#data" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Data Security &amp; DLP</a>
+              <div class="px-2.5 py-1 text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-wider pt-1 border-t border-slate-800">Operations</div>
+              <a href="cybersecurity.html#soc" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Security Operations (SOC)</a>
+              <a href="cybersecurity.html#identity" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Identity &amp; Access Management</a>
+              <a href="cybersecurity.html#training" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Security Awareness Training</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital Transformation Dropdown -->
+        <div class="relative group">
+          <a href="digital-transformation.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg flex items-center gap-1 font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">
+            <span>Digital Transformation</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform"></i>
+          </a>
+          <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50 min-w-[240px]">
+            <div class="p-2 rounded-xl bg-[#0F141C] border border-indigo-900/60 shadow-2xl space-y-1">
+              <a href="digital-transformation.html#erp" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">ERP Systems (SAP, Dynamics)</a>
+              <a href="digital-transformation.html#erpnext" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">ERPNext &amp; Frappe Framework</a>
+              <a href="digital-transformation.html#crm" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">CRM Platforms (Salesforce, Zoho)</a>
+              <a href="digital-transformation.html#web" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Web Application Dev</a>
+              <a href="digital-transformation.html#ai" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">AI Solutions &amp; LLMs</a>
+              <a href="digital-transformation.html#cards" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">NFC Digital Business Cards</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="contact.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Theme Mode Switcher -->
+        <div class="flex items-center p-0.5 rounded-xl bg-[#120E3D] border border-indigo-900/40 shrink-0" role="group" aria-label="Theme Selection">
+          <button type="button" id="theme-btn-dark" onclick="window.qwtToggleTheme('dark')" class="theme-switch-btn p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg text-xs font-mono font-semibold flex items-center gap-1 text-[#8A95FA]" title="Dark Mode">
+            <i data-lucide="moon" class="w-3.5 h-3.5"></i> <span class="hidden 2xl:inline">Dark</span>
+          </button>
+          <button type="button" id="theme-btn-white" onclick="window.qwtToggleTheme('white')" class="theme-switch-btn p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg text-xs font-mono font-semibold flex items-center gap-1 text-slate-400 hover:text-white" title="White Mode">
+            <i data-lucide="sun" class="w-3.5 h-3.5 text-amber-400"></i> <span class="hidden 2xl:inline">White</span>
+          </button>
+        </div>
+
+        <!-- Consultation Request CTA Button -->
+        <button data-open-quote class="inline-flex items-center gap-1.5 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-[#514DEB] to-[#4338CA] hover:from-[#6345EC] hover:to-[#514DEB] shadow-md transition-all whitespace-nowrap">
+          <span>Book Consultation</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </button>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-indigo-950/50 border border-indigo-800/30" aria-label="Toggle Navigation">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-indigo-900/40 bg-[#0D0A2E]/98 px-4 pt-3 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">Home</a>
+      <a href="about.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">About</a>
+      <a href="it-infrastructure.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">IT Infrastructure</a>
+      <a href="cybersecurity.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">Cyber Security</a>
+      <a href="digital-transformation.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">Digital Transformation</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">Contact</a>
+      <div class="pt-2 border-t border-indigo-900/30 flex items-center justify-between">
+        <button data-open-quote class="w-full py-2.5 rounded-xl text-xs font-bold text-white bg-[#514DEB] text-center">Book Consultation</button>
+      </div>
+    </div>
+  </header>
+  <!-- PAGE HERO -->
+  <section class="py-16 sm:py-24 bg-[#090724] border-b border-indigo-900/40 tech-grid relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-6">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <span>&rsaquo;</span>
+        <span class="text-[#8A95FA]">Cyber Security</span>
+      </nav>
+
+      <div class="max-w-3xl space-y-5">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#514DEB]/15 border border-[#8A95FA]/30 text-xs font-mono text-[#8A95FA] font-semibold">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#8A95FA]"></i>
+          <span>ENTERPRISE SECURITY PORTFOLIO</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-tight leading-tight">
+          Multi-Layered Protection <br><span class="bg-gradient-to-r from-white via-[#C7D2FE] to-[#8A95FA] bg-clip-text text-transparent">for Your Entire Digital Estate</span>
+        </h1>
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+          From endpoints to the network perimeter, from data classification to security operations — QuadWise Technologies delivers integrated cybersecurity aligned with UAE PDPL, DIFC, ADGM, and GDPR.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 pt-4">
+          <button data-open-quote class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-[#514DEB] to-[#4338CA] hover:from-[#6345EC] hover:to-[#514DEB] shadow-lg shadow-indigo-600/30 transition-all hover:-translate-y-0.5">
+            <span>Request Free Assessment</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+          <a href="#endpoint" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-slate-200 bg-[#120E3D] hover:bg-[#161248] border border-indigo-800/40 transition-all">
+            <span>Explore Services</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-[#8A95FA]"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SIX SECURITY SERVICES -->
+  <section class="py-20 bg-[#0D0A2E] border-b border-indigo-900/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <div class="text-xs font-mono uppercase tracking-wider text-[#8A95FA] font-bold">Security Services</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">Comprehensive Protection Across Every Attack Surface</h2>
+        <p class="text-sm text-slate-300">Continuous visibility, zero trust enforcement, and automated threat defense.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 1. Endpoint Security -->
+        <div id="endpoint" class="p-7 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-4 hover:border-[#8A95FA]/50 transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-[#514DEB]/20 border border-[#8A95FA]/30 flex items-center justify-center text-[#8A95FA]">
+              <i data-lucide="shield" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-heading text-white">Endpoint Security (EDR/XDR)</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Protect your most targeted assets — endpoints and servers — with multi-layered defence against ransomware, malware, spyware, and advanced persistent threats guided by the MITRE ATT&amp;CK framework.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 pt-2 border-t border-indigo-900/40">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Next-gen antivirus with signature &amp; anomaly detection</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>EDR — Endpoint Detection &amp; Response (MITRE ATT&amp;CK aligned)</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>XDR — Extended Detection spanning endpoint, network &amp; email</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>UEFI, firmware, and pre-boot scanning</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Sandboxing &amp; behavioural analysis engine</span></li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-indigo-900/40 flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">CrowdStrike Falcon</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">MS Defender XDR</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">SentinelOne</span>
+          </div>
+        </div>
+
+        <!-- 2. Network Security -->
+        <div id="network" class="p-7 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-4 hover:border-[#8A95FA]/50 transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-[#514DEB]/20 border border-[#8A95FA]/30 flex items-center justify-center text-[#8A95FA]">
+              <i data-lucide="network" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-heading text-white">Network Security</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Defend your perimeter and internal network with next-generation firewalls, intrusion prevention, zero-trust access, and deep traffic inspection — keeping pace with the evolving threat landscape.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 pt-2 border-t border-indigo-900/40">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Next-Generation Firewall (NGFW) with IDS/IPS &amp; SSL inspection</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Network Detection &amp; Response (NDR) — internal visibility</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Network Access Control (NAC) &amp; 802.1X enforcement</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Zero Trust Network Access (ZTNA) &amp; Secure Remote Connectivity</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>DDoS protection, DNS filtering, and SD-WAN security</span></li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-indigo-900/40 flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Palo Alto NGFW</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Darktrace NDR</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Fortinet</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Cisco ISE</span>
+          </div>
+        </div>
+
+        <!-- 3. Data Security & DLP -->
+        <div id="data" class="p-7 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-4 hover:border-[#8A95FA]/50 transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-[#514DEB]/20 border border-[#8A95FA]/30 flex items-center justify-center text-[#8A95FA]">
+              <i data-lucide="lock" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-heading text-white">Data Security &amp; DLP</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Safeguard your data across its entire lifecycle — from creation and storage through active use, transmission, archiving, and secure disposal. Full UAE PDPL and GDPR alignment built in.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 pt-2 border-t border-indigo-900/40">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Data Loss Prevention (DLP) — email, USB, cloud upload, messaging</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Data Classification — Public / Confidential / Restricted tagging</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Data Security Posture Management (DSPM) — cloud visibility</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Encryption at rest and in transit with HSM key management</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>UAE PDPL, DIFC, ADGM, and GDPR compliance governance</span></li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-indigo-900/40 flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Varonis DSPM</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Forcepoint DLP</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">MS Purview</span>
+          </div>
+        </div>
+
+        <!-- 4. Security Operations (SOC) -->
+        <div id="soc" class="p-7 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-4 hover:border-[#8A95FA]/50 transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-[#514DEB]/20 border border-[#8A95FA]/30 flex items-center justify-center text-[#8A95FA]">
+              <i data-lucide="activity" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-heading text-white">Security Operations (SOC)</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Continuous monitoring, threat detection, and incident response capabilities — delivering 24/7 visibility into your security posture and the capability to respond before breaches escalate.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 pt-2 border-t border-indigo-900/40">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>SIEM implementation &amp; operations (Sentinel, Splunk, QRadar)</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>SOC-as-a-Service with SLA-backed mean time to respond (MTTR)</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Threat intelligence integration (MITRE, ISAC, commercial feeds)</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Incident response planning, playbooks, and tabletop exercises</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Digital forensics, investigation, and post-incident reporting</span></li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-indigo-900/40 flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Microsoft Sentinel</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Splunk</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">IBM QRadar</span>
+          </div>
+        </div>
+
+        <!-- 5. Identity & Access Management -->
+        <div id="identity" class="p-7 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-4 hover:border-[#8A95FA]/50 transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-[#514DEB]/20 border border-[#8A95FA]/30 flex items-center justify-center text-[#8A95FA]">
+              <i data-lucide="user-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-heading text-white">Identity &amp; Access Management</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Control who accesses what across your entire organisation — from privileged administrator accounts to everyday user authentication. IAM is the cornerstone of any Zero Trust architecture.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 pt-2 border-t border-indigo-900/40">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Privileged Access Management (PAM) — CyberArk, BeyondTrust</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Multi-Factor Authentication (MFA) &amp; FIDO2 passwordless auth</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Identity Governance &amp; Administration (IGA) with access reviews</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Single Sign-On (SSO) &amp; Federation (SAML 2.0, OIDC)</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Active Directory tiering, hardening, and credential hygiene</span></li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-indigo-900/40 flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">CyberArk PAM</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Microsoft Entra ID</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Okta</span>
+          </div>
+        </div>
+
+        <!-- 6. Security Awareness Training -->
+        <div id="training" class="p-7 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-4 hover:border-[#8A95FA]/50 transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-[#514DEB]/20 border border-[#8A95FA]/30 flex items-center justify-center text-[#8A95FA]">
+              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold font-heading text-white">Security Awareness Training</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Your people are your first — and most frequently attacked — line of defence. Build a lasting human firewall through structured, role-based training aligned to real-world threat scenarios.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 pt-2 border-t border-indigo-900/40">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Phishing simulation campaigns with detailed cohort analytics</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Role-based curriculum: executive, IT staff, general workforce</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Compliance training — UAE PDPL, GDPR &amp; data governance</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Social engineering recognition and emergency response drills</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i><span>Executive &amp; board-level security posture reporting dashboards</span></li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-indigo-900/40 flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">KnowBe4</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Proofpoint</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REGULATORY COMPLIANCE & LIFECYCLE TABLE -->
+  <section class="py-20 bg-[#090724] border-b border-indigo-900/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="max-w-3xl space-y-4">
+        <div class="text-xs font-mono uppercase tracking-wider text-[#8A95FA] font-bold">Regulatory Compliance</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">Navigating the UAE's Data Protection Landscape</h2>
+        <p class="text-sm text-slate-300 leading-relaxed font-light">
+          Organisations operating in the UAE face simultaneous compliance obligations across multiple frameworks. QuadWise Technologies assesses your data posture, identifies gaps, and implements the technical and procedural controls required to meet each framework's obligations.
+        </p>
+      </div>
+
+      <!-- Framework Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-2">
+          <div class="text-sm font-bold text-white font-mono">UAE PDPL</div>
+          <div class="text-xs text-slate-400">Federal Decree-Law No. 45 of 2021 — covers all personal data involving UAE residents and sovereign data handling.</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-2">
+          <div class="text-sm font-bold text-white font-mono">DIFC DP Law</div>
+          <div class="text-xs text-slate-400">Law No. 5 of 2020 (amended by Law No. 1 of 2025, effective July 2025) governing DIFC financial entities.</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-2">
+          <div class="text-sm font-bold text-white font-mono">ADGM DP 2021</div>
+          <div class="text-xs text-slate-400">Comprehensive regulations governing Abu Dhabi Global Market incorporated entities and data transfers.</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-2">
+          <div class="text-sm font-bold text-white font-mono">GDPR Alignment</div>
+          <div class="text-xs text-slate-400">Full operational alignment for organizations processing personal data of European Union residents or global clients.</div>
+        </div>
+      </div>
+
+      <!-- Lifecycle Table -->
+      <div class="space-y-6 pt-6">
+        <h3 class="text-2xl font-bold font-heading text-white">Data Protection Across the Full Lifecycle</h3>
+        <div class="overflow-x-auto rounded-2xl border border-indigo-800/40 bg-[#120E3D]">
+          <table class="w-full text-left text-xs sm:text-sm text-slate-300">
+            <thead class="bg-[#090724] border-b border-indigo-800/40 text-xs font-mono uppercase text-[#8A95FA]">
+              <tr>
+                <th class="p-4 sm:p-5">Lifecycle Stage</th>
+                <th class="p-4 sm:p-5">What Happens</th>
+                <th class="p-4 sm:p-5">QuadWise Protection Layer</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-indigo-900/30">
+              <tr>
+                <td class="p-4 sm:p-5 font-bold text-white">Creation</td>
+                <td class="p-4 sm:p-5 text-slate-400">Data generated, entered, or received</td>
+                <td class="p-4 sm:p-5 text-slate-200">Classification, access controls, encryption at creation</td>
+              </tr>
+              <tr>
+                <td class="p-4 sm:p-5 font-bold text-white">Storage</td>
+                <td class="p-4 sm:p-5 text-slate-400">Saved on devices, servers, or cloud</td>
+                <td class="p-4 sm:p-5 text-slate-200">Encryption at rest, DSPM, access governance and monitoring</td>
+              </tr>
+              <tr>
+                <td class="p-4 sm:p-5 font-bold text-white">Active Use</td>
+                <td class="p-4 sm:p-5 text-slate-400">Data accessed, processed, or shared</td>
+                <td class="p-4 sm:p-5 text-slate-200">DLP policies, MFA enforcement, audit logging</td>
+              </tr>
+              <tr>
+                <td class="p-4 sm:p-5 font-bold text-white">Transmission</td>
+                <td class="p-4 sm:p-5 text-slate-400">Data moves across networks or to third parties</td>
+                <td class="p-4 sm:p-5 text-slate-200">Encryption in transit, network DLP, secure channels</td>
+              </tr>
+              <tr>
+                <td class="p-4 sm:p-5 font-bold text-white">Archiving</td>
+                <td class="p-4 sm:p-5 text-slate-400">Retained for compliance or records</td>
+                <td class="p-4 sm:p-5 text-slate-200">Retention policy management, immutable archive controls</td>
+              </tr>
+              <tr>
+                <td class="p-4 sm:p-5 font-bold text-white">Disposal</td>
+                <td class="p-4 sm:p-5 text-slate-400">Data no longer required</td>
+                <td class="p-4 sm:p-5 text-slate-200">Certified secure wiping and cryptographic data destruction</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="py-16 bg-gradient-to-b from-[#090724] to-[#0D0A2E] border-b border-indigo-900/40">
+    <div class="max-w-4xl mx-auto px-4 text-center space-y-6">
+      <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">Strengthen Your Security Posture Today</h2>
+      <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        Start with a free security assessment — we'll identify your risk exposure and deliver a prioritised remediation roadmap within 5 business days.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <button data-open-quote class="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-[#514DEB] to-[#4338CA] hover:from-[#6345EC] hover:to-[#514DEB] shadow-lg shadow-indigo-600/30 transition-all hover:-translate-y-0.5">
+          <span>Request Free Assessment</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+        <a href="mailto:contact@qwt.ae" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-slate-200 bg-[#120E3D] hover:bg-[#161248] border border-indigo-800/40 transition-all">
+          <i data-lucide="mail" class="w-4 h-4 text-[#8A95FA]"></i>
+          <span>Email Our Security Team</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- GLOBAL ENTERPRISE FOOTER -->
+  <footer class="bg-[#07051C] border-t border-indigo-900/40 py-16 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <!-- Col 1: Brand & Identity -->
+        <div class="lg:col-span-2 space-y-4">
+          <a href="index.html" class="flex items-center gap-2.5 select-none" aria-label="QuadWise Technologies Home">
+            <svg class="brand-emblem-svg w-8 h-8 shrink-0" viewBox="0 0 100 100" fill="none">
+              <path class="brand-emblem-q1" d="M 48,48 L 6,48 A 42,42 0 0,1 48,6 Z" fill="#9390F9"/>
+              <path class="brand-emblem-q2" d="M 52,48 L 52,6 A 42,42 0 0,1 94,48 Z" fill="#8397F9"/>
+              <path class="brand-emblem-q3" d="M 48,52 L 48,94 A 42,42 0 0,1 6,52 Z" fill="#8396F9"/>
+              <path class="brand-emblem-q4" d="M 94,52 L 94,94 L 52,94 A 42,42 0 0,0 94,52 Z" fill="#6AA0FA"/>
+            </svg>
+            <div class="flex flex-col">
+              <div class="flex items-baseline font-heading font-extrabold text-lg tracking-tight leading-none">
+                <span class="brand-wordmark-quad text-white">QUAD</span><span class="brand-wordmark-wise text-[#8A95FA]">WISE</span>
+              </div>
+              <span class="text-[8px] font-mono tracking-[0.32em] brand-wordmark-sub font-bold text-slate-400 mt-1">TECHNOLOGIES</span>
+            </div>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            QuadWise Technologies is the UAE's premier technology integration firm delivering enterprise IT infrastructure, cybersecurity, ERPNext, and digital transformation across the Middle East.
+          </p>
+          <div class="text-xs font-mono text-slate-400 space-y-1 pt-1">
+            <div>Sharjah Publishing City &bull; Dubai Silicon Oasis &bull; ADGM Abu Dhabi</div>
+            <div>Phone: <a href="tel:+97167464596" class="text-slate-300 hover:text-white">+971 6 746 4596</a> / <a href="tel:+971503488680" class="text-slate-300 hover:text-white">+971 50 348 8680</a></div>
+            <div>Email: <a href="mailto:contact@qwt.ae" class="text-[#8A95FA] hover:underline">contact@qwt.ae</a></div>
+          </div>
+        </div>
+
+        <!-- Col 2: IT Infrastructure -->
+        <div class="space-y-3">
+          <div class="text-xs font-mono font-bold uppercase text-white tracking-wider">IT Infrastructure</div>
+          <ul class="space-y-2 text-xs">
+            <li><a href="it-infrastructure.html#servers" class="hover:text-white transition-colors">Servers &amp; Compute</a></li>
+            <li><a href="it-infrastructure.html#storage" class="hover:text-white transition-colors">Storage Solutions (SAN/NAS)</a></li>
+            <li><a href="it-infrastructure.html#virtualisation" class="hover:text-white transition-colors">Virtualisation &amp; HCI</a></li>
+            <li><a href="it-infrastructure.html#backup" class="hover:text-white transition-colors">Backup &amp; Disaster Recovery</a></li>
+            <li><a href="it-infrastructure.html#euc" class="hover:text-white transition-colors">End User Computing</a></li>
+            <li><a href="it-infrastructure.html#elv" class="hover:text-white transition-colors">ELV &amp; Physical Security</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Cyber Security -->
+        <div class="space-y-3">
+          <div class="text-xs font-mono font-bold uppercase text-white tracking-wider">Cyber Security</div>
+          <ul class="space-y-2 text-xs">
+            <li><a href="cybersecurity.html#endpoint" class="hover:text-white transition-colors">Endpoint Security (EDR/XDR)</a></li>
+            <li><a href="cybersecurity.html#network" class="hover:text-white transition-colors">Network Defense &amp; NGFW</a></li>
+            <li><a href="cybersecurity.html#data" class="hover:text-white transition-colors">Data Security &amp; DLP</a></li>
+            <li><a href="cybersecurity.html#soc" class="hover:text-white transition-colors">Security Operations (SOC)</a></li>
+            <li><a href="cybersecurity.html#identity" class="hover:text-white transition-colors">Identity &amp; Access (IAM)</a></li>
+            <li><a href="cybersecurity.html#training" class="hover:text-white transition-colors">Security Awareness Training</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Digital Solutions & Company -->
+        <div class="space-y-3">
+          <div class="text-xs font-mono font-bold uppercase text-white tracking-wider">Digital &amp; Company</div>
+          <ul class="space-y-2 text-xs">
+            <li><a href="digital-transformation.html#erp" class="hover:text-white transition-colors">Enterprise ERP (SAP)</a></li>
+            <li><a href="digital-transformation.html#erpnext" class="hover:text-white transition-colors">ERPNext &amp; Frappe Framework</a></li>
+            <li><a href="digital-transformation.html#crm" class="hover:text-white transition-colors">CRM Platforms</a></li>
+            <li><a href="digital-transformation.html#web" class="hover:text-white transition-colors">Web Application Dev</a></li>
+            <li><a href="digital-transformation.html#ai" class="hover:text-white transition-colors">AI Solutions &amp; LLMs</a></li>
+            <li><a href="digital-transformation.html#cards" class="hover:text-white transition-colors">NFC Digital Business Cards</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About QuadWise</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact &amp; RFQ</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal Sub-Bar -->
+      <div class="mt-12 pt-8 border-t border-indigo-900/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400">
+        <div>
+          &copy; 2026 QuadWise Technologies. All Rights Reserved. Privacy Policy &bull; UAE PDPL Compliance &bull; SLA Terms
+        </div>
+        <div class="flex items-center gap-4 text-[11px]">
+          <span>Federal Tax TRN: 100482910300003</span>
+          <span class="text-indigo-400 font-bold">Innovating with integrity&trade;</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/971503488680?text=Hello%20QuadWise%20Technologies%2C%20I%20would%20like%20to%20enquire%20about%20your%20IT%20services." target="_blank" rel="noopener" class="fixed bottom-6 left-6 z-40 flex items-center justify-center w-12 h-12 rounded-full bg-[#25D366] text-white shadow-xl hover:scale-110 transition-transform" aria-label="Chat on WhatsApp">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.58 1.897.948 2.791.948 3.181 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.734-5.767-5.734zm3.376 8.211c-.143.402-.83.743-1.15.787-.319.043-.728.058-2.176-.539-1.854-.764-3.036-2.65-3.129-2.774-.093-.124-.753-1.002-.753-1.91 0-.909.476-1.355.645-1.539.169-.184.368-.231.492-.231.124 0 .248.002.355.008.113.006.264-.042.412.316.155.375.529 1.29.576 1.384.047.094.078.204.016.327-.063.124-.094.202-.187.311-.093.109-.196.244-.28.328-.094.094-.192.196-.083.383.109.187.483.797 1.036 1.29.711.634 1.31.83 1.496.924.186.094.296.079.406-.048.11-.127.469-.545.594-.732.125-.187.248-.156.417-.094.169.062 1.074.507 1.258.599.184.093.307.14.353.218.046.078.046.452-.097.854z"/></svg>
+  </a>
+
+  <!-- Shared Global JS -->
+  <script src="js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

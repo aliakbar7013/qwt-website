@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Infrastructure & Data Centre Solutions UAE | QuadWise Technologies</title>
+  <meta name="description" content="Enterprise servers, storage, virtualisation, HCI, backup, EUC, and ELV systems — designed, supplied, and deployed by expert engineers across the UAE and Middle East.">
+  <meta name="keywords" content="QuadWise Technologies, QWT, IT infrastructure UAE, cybersecurity Dubai, ERPNext UAE VAT, digital transformation, cloud storage, enterprise networking, servers UAE">
+  <meta name="author" content="QuadWise Technologies">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Inter & Plus Jakarta Sans Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN with Official Clearbit Theme Extensions -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#F0EFFF',
+              100: '#E4E2FE',
+              200: '#C7D2FE',
+              300: '#A5B4FC',
+              400: '#818CF8',
+              500: '#514DEB',
+              600: '#5B49EC',
+              700: '#4338CA',
+              800: '#3730A3',
+              900: '#1E1B4B',
+              accent: '#8A95FA',
+              deep: '#090724',
+              surface: '#120E3D'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Theme CSS -->
+  <link rel="stylesheet" href="css/custom.css?v=2.2">
+
+  <script>
+    (function() {
+      try {
+        const stored = localStorage.getItem('qwt_theme') || localStorage.getItem('qwt_admin_theme');
+        if (stored === 'white' || stored === 'light') {
+          document.documentElement.classList.add('theme-white');
+          document.documentElement.setAttribute('data-theme', 'white');
+        } else {
+          document.documentElement.classList.remove('theme-white');
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="bg-[#0D0A2E] text-slate-200 antialiased selection:bg-[#514DEB] selection:text-white">
+  <div id="page-scroll-progress"></div>
+  <!-- STICKY NAVIGATION HEADER -->
+  <header id="main-header" class="sticky top-0 z-40 bg-[#0D0A2E]/95 backdrop-blur-md border-b border-indigo-900/30 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 sm:gap-4">
+      
+      <!-- Brand Logo Lockup (Official Option B: Capitals with Tagline Lockup) -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 select-none" aria-label="QuadWise Technologies Home">
+        <svg class="brand-emblem-svg w-9 h-9 sm:w-10 sm:h-10 shrink-0 group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="none">
+          <path class="brand-emblem-q1" d="M 48,48 L 6,48 A 42,42 0 0,1 48,6 Z" fill="#9390F9"/>
+          <path class="brand-emblem-q2" d="M 52,48 L 52,6 A 42,42 0 0,1 94,48 Z" fill="#8397F9"/>
+          <path class="brand-emblem-q3" d="M 48,52 L 48,94 A 42,42 0 0,1 6,52 Z" fill="#8396F9"/>
+          <path class="brand-emblem-q4" d="M 94,52 L 94,94 L 52,94 A 42,42 0 0,0 94,52 Z" fill="#6AA0FA"/>
+        </svg>
+
+        <div class="flex flex-col">
+          <div class="flex items-baseline font-heading font-extrabold text-lg sm:text-xl tracking-tight leading-none">
+            <span class="brand-wordmark-quad">QUAD</span><span class="brand-wordmark-wise">WISE</span>
+          </div>
+          <span class="text-[8px] sm:text-[9px] font-mono tracking-[0.32em] brand-wordmark-sub font-bold mt-1">TECHNOLOGIES</span>
+        </div>
+
+        <div class="hidden lg:flex items-center gap-2.5 pl-3 border-l brand-tagline-divider ml-1.5">
+          <div class="text-[11px] font-medium leading-tight">
+            <span class="brand-tagline-title block font-semibold">Innovating</span>
+            <span class="brand-tagline-sub">with integrity</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop & Tablet Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-1.5 xl:gap-2 text-xs lg:text-sm">
+        <a href="index.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">Home</a>
+        <a href="about.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">About</a>
+        
+        <!-- IT Infrastructure Dropdown -->
+        <div class="relative group">
+          <a href="it-infrastructure.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg flex items-center gap-1 font-semibold text-[#8A95FA] bg-[#514DEB]/15 border border-[#8A95FA]/30">
+            <span>IT Infrastructure</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform"></i>
+          </a>
+          <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50 min-w-[240px]">
+            <div class="p-2 rounded-xl bg-[#0F141C] border border-indigo-900/60 shadow-2xl space-y-1">
+              <div class="px-2.5 py-1 text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-wider">Data Centre</div>
+              <a href="it-infrastructure.html#servers" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Servers &amp; Compute</a>
+              <a href="it-infrastructure.html#storage" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Storage Solutions</a>
+              <a href="it-infrastructure.html#virtualisation" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Virtualisation &amp; HCI</a>
+              <a href="it-infrastructure.html#backup" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Backup &amp; Disaster Recovery</a>
+              <div class="px-2.5 py-1 text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-wider pt-1 border-t border-slate-800">Workspace &amp; Facilities</div>
+              <a href="it-infrastructure.html#euc" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">End User Computing</a>
+              <a href="it-infrastructure.html#elv" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">ELV &amp; Physical Security</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cyber Security Dropdown -->
+        <div class="relative group">
+          <a href="cybersecurity.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg flex items-center gap-1 font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">
+            <span>Cyber Security</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform"></i>
+          </a>
+          <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50 min-w-[240px]">
+            <div class="p-2 rounded-xl bg-[#0F141C] border border-indigo-900/60 shadow-2xl space-y-1">
+              <div class="px-2.5 py-1 text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-wider">Protection</div>
+              <a href="cybersecurity.html#endpoint" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Endpoint Security (EDR/XDR)</a>
+              <a href="cybersecurity.html#network" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Network Security</a>
+              <a href="cybersecurity.html#data" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Data Security &amp; DLP</a>
+              <div class="px-2.5 py-1 text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-wider pt-1 border-t border-slate-800">Operations</div>
+              <a href="cybersecurity.html#soc" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Security Operations (SOC)</a>
+              <a href="cybersecurity.html#identity" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Identity &amp; Access Management</a>
+              <a href="cybersecurity.html#training" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Security Awareness Training</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital Transformation Dropdown -->
+        <div class="relative group">
+          <a href="digital-transformation.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg flex items-center gap-1 font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">
+            <span>Digital Transformation</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform"></i>
+          </a>
+          <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50 min-w-[240px]">
+            <div class="p-2 rounded-xl bg-[#0F141C] border border-indigo-900/60 shadow-2xl space-y-1">
+              <a href="digital-transformation.html#erp" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">ERP Systems (SAP, Dynamics)</a>
+              <a href="digital-transformation.html#erpnext" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">ERPNext &amp; Frappe Framework</a>
+              <a href="digital-transformation.html#crm" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">CRM Platforms (Salesforce, Zoho)</a>
+              <a href="digital-transformation.html#web" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">Web Application Dev</a>
+              <a href="digital-transformation.html#ai" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">AI Solutions &amp; LLMs</a>
+              <a href="digital-transformation.html#cards" class="block px-2.5 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-indigo-950/60">NFC Digital Business Cards</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="contact.html" class="nav-link px-2.5 lg:px-3 py-1.5 rounded-lg font-medium text-slate-300 hover:text-white hover:bg-indigo-950/40 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Theme Mode Switcher -->
+        <div class="flex items-center p-0.5 rounded-xl bg-[#120E3D] border border-indigo-900/40 shrink-0" role="group" aria-label="Theme Selection">
+          <button type="button" id="theme-btn-dark" onclick="window.qwtToggleTheme('dark')" class="theme-switch-btn p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg text-xs font-mono font-semibold flex items-center gap-1 text-[#8A95FA]" title="Dark Mode">
+            <i data-lucide="moon" class="w-3.5 h-3.5"></i> <span class="hidden 2xl:inline">Dark</span>
+          </button>
+          <button type="button" id="theme-btn-white" onclick="window.qwtToggleTheme('white')" class="theme-switch-btn p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg text-xs font-mono font-semibold flex items-center gap-1 text-slate-400 hover:text-white" title="White Mode">
+            <i data-lucide="sun" class="w-3.5 h-3.5 text-amber-400"></i> <span class="hidden 2xl:inline">White</span>
+          </button>
+        </div>
+
+        <!-- Consultation Request CTA Button -->
+        <button data-open-quote class="inline-flex items-center gap-1.5 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-[#514DEB] to-[#4338CA] hover:from-[#6345EC] hover:to-[#514DEB] shadow-md transition-all whitespace-nowrap">
+          <span>Book Consultation</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </button>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-indigo-950/50 border border-indigo-800/30" aria-label="Toggle Navigation">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-indigo-900/40 bg-[#0D0A2E]/98 px-4 pt-3 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">Home</a>
+      <a href="about.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">About</a>
+      <a href="it-infrastructure.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">IT Infrastructure</a>
+      <a href="cybersecurity.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">Cyber Security</a>
+      <a href="digital-transformation.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">Digital Transformation</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-indigo-950/50">Contact</a>
+      <div class="pt-2 border-t border-indigo-900/30 flex items-center justify-between">
+        <button data-open-quote class="w-full py-2.5 rounded-xl text-xs font-bold text-white bg-[#514DEB] text-center">Book Consultation</button>
+      </div>
+    </div>
+  </header>
+  <!-- PAGE HERO -->
+  <section class="py-16 sm:py-24 bg-[#090724] border-b border-indigo-900/40 tech-grid relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-6">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <span>&rsaquo;</span>
+        <span class="text-[#8A95FA]">IT Infrastructure</span>
+      </nav>
+
+      <div class="max-w-3xl space-y-5">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#514DEB]/15 border border-[#8A95FA]/30 text-xs font-mono text-[#8A95FA] font-semibold">
+          <i data-lucide="server" class="w-3.5 h-3.5 text-[#8A95FA]"></i>
+          <span>DATA CENTRE &amp; WORKSPACE INFRASTRUCTURE</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-tight leading-tight">
+          IT Infrastructure <br><span class="bg-gradient-to-r from-white via-[#C7D2FE] to-[#8A95FA] bg-clip-text text-transparent">Built for Scale</span>
+        </h1>
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+          From edge deployments to AI-ready data centres — QuadWise Technologies designs, supplies, and deploys compute, storage, virtualisation, and physical infrastructure tailored to your exact requirements.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 pt-4">
+          <button data-open-quote class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-[#514DEB] to-[#4338CA] hover:from-[#6345EC] hover:to-[#514DEB] shadow-lg shadow-indigo-600/30 transition-all hover:-translate-y-0.5">
+            <span>Request a Quote</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+          <a href="#services-grid" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-slate-200 bg-[#120E3D] hover:bg-[#161248] border border-indigo-800/40 transition-all">
+            <span>Explore Services</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-[#8A95FA]"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SIX INFRASTRUCTURE PILLARS -->
+  <section id="services-grid" class="py-20 bg-[#0D0A2E] border-b border-indigo-900/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <div class="text-xs font-mono uppercase tracking-wider text-[#8A95FA] font-bold">End-To-End Architecture</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">Complete Enterprise Infrastructure Stack</h2>
+        <p class="text-sm text-slate-300">Right-sized architecture with full BOM, performance benchmarks, and TCO analysis.</p>
+      </div>
+
+      <!-- Grid of 6 Detailed Services -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- 1. Servers & Compute -->
+        <div id="servers" class="p-8 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-5 hover:border-[#8A95FA]/50 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-[#514DEB]/20 border border-[#8A95FA]/30 flex items-center justify-center text-[#8A95FA]">
+              <i data-lucide="cpu" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full bg-indigo-950/60 text-slate-300 border border-indigo-800/40">COMPUTE</span>
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold font-heading text-white">Servers &amp; Compute Solutions</h3>
+            <p class="text-xs font-mono text-[#8A95FA] mt-1">Rack &bull; GPU &bull; HCI &bull; Edge &bull; Modular</p>
+          </div>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            From edge deployments to AI-ready data centres — QuadWise Technologies designs, supplies, and deploys server and compute solutions built for performance, reliability, and scale. Our senior engineers handle GPU clusters, dark-site deployments, and complex multi-node environments.
+          </p>
+          <div class="space-y-2 pt-2 border-t border-indigo-900/40">
+            <div class="text-xs font-bold text-white uppercase tracking-wider">Core Capabilities:</div>
+            <ul class="space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Rack Servers:</strong> Optimized for virtualisation, databases, ERP systems, and web hosting workloads.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Tower Servers:</strong> Enterprise-class performance for branch offices and growing SMBs.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Blade &amp; Modular Servers:</strong> Maximum density for large enterprises and service providers.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>GPU &amp; AI Compute:</strong> NVIDIA DGX / HGX platforms for ML training, inference, and HPC clusters.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Edge Compute:</strong> Low-latency processing for smart cities, retail, and industrial facilities.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Hyper-Converged (HCI):</strong> Software-defined compute, storage, and networking in a unified fabric.</span></li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-indigo-900/40 flex flex-wrap gap-2 text-[11px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Dell PowerEdge</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">HPE ProLiant</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Cisco UCS</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">NVIDIA DGX</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Lenovo ThinkSystem</span>
+          </div>
+        </div>
+
+        <!-- 2. Storage Solutions -->
+        <div id="storage" class="p-8 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-5 hover:border-[#8A95FA]/50 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-[#514DEB]/20 border border-[#8A95FA]/30 flex items-center justify-center text-[#8A95FA]">
+              <i data-lucide="database" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full bg-indigo-950/60 text-slate-300 border border-indigo-800/40">STORAGE</span>
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold font-heading text-white">Storage Solutions — SAN, NAS &amp; Object</h3>
+            <p class="text-xs font-mono text-[#8A95FA] mt-1">All-Flash &bull; High IOPS &bull; S3 Object &bull; Replication</p>
+          </div>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            QuadWise Technologies architects, deploys, and manages enterprise storage — All-Flash SAN for mission-critical databases, NAS for high-throughput file sharing, and S3-compatible object storage for AI workloads and petabyte-scale retention.
+          </p>
+          <div class="space-y-2 pt-2 border-t border-indigo-900/40">
+            <div class="text-xs font-bold text-white uppercase tracking-wider">Core Capabilities:</div>
+            <ul class="space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>SAN All-Flash Arrays:</strong> Sub-millisecond latency and maximum IOPS over Fibre Channel &amp; iSCSI.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>NAS File Systems:</strong> Multi-protocol file sharing (NFS, SMB) with granular Active Directory ACLs.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Object Storage (S3-compatible):</strong> Petabyte scale for AI datasets, media archives, and cloud apps.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Hybrid Flash/Disk:</strong> Cost-optimised tiered storage for mixed performance workloads.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Deduplication &amp; Compression:</strong> Reduce storage footprint by up to 5:1 without latency penalty.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>ActiveCluster Replication:</strong> Synchronous and asynchronous multi-site replication for zero-RPO DR.</span></li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-indigo-900/40 flex flex-wrap gap-2 text-[11px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Pure Storage</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Dell PowerStore</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">NetApp ONTAP</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">HPE Alletra</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Synology</span>
+          </div>
+        </div>
+
+        <!-- 3. Virtualisation & HCI -->
+        <div id="virtualisation" class="p-8 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-5 hover:border-[#8A95FA]/50 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-[#514DEB]/20 border border-[#8A95FA]/30 flex items-center justify-center text-[#8A95FA]">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full bg-indigo-950/60 text-slate-300 border border-indigo-800/40">VIRTUALISATION</span>
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold font-heading text-white">Virtualisation, HCI &amp; Kubernetes</h3>
+            <p class="text-xs font-mono text-[#8A95FA] mt-1">VMware &bull; Nutanix &bull; OpenShift &bull; VDI</p>
+          </div>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Modernise your data centre with software-defined infrastructure. QuadWise Technologies deploys virtualisation platforms, HCI, and container orchestration environments that reduce complexity, accelerate deployment, and lower TCO.
+          </p>
+          <div class="space-y-2 pt-2 border-t border-indigo-900/40">
+            <div class="text-xs font-bold text-white uppercase tracking-wider">Core Capabilities:</div>
+            <ul class="space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>VMware vSphere &amp; vSAN:</strong> Enterprise-standard virtualisation and software-defined storage.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Nutanix Cloud Platform:</strong> Resilient HCI integrating compute, storage, and networking.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Microsoft Hyper-V:</strong> Windows-native virtualisation for mixed enterprise environments.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Kubernetes &amp; Containers:</strong> Production-grade container orchestration with Red Hat OpenShift.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Virtual Desktop Infrastructure (VDI):</strong> Secure remote workspaces via VMware Horizon &amp; Citrix.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Private Cloud Foundations:</strong> Multi-tenant private cloud blueprints with automated governance.</span></li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-indigo-900/40 flex flex-wrap gap-2 text-[11px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">VMware</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Nutanix</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Hyper-V</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">OpenShift</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Citrix</span>
+          </div>
+        </div>
+
+        <!-- 4. Backup & Disaster Recovery -->
+        <div id="backup" class="p-8 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-5 hover:border-[#8A95FA]/50 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-[#514DEB]/20 border border-[#8A95FA]/30 flex items-center justify-center text-[#8A95FA]">
+              <i data-lucide="shield-alert" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full bg-indigo-950/60 text-slate-300 border border-indigo-800/40">CONTINUITY</span>
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold font-heading text-white">Backup &amp; Disaster Recovery</h3>
+            <p class="text-xs font-mono text-[#8A95FA] mt-1">Immutable &bull; Air-Gapped &bull; Near-Zero RTO &bull; Cloud DR</p>
+          </div>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Business continuity is non-negotiable. QuadWise Technologies designs comprehensive backup and DR strategies aligned to your exact RTO and RPO requirements — protecting on-premises, cloud, and hybrid environments.
+          </p>
+          <div class="space-y-2 pt-2 border-t border-indigo-900/40">
+            <div class="text-xs font-bold text-white uppercase tracking-wider">Core Capabilities:</div>
+            <ul class="space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>3-2-1-1 Architecture:</strong> 3 copies, 2 media types, 1 off-site, and 1 immutable air-gapped copy.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Ransomware Resilience:</strong> Immutable Linux storage repositories with anomaly detection.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Cloud-Based DR:</strong> Azure Site Recovery, AWS Elastic DR, and hybrid automated failover.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>DR Runbook Drills:</strong> Documented step-by-step recovery plans with quarterly automated drills.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>RTO/RPO SLAs:</strong> Engineered to restore mission-critical databases in minutes, not days.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Compliance Reporting:</strong> Automated audit dashboards proving backup integrity under UAE PDPL.</span></li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-indigo-900/40 flex flex-wrap gap-2 text-[11px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Veeam</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Commvault</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Veritas</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Acronis</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Zerto</span>
+          </div>
+        </div>
+
+        <!-- 5. End User Computing -->
+        <div id="euc" class="p-8 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-5 hover:border-[#8A95FA]/50 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-[#514DEB]/20 border border-[#8A95FA]/30 flex items-center justify-center text-[#8A95FA]">
+              <i data-lucide="monitor" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full bg-indigo-950/60 text-slate-300 border border-indigo-800/40">WORKSPACE</span>
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold font-heading text-white">End User Computing &amp; Peripherals</h3>
+            <p class="text-xs font-mono text-[#8A95FA] mt-1">Laptops &bull; Workstations &bull; Thin Clients &bull; Collaboration</p>
+          </div>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            QuadWise Technologies supplies, configures, and manages end user computing fleets — from executive laptops to clinical thin clients — ensuring seamless integration with your MDM and corporate security policies.
+          </p>
+          <div class="space-y-2 pt-2 border-t border-indigo-900/40">
+            <div class="text-xs font-bold text-white uppercase tracking-wider">Core Capabilities:</div>
+            <ul class="space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Business Laptops:</strong> Ultrabooks, ruggedised field hardware, and encrypted executive systems.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Desktops &amp; Mini PCs:</strong> High-density, low-noise deployments for trading desks and corporate offices.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>ISV Workstations:</strong> Certified performance for CAD/BIM, 3D simulation, and video rendering.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Thin &amp; Zero Clients:</strong> Ultra-secure terminals for VMware Horizon, Citrix, and MS AVD.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Monitors &amp; Healthcare Displays:</strong> 4K ultrawide, color-accurate, and DICOM-certified medical monitors.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>AV &amp; Collaboration:</strong> Microsoft Teams and Zoom Rooms audio/video systems by Poly &amp; Logitech.</span></li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-indigo-900/40 flex flex-wrap gap-2 text-[11px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Dell</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">HP</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Lenovo</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Surface</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Logitech</span>
+          </div>
+        </div>
+
+        <!-- 6. ELV & Physical Security -->
+        <div id="elv" class="p-8 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-5 hover:border-[#8A95FA]/50 transition-all">
+          <div class="flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-[#514DEB]/20 border border-[#8A95FA]/30 flex items-center justify-center text-[#8A95FA]">
+              <i data-lucide="shield" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-mono px-3 py-1 rounded-full bg-indigo-950/60 text-slate-300 border border-indigo-800/40">PHYSICAL SECURITY</span>
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold font-heading text-white">ELV Systems &amp; Physical Security</h3>
+            <p class="text-xs font-mono text-[#8A95FA] mt-1">IP CCTV &bull; Biometric Access &bull; BMS &bull; Structured Cabling</p>
+          </div>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            QuadWise Technologies designs and deploys comprehensive Extra Low Voltage (ELV) systems — the nervous system of modern facilities. Every installation adheres to UAE civil defence safety regulations and international structured cabling benchmarks.
+          </p>
+          <div class="space-y-2 pt-2 border-t border-indigo-900/40">
+            <div class="text-xs font-bold text-white uppercase tracking-wider">Core Capabilities:</div>
+            <ul class="space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>IP Video Surveillance:</strong> 4K continuous recording, thermal imaging, license plate recognition (LPR).</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Access Control &amp; Time Attendance:</strong> Touchless biometric turnstiles, smart cards, and visitor systems.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Building Management (BMS):</strong> Centralized HVAC, environmental telemetry, and energy optimization.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Structured Cabling:</strong> Cat6A copper, multi-mode/single-mode optical fiber (TIA/EIA-568 standard).</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Fire Alarm &amp; Voice Evacuation:</strong> Civil Defence compliant life safety integration.</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i><span><strong>Parking &amp; Barrier Control:</strong> Automated RFID gate barriers, ultrasonic guidance, and fee systems.</span></li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-indigo-900/40 flex flex-wrap gap-2 text-[11px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Honeywell</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Bosch Security</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Hikvision</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">CommScope</span>
+            <span class="px-2 py-0.5 rounded bg-[#090724] border border-indigo-900/40 text-slate-300">Panduit</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERTISE ACROSS EIGHT SECTORS -->
+  <section class="py-20 bg-[#090724] border-b border-indigo-900/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <div class="text-xs font-mono uppercase tracking-wider text-[#8A95FA] font-bold">Industries Served</div>
+        <h2 class="text-3xl font-extrabold font-heading text-white">Expertise Across Eight Sectors</h2>
+        <p class="text-xs text-slate-400">Tailored hardware configurations meeting specific regulatory and operational demands.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-3 text-center">
+          <div class="text-3xl">🏥</div>
+          <h3 class="text-lg font-bold font-heading text-white">Healthcare</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Clinical workstations, PACS storage, DICOM displays, HIPAA-aware network architecture.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-3 text-center">
+          <div class="text-3xl">🏛️</div>
+          <h3 class="text-lg font-bold font-heading text-white">Government</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Air-gapped deployments, UAE data residency, TPM-enabled secure endpoints.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-3 text-center">
+          <div class="text-3xl">🏭</div>
+          <h3 class="text-lg font-bold font-heading text-white">Manufacturing</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Edge compute, OT network integration, ruggedised devices, ELV systems.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-3 text-center">
+          <div class="text-3xl">🏦</div>
+          <h3 class="text-lg font-bold font-heading text-white">Banking &amp; Finance</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">High-availability SAN, secure endpoints, pull printing, near-zero RTO DR.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-3 text-center">
+          <div class="text-3xl">🎓</div>
+          <h3 class="text-lg font-bold font-heading text-white">Education</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Desktop labs, thin clients, structured cabling, AV systems for modern learning.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-3 text-center">
+          <div class="text-3xl">🏗️</div>
+          <h3 class="text-lg font-bold font-heading text-white">Construction</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">CAD/BIM workstations, large-format storage, site communication infrastructure.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-3 text-center">
+          <div class="text-3xl">🛒</div>
+          <h3 class="text-lg font-bold font-heading text-white">Retail</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">POS integration, CCTV analytics, structured cabling, centralised IT management.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#120E3D] border border-indigo-800/40 space-y-3 text-center">
+          <div class="text-3xl">⛽</div>
+          <h3 class="text-lg font-bold font-heading text-white">Oil &amp; Gas</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Ruggedised field devices, SCADA-connected infra, dark-site GPU deployments.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="py-16 bg-gradient-to-b from-[#090724] to-[#0D0A2E] border-b border-indigo-900/40">
+    <div class="max-w-4xl mx-auto px-4 text-center space-y-6">
+      <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">Ready to Right-Size Your Infrastructure?</h2>
+      <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        Our senior engineers design solutions with full BOM, performance benchmarks, and TCO analysis — tailored to your exact workload and budget.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <button data-open-quote class="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-[#514DEB] to-[#4338CA] hover:from-[#6345EC] hover:to-[#514DEB] shadow-lg shadow-indigo-600/30 transition-all hover:-translate-y-0.5">
+          <span>Request a Free Assessment</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+        <a href="tel:+97167464596" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-slate-200 bg-[#120E3D] hover:bg-[#161248] border border-indigo-800/40 transition-all">
+          <i data-lucide="phone" class="w-4 h-4 text-[#8A95FA]"></i>
+          <span>+971 6 746 4596</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- GLOBAL ENTERPRISE FOOTER -->
+  <footer class="bg-[#07051C] border-t border-indigo-900/40 py-16 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <!-- Col 1: Brand & Identity -->
+        <div class="lg:col-span-2 space-y-4">
+          <a href="index.html" class="flex items-center gap-2.5 select-none" aria-label="QuadWise Technologies Home">
+            <svg class="brand-emblem-svg w-8 h-8 shrink-0" viewBox="0 0 100 100" fill="none">
+              <path class="brand-emblem-q1" d="M 48,48 L 6,48 A 42,42 0 0,1 48,6 Z" fill="#9390F9"/>
+              <path class="brand-emblem-q2" d="M 52,48 L 52,6 A 42,42 0 0,1 94,48 Z" fill="#8397F9"/>
+              <path class="brand-emblem-q3" d="M 48,52 L 48,94 A 42,42 0 0,1 6,52 Z" fill="#8396F9"/>
+              <path class="brand-emblem-q4" d="M 94,52 L 94,94 L 52,94 A 42,42 0 0,0 94,52 Z" fill="#6AA0FA"/>
+            </svg>
+            <div class="flex flex-col">
+              <div class="flex items-baseline font-heading font-extrabold text-lg tracking-tight leading-none">
+                <span class="brand-wordmark-quad text-white">QUAD</span><span class="brand-wordmark-wise text-[#8A95FA]">WISE</span>
+              </div>
+              <span class="text-[8px] font-mono tracking-[0.32em] brand-wordmark-sub font-bold text-slate-400 mt-1">TECHNOLOGIES</span>
+            </div>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            QuadWise Technologies is the UAE's premier technology integration firm delivering enterprise IT infrastructure, cybersecurity, ERPNext, and digital transformation across the Middle East.
+          </p>
+          <div class="text-xs font-mono text-slate-400 space-y-1 pt-1">
+            <div>Sharjah Publishing City &bull; Dubai Silicon Oasis &bull; ADGM Abu Dhabi</div>
+            <div>Phone: <a href="tel:+97167464596" class="text-slate-300 hover:text-white">+971 6 746 4596</a> / <a href="tel:+971503488680" class="text-slate-300 hover:text-white">+971 50 348 8680</a></div>
+            <div>Email: <a href="mailto:contact@qwt.ae" class="text-[#8A95FA] hover:underline">contact@qwt.ae</a></div>
+          </div>
+        </div>
+
+        <!-- Col 2: IT Infrastructure -->
+        <div class="space-y-3">
+          <div class="text-xs font-mono font-bold uppercase text-white tracking-wider">IT Infrastructure</div>
+          <ul class="space-y-2 text-xs">
+            <li><a href="it-infrastructure.html#servers" class="hover:text-white transition-colors">Servers &amp; Compute</a></li>
+            <li><a href="it-infrastructure.html#storage" class="hover:text-white transition-colors">Storage Solutions (SAN/NAS)</a></li>
+            <li><a href="it-infrastructure.html#virtualisation" class="hover:text-white transition-colors">Virtualisation &amp; HCI</a></li>
+            <li><a href="it-infrastructure.html#backup" class="hover:text-white transition-colors">Backup &amp; Disaster Recovery</a></li>
+            <li><a href="it-infrastructure.html#euc" class="hover:text-white transition-colors">End User Computing</a></li>
+            <li><a href="it-infrastructure.html#elv" class="hover:text-white transition-colors">ELV &amp; Physical Security</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Cyber Security -->
+        <div class="space-y-3">
+          <div class="text-xs font-mono font-bold uppercase text-white tracking-wider">Cyber Security</div>
+          <ul class="space-y-2 text-xs">
+            <li><a href="cybersecurity.html#endpoint" class="hover:text-white transition-colors">Endpoint Security (EDR/XDR)</a></li>
+            <li><a href="cybersecurity.html#network" class="hover:text-white transition-colors">Network Defense &amp; NGFW</a></li>
+            <li><a href="cybersecurity.html#data" class="hover:text-white transition-colors">Data Security &amp; DLP</a></li>
+            <li><a href="cybersecurity.html#soc" class="hover:text-white transition-colors">Security Operations (SOC)</a></li>
+            <li><a href="cybersecurity.html#identity" class="hover:text-white transition-colors">Identity &amp; Access (IAM)</a></li>
+            <li><a href="cybersecurity.html#training" class="hover:text-white transition-colors">Security Awareness Training</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Digital Solutions & Company -->
+        <div class="space-y-3">
+          <div class="text-xs font-mono font-bold uppercase text-white tracking-wider">Digital &amp; Company</div>
+          <ul class="space-y-2 text-xs">
+            <li><a href="digital-transformation.html#erp" class="hover:text-white transition-colors">Enterprise ERP (SAP)</a></li>
+            <li><a href="digital-transformation.html#erpnext" class="hover:text-white transition-colors">ERPNext &amp; Frappe Framework</a></li>
+            <li><a href="digital-transformation.html#crm" class="hover:text-white transition-colors">CRM Platforms</a></li>
+            <li><a href="digital-transformation.html#web" class="hover:text-white transition-colors">Web Application Dev</a></li>
+            <li><a href="digital-transformation.html#ai" class="hover:text-white transition-colors">AI Solutions &amp; LLMs</a></li>
+            <li><a href="digital-transformation.html#cards" class="hover:text-white transition-colors">NFC Digital Business Cards</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About QuadWise</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact &amp; RFQ</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal Sub-Bar -->
+      <div class="mt-12 pt-8 border-t border-indigo-900/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400">
+        <div>
+          &copy; 2026 QuadWise Technologies. All Rights Reserved. Privacy Policy &bull; UAE PDPL Compliance &bull; SLA Terms
+        </div>
+        <div class="flex items-center gap-4 text-[11px]">
+          <span>Federal Tax TRN: 100482910300003</span>
+          <span class="text-indigo-400 font-bold">Innovating with integrity&trade;</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/971503488680?text=Hello%20QuadWise%20Technologies%2C%20I%20would%20like%20to%20enquire%20about%20your%20IT%20services." target="_blank" rel="noopener" class="fixed bottom-6 left-6 z-40 flex items-center justify-center w-12 h-12 rounded-full bg-[#25D366] text-white shadow-xl hover:scale-110 transition-transform" aria-label="Chat on WhatsApp">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.58 1.897.948 2.791.948 3.181 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.734-5.767-5.734zm3.376 8.211c-.143.402-.83.743-1.15.787-.319.043-.728.058-2.176-.539-1.854-.764-3.036-2.65-3.129-2.774-.093-.124-.753-1.002-.753-1.91 0-.909.476-1.355.645-1.539.169-.184.368-.231.492-.231.124 0 .248.002.355.008.113.006.264-.042.412.316.155.375.529 1.29.576 1.384.047.094.078.204.016.327-.063.124-.094.202-.187.311-.093.109-.196.244-.28.328-.094.094-.192.196-.083.383.109.187.483.797 1.036 1.29.711.634 1.31.83 1.496.924.186.094.296.079.406-.048.11-.127.469-.545.594-.732.125-.187.248-.156.417-.094.169.062 1.074.507 1.258.599.184.093.307.14.353.218.046.078.046.452-.097.854z"/></svg>
+  </a>
+
+  <!-- Shared Global JS -->
+  <script src="js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

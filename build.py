@@ -20,6 +20,9 @@ os.makedirs(DIST_DIR, exist_ok=True)
 include_dirs = ["assets", "css", "js"]
 include_files = [
     "index.html",
+    "it-infrastructure.html",
+    "cybersecurity.html",
+    "digital-transformation.html",
     "solutions.html",
     "hardware.html",
     "case-studies.html",
