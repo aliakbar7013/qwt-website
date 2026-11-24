@@ -62,7 +62,7 @@ const DEFAULT_COMMERCIAL_DOCS = [
     ],
     discountPercent: 0,
     vatPercent: 5,
-    notes: 'Official Tax Invoice issued under UAE Federal Decree-Law No. (8) of 2017 on Value Added Tax. Goods delivered and installed in accordance with SIRA and UAE Sovereign Data residency standards.'
+    notes: 'Official Tax Invoice issued under UAE Federal Decree-Law No. (8) of 2017 on Value Added Tax. Goods delivered and installed in accordance with UAE Sovereign Data residency and enterprise quality standards.'
   },
 
   // 2. Commercial Quotation / BOQ Proposal
@@ -83,7 +83,7 @@ const DEFAULT_COMMERCIAL_DOCS = [
     currency: 'AED',
     domain: 'IT Infrastructure & Data Centre',
     status: 'CLIENT_ACCEPTED', // DRAFT, ISSUED, CLIENT_ACCEPTED, REJECTED, EXPIRED
-    paymentTerms: '50% Advance with L.P.O., 40% upon Delivery & Staging, 10% upon Final SIRA Sign-off',
+    paymentTerms: '50% Advance with L.P.O., 40% upon Delivery & Staging, 10% upon Final Handover & Sign-off',
     items: [
       {
         description: 'Pure Storage FlashBlade //S500 (480TB Raw NVMe DirectFlash Modules, Dual 100GbE Controllers)',
@@ -120,7 +120,7 @@ const DEFAULT_COMMERCIAL_DOCS = [
     ],
     discountPercent: 0,
     vatPercent: 5,
-    notes: 'Quotation valid for 30 calendar days from issue date. Pricing includes factory OEM authorization, UAE customs duties, and official SIRA/MCC compliance inspections.'
+    notes: 'Quotation valid for 30 calendar days from issue date. Pricing includes factory OEM authorization, UAE customs duties, and enterprise quality inspections.'
   },
 
   // 3. Purchase Order (Procurement Dispatch to OEM Vendor)
@@ -162,14 +162,14 @@ const DEFAULT_COMMERCIAL_DOCS = [
     ],
     discountPercent: 0,
     vatPercent: 5,
-    notes: 'Delivery strictly to QWT Secure Staging Facility (Warehouse 4B, Dubai Silicon Oasis Hub). All serial numbers must be pre-notified for SIRA compliance registration.'
+    notes: 'Delivery strictly to QWT Secure Staging Facility (Warehouse 4B, Dubai Silicon Oasis Hub). All serial numbers must be pre-notified for asset custody registration.'
   },
 
   // 4. Delivery Note & Proof of Delivery (POD)
   {
     id: 'QWT-DN-2026-0188',
     type: 'DELIVERY_NOTE',
-    title: 'SIRA CCTV 31-Day Video Storage & Thermal Camera Deployment',
+    title: 'Enterprise IP CCTV 31-Day Video Storage & Thermal Camera Deployment',
     clientName: 'ADNOC Offshore Logistics & ELV',
     attention: 'David Sterling (Offshore Terminal Manager)',
     email: 'd.sterling@adnoc-upstream.ae',
@@ -181,7 +181,7 @@ const DEFAULT_COMMERCIAL_DOCS = [
     docDate: '2026-11-10',
     dueDate: '2026-11-10',
     currency: 'AED',
-    domain: 'ELV & SIRA Physical Security',
+    domain: 'ELV & Physical Security',
     status: 'DELIVERED_SIGNED', // STAGED, IN_TRANSIT, DELIVERED_SIGNED
     paymentTerms: 'Payment Against Verified Proof of Delivery (POD)',
     deliveryDetails: {
@@ -196,7 +196,7 @@ const DEFAULT_COMMERCIAL_DOCS = [
     },
     items: [
       {
-        description: 'NetApp E-Series E2824 Storage Array (31-Day SIRA Certified 4K Stream Ingest, Dual 25GbE)',
+        description: 'NetApp E-Series E2824 Video Storage Array (31-Day 4K Stream Ingest, Dual 25GbE)',
         category: 'Hardware',
         serial: 'SN-NETAPP-E28-8812, SN-NETAPP-E28-8813',
         qty: 2,
@@ -204,7 +204,7 @@ const DEFAULT_COMMERCIAL_DOCS = [
         total: 390000
       },
       {
-        description: 'Explosion-Proof ATEX-Certified Thermal PTZ Cameras with SHA-256 Tamper-Proof Watermarking',
+        description: 'Explosion-Proof Industrial Thermal PTZ Cameras with SHA-256 Tamper-Proof Watermarking',
         category: 'Hardware',
         serial: 'SN-CAM-EXP-01 through SN-CAM-EXP-12',
         qty: 12,
@@ -222,7 +222,7 @@ const DEFAULT_COMMERCIAL_DOCS = [
     ],
     discountPercent: 0,
     vatPercent: 5,
-    notes: 'Received above mentioned goods in perfect physical and functional condition. Hardware serial numbers verified against Dubai SIRA physical security guidelines.'
+    notes: 'Received above mentioned goods in perfect physical and functional condition. Hardware serial numbers verified against enterprise physical security guidelines.'
   },
 
   // 5. Official UAE Tax Invoice (Paid)
@@ -866,13 +866,13 @@ class QwtCommercialDocsHub {
         }
       ];
     } else if (presetName === 'sira') {
-      this.currentDoc.title = 'Dubai SIRA CCTV 31-Day Video Retention SAN Array';
-      this.currentDoc.domain = 'ELV & SIRA Physical Security';
+      this.currentDoc.title = 'Enterprise CCTV 31-Day Video Retention SAN Array';
+      this.currentDoc.domain = 'ELV & Physical Security';
       this.currentDoc.items = [
         {
           description: 'NetApp E-Series E2824 Storage Array (RAID-6 Dual Parity, 31-Day 4K Video Stream Ingest)',
           category: 'Hardware',
-          serial: 'SN-NETAPP-E28-SIRA',
+          serial: 'SN-NETAPP-E28-SAN',
           qty: 2,
           unitPrice: 195000,
           total: 390000
@@ -886,16 +886,16 @@ class QwtCommercialDocsHub {
           total: 300000
         },
         {
-          description: 'Dubai Police SIRA Audit Documentation, Field Inspection & Certificate Handover',
+          description: 'Turnkey Physical Security Audit Documentation, Field Inspection & Project Handover',
           category: 'Professional Services',
-          serial: 'SVC-SIRA-AUDIT',
+          serial: 'SVC-SEC-AUDIT',
           qty: 1,
           unitPrice: 45000,
           total: 45000
         }
       ];
     } else if (presetName === 'cyber') {
-      this.currentDoc.title = 'Fortinet 3700F NESA Sovereign Next-Gen Firewall Cluster';
+      this.currentDoc.title = 'Fortinet 3700F Sovereign Next-Gen Firewall Cluster';
       this.currentDoc.domain = 'Cyber Security';
       this.currentDoc.items = [
         {
@@ -915,9 +915,9 @@ class QwtCommercialDocsHub {
           total: 170000
         },
         {
-          description: 'UAE PDPL & NESA Critical National Infrastructure Microsegmentation Architecture Deployment',
+          description: 'UAE PDPL & Sovereign Infrastructure Microsegmentation Architecture Deployment',
           category: 'Professional Services',
-          serial: 'SVC-NESA-DEFENSE',
+          serial: 'SVC-SOV-DEFENSE',
           qty: 1,
           unitPrice: 95000,
           total: 95000
@@ -1137,9 +1137,9 @@ class QwtCommercialDocsHub {
           <div class="text-[10px] font-mono font-bold text-[#B38E3F] uppercase tracking-wider mb-2">PROJECT / REGULATORY SCOPE:</div>
           <div class="font-heading font-bold text-sm text-slate-900">${doc.title}</div>
           <div class="text-[11px] font-mono text-slate-600 mt-1">Domain: ${doc.domain}</div>
-          <div class="text-[11px] font-mono text-slate-600">Currency: ${doc.currency} &bull; SIRA/MCC Validated</div>
+          <div class="text-[11px] font-mono text-slate-600">Currency: ${doc.currency} &bull; Quality Validated</div>
           <div class="mt-2 text-[10px] font-mono text-emerald-700 bg-emerald-50 border border-emerald-200 p-1.5 rounded flex items-center gap-1">
-            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> UAE Sovereign Data Residency &amp; ISO 27001 Certified
+            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> UAE Sovereign Data Residency &amp; Enterprise Security Standards
           </div>
         </div>
       </div>
@@ -1190,10 +1190,10 @@ class QwtCommercialDocsHub {
 
           ${doc.type === 'DELIVERY_NOTE' && doc.deliveryDetails ? `
             <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-[10px] font-mono space-y-1">
-              <div class="font-bold text-slate-900 text-xs mb-1">LOGISTICS &amp; SIRA PHYSICAL VERIFICATION:</div>
+              <div class="font-bold text-slate-900 text-xs mb-1">LOGISTICS &amp; PHYSICAL ASSET VERIFICATION:</div>
               <div>Site: <strong class="text-slate-900">${doc.deliveryDetails.siteLocation || 'Client Facility'}</strong></div>
               <div>Vehicle / Driver: <strong class="text-slate-900">${doc.deliveryDetails.vehiclePlate || 'Direct Dispatch'} &bull; ${doc.deliveryDetails.driverName || 'Authorized QWT Courier'}</strong></div>
-              <div class="text-emerald-700 font-bold">SIRA Security Hardware Audit Check: PASSED &amp; VALIDATED</div>
+              <div class="text-emerald-700 font-bold">Physical Security Hardware Audit Check: PASSED &amp; VALIDATED</div>
             </div>
           ` : ''}
 
@@ -2049,14 +2049,14 @@ class QwtCommercialDocsHub {
       </div>
     ` : ''}
 
-    <!-- Conditional Banner: SIRA Delivery Details for Delivery Notes -->
+    <!-- Conditional Banner: Security Delivery Details for Delivery Notes -->
     ${doc.type === 'DELIVERY_NOTE' && doc.deliveryDetails ? `
       <div class="info-banner purple">
-        <strong>DELIVERY NOTE &amp; SIRA PROOF OF CUSTODY (POD):</strong><br>
+        <strong>DELIVERY NOTE &amp; PROOF OF CUSTODY (POD):</strong><br>
         Site Facility: <strong>${doc.deliveryDetails.siteLocation || 'Warsan Data Center Hall 2'}</strong> &bull;
         Vehicle Plate: <strong>${doc.deliveryDetails.vehiclePlate || 'Dubai Plate B-88219'}</strong> &bull;
         Courier / Driver: <strong>${doc.deliveryDetails.driverName || 'Rashid Al-Kaabi'}</strong><br>
-        Chain of Custody: ${doc.deliveryDetails.siraInspectionPassed ? '&#10004; SIRA Physical Inspection Passed &amp; Tamper Seals Verified' : 'Standard Delivery'}
+        Chain of Custody: ${doc.deliveryDetails.siraInspectionPassed ? '&#10004; Physical Inspection Passed &amp; Tamper Seals Verified' : 'Standard Delivery'}
       </div>
     ` : ''}
 
@@ -2095,7 +2095,7 @@ class QwtCommercialDocsHub {
     <div class="summary-grid">
       <div class="notes-box">
         <strong>COMMERCIAL &amp; REGULATORY TERMS:</strong>
-        <p style="margin-top: 4px;">${doc.notes || 'Official Commercial Document issued under UAE Federal Decree-Law No. (8) of 2017 on Value Added Tax. Goods delivered and installed in accordance with SIRA and UAE Sovereign Data residency standards.'}</p>
+        <p style="margin-top: 4px;">${doc.notes || 'Official Commercial Document issued under UAE Federal Decree-Law No. (8) of 2017 on Value Added Tax. Goods delivered and installed in accordance with UAE Sovereign Data residency and enterprise quality standards.'}</p>
       </div>
 
       <div class="totals-box">

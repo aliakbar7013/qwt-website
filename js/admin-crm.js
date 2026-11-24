@@ -43,11 +43,11 @@ const DEFAULT_MOCK_LEADS = [
     workEmail: 'd.sterling@adnoc-upstream.ae',
     phone: '+971 2 707 0000',
     company: 'ADNOC Offshore Logistics & ELV',
-    solution: 'ELV & SIRA Physical Security',
+    solution: 'ELV & Physical Security',
     slaRequirement: 'Mission-Critical 24/7',
     estimatedBudget: 'AED 620,000',
     siraCompliant: true,
-    notes: '31-day SIRA CCTV certified refresh, explosive-proof thermal camera array, and biometric turnstiles for offshore terminal.',
+    notes: '31-day enterprise CCTV refresh, explosive-proof thermal camera array, and biometric turnstiles for offshore terminal.',
     status: 'NEW_TRIAGE'
   },
   {
@@ -61,7 +61,7 @@ const DEFAULT_MOCK_LEADS = [
     slaRequirement: 'Tier-IV 99.999%',
     estimatedBudget: 'AED 2,400,000',
     siraCompliant: true,
-    notes: 'Fortinet FortiGate 3000F multi-tenant cluster with post-quantum key exchange and NESA compliance audit certification.',
+    notes: 'Fortinet FortiGate 3000F multi-tenant cluster with post-quantum key exchange and sovereign security governance validation.',
     status: 'OEM_APPROVED'
   }
 ];
@@ -142,7 +142,7 @@ function initCrmPortal() {
           <td class="py-3 px-4 font-mono text-xs text-slate-200">${lead.estimatedBudget}</td>
           <td class="py-3 px-4">
             ${lead.siraCompliant 
-              ? `<span class="inline-flex items-center gap-1 text-[11px] text-emerald-400 font-mono"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> SIRA REQ</span>` 
+              ? `<span class="inline-flex items-center gap-1 text-[11px] text-emerald-400 font-mono"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> SEC REQ</span>` 
               : `<span class="text-[11px] text-slate-500 font-mono">Standard</span>`}
           </td>
           <td class="py-3 px-4">${statusBadge}</td>
@@ -172,7 +172,7 @@ function initCrmPortal() {
   if (exportBtn) {
     exportBtn.addEventListener('click', () => {
       const csv = [
-        ['RFP ID', 'Timestamp', 'Company', 'Contact', 'Email', 'Phone', 'Domain', 'Budget', 'SIRA', 'Status', 'Notes'],
+        ['RFP ID', 'Timestamp', 'Company', 'Contact', 'Email', 'Phone', 'Domain', 'Budget', 'Security Spec', 'Status', 'Notes'],
         ...leads.map(l => [
           l.id, l.timestamp, `"${l.company}"`, `"${l.fullName}"`, l.workEmail, l.phone, `"${l.solution}"`, `"${l.estimatedBudget}"`, l.siraCompliant ? 'YES' : 'NO', l.status, `"${(l.notes||'').replace(/"/g, '""')}"`
         ])

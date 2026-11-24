@@ -44,8 +44,8 @@ function initCaseStudies() {
     const title = card.querySelector('.cs-title')?.textContent || 'UAE Enterprise Deployment';
     const client = card.querySelector('.cs-client')?.textContent || 'Regulated Enterprise';
     const sector = card.querySelector('.cs-sector-badge')?.textContent || 'Government';
-    const challenge = card.getAttribute('data-challenge') || 'High latency and uncertified legacy infrastructure.';
-    const solution = card.getAttribute('data-solution') || 'De-coupled spine-leaf network with all-flash NVMe-oF and SIRA VMS compliance.';
+    const challenge = card.getAttribute('data-challenge') || 'High latency and aging legacy infrastructure.';
+    const solution = card.getAttribute('data-solution') || 'De-coupled spine-leaf network with all-flash NVMe-oF and enterprise VMS compliance.';
     const boq = JSON.parse(card.getAttribute('data-boq') || '[]');
     const metrics = JSON.parse(card.getAttribute('data-metrics') || '[]');
 
@@ -103,7 +103,7 @@ function initCaseStudies() {
         </div>
 
         <div class="pt-4 border-t border-slate-800 flex justify-between items-center">
-          <span class="text-xs text-slate-500 font-mono">AUDITED BY SIRA & ADGM REGULATORY PANELS</span>
+          <span class="text-xs text-slate-500 font-mono">AUDITED & COMMISSIONED UNDER ENTERPRISE STANDARDS</span>
           <button data-open-quote data-quote-category="Enterprise Infrastructure" class="px-5 py-2.5 rounded-xl btn-gold text-xs font-bold inline-flex items-center gap-2">
             <i data-lucide="file-text" class="w-4 h-4 text-black"></i> Replicate This Architecture
           </button>

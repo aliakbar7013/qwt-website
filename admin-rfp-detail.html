@@ -215,7 +215,7 @@
             <span>&bull;</span>
             <span id="dossier-timestamp">Ingested: 2026-11-09 14:22 UTC</span>
             <span>&bull;</span>
-            <span class="text-emerald-400 font-semibold">SIRA Audited Physical &amp; Cyber Spec</span>
+            <span class="text-emerald-400 font-semibold">Enterprise Physical &amp; Cyber Spec</span>
           </div>
         </div>
 
@@ -260,10 +260,10 @@
 
         <div class="p-5 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-2 print-card">
           <div class="flex items-center justify-between text-xs font-mono text-slate-400">
-            <span>SIRA / MCC COMPLIANCE</span>
+            <span>ENTERPRISE SECURITY SPEC</span>
             <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
           </div>
-          <div id="metric-compliance" class="text-lg sm:text-xl font-bold font-heading text-emerald-400">SIRA REQ Active</div>
+          <div id="metric-compliance" class="text-lg sm:text-xl font-bold font-heading text-emerald-400">Security Spec Active</div>
           <div class="text-[10px] font-mono text-slate-400">Strict UAE Government Mandate</div>
         </div>
 
@@ -452,14 +452,14 @@
           <div class="p-6 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-4 print-card">
             <div class="flex items-center gap-2 text-xs font-mono text-[#C9A24D] uppercase font-bold tracking-wider pb-3 border-b border-slate-800">
               <i data-lucide="award" class="w-4 h-4"></i>
-              <span>Sovereign Certifications</span>
+              <span>Sovereign Standards &amp; Architecture</span>
             </div>
 
             <div class="space-y-3 text-xs">
               <div class="p-3 rounded-xl bg-[#0D0A2E] border border-emerald-500/30 flex items-start gap-2.5">
                 <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
                 <div>
-                  <div class="font-bold text-white text-xs">Dubai SIRA Certified</div>
+                  <div class="font-bold text-white text-xs">Enterprise IP Surveillance</div>
                   <div class="text-[10px] text-slate-400">Electronic surveillance &amp; data retention standard compliant</div>
                 </div>
               </div>
@@ -467,7 +467,7 @@
               <div class="p-3 rounded-xl bg-[#0D0A2E] border border-[#C9A24D]/30 flex items-start gap-2.5">
                 <i data-lucide="check-circle" class="w-4 h-4 text-[#C9A24D] shrink-0 mt-0.5"></i>
                 <div>
-                  <div class="font-bold text-white text-xs">Abu Dhabi MCC Authorized</div>
+                  <div class="font-bold text-white text-xs">High-Density Storage Spec</div>
                   <div class="text-[10px] text-slate-400">Monitoring &amp; Control Centre critical infrastructure spec</div>
                 </div>
               </div>
@@ -572,7 +572,7 @@
       // Metric cards
       document.getElementById('metric-budget').textContent = lead.estimatedBudget || 'AED 1,850,000';
       document.getElementById('metric-sla').textContent = lead.slaRequirement || 'Tier-IV 24/7 SLA';
-      document.getElementById('metric-compliance').textContent = lead.siraCompliant ? 'SIRA REQ Verified' : 'Standard Compliance';
+      document.getElementById('metric-compliance').textContent = lead.siraCompliant ? 'Security Spec Verified' : 'Standard Spec';
 
       // Scope verbatim
       document.getElementById('dossier-notes-verbatim').textContent = lead.notes || 'No technical notes recorded.';
@@ -622,17 +622,17 @@
         ];
       } else if (solution.includes('elv') || solution.includes('security') || solution.includes('cctv')) {
         items = [
-          { name: 'Axis Communications 4K Ultra-HD SIRA Certified Explosion-Proof IP Surveillance Array', qty: 48, rate: 4500 },
+          { name: 'Axis Communications 4K Ultra-HD Industrial Explosion-Proof IP Surveillance Array', qty: 48, rate: 4500 },
           { name: 'NetApp E-Series E2860 31-Day Video Retention SAN SAN Storage Array (360TB Raw)', qty: 2, rate: 130000 },
           { name: 'Gunnebo SpeedStile FP Optical Biometric Speed Gates with AI Facial Recognition', qty: 4, rate: 21000 },
-          { name: 'Dubai SIRA & Abu Dhabi MCC Inspection, Regulatory Audit & Engineering Handover', qty: 1, rate: 60000 }
+          { name: 'Enterprise Video Surveillance Matrix Inspection, Storage Audit & Engineering Handover', qty: 1, rate: 60000 }
         ];
       } else {
         // Cybersecurity & SOC or generic
         items = [
           { name: 'Fortinet FortiGate 3000F Next-Generation Enterprise HA Firewall Pair', qty: 2, rate: 920000 },
           { name: 'Fortinet FortiSwitch 1048E Data Centre Distribution Switch Fabric (48x 10GE, 6x 100GE)', qty: 8, rate: 35000 },
-          { name: 'Post-Quantum Key Exchange Protocol Acceleration & NESA Sovereign Compliance Suite', qty: 1, rate: 150000 },
+          { name: 'Post-Quantum Key Exchange Protocol Acceleration & Sovereign Cybersecurity Suite', qty: 1, rate: 150000 },
           { name: '24/7 Sovereign SOC Telemetry Connector, SIEM Integration & Threat Hunting Handover', qty: 1, rate: 130000 }
         ];
       }

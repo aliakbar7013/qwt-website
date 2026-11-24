@@ -18,7 +18,7 @@ const DEFAULT_MOCK_CONTACTS = [
     estimatedBudget: 'AED 5,000,000+ (Turnkey Enterprise)',
     fileName: 'DEWA_TierIV_MetroSAN_RFP.pdf',
     fileSize: '4.2 MB',
-    notes: 'Urgent RFP tender for Tier-IV SAN expansion and dual-site synchronous ActiveCluster replication between Warsan and Jebel Ali data centres. Must include full SIRA inspection sign-off and CommScope OM4 fiber trunking.',
+    notes: 'Urgent RFP tender for Tier-IV SAN expansion and dual-site synchronous ActiveCluster replication between Warsan and Jebel Ali data centres. Must include full engineering inspection sign-off and CommScope OM4 fiber trunking.',
     siraCompliant: true,
     recaptchaVerified: true,
     status: 'NEW'
@@ -36,7 +36,7 @@ const DEFAULT_MOCK_CONTACTS = [
     estimatedBudget: 'AED 1,500,000 - 5,000,000',
     fileName: 'ADGM_Cyber_Tender_Scope.docx',
     fileSize: '1.8 MB',
-    notes: 'Seeking CrowdStrike Falcon Complete EDR deployment across 850 endpoints and Palo Alto Networks 400G next-gen firewall clustering with UAE PDPL audit certification.',
+    notes: 'Seeking CrowdStrike Falcon Complete EDR deployment across 850 endpoints and Palo Alto Networks 400G next-gen firewall clustering with UAE PDPL governance validation.',
     siraCompliant: true,
     recaptchaVerified: true,
     status: 'CONTACTED'
@@ -273,7 +273,7 @@ class ContactSubmissionsManager {
       }
 
       const siraBadge = sub.siraCompliant
-        ? '<span class="px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[9px] font-mono font-bold" title="SIRA Audit Required">SIRA</span>'
+        ? '<span class="px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[9px] font-mono font-bold" title="Security Spec Required">SEC</span>'
         : '';
 
       const fileIcon = sub.fileName
@@ -396,7 +396,7 @@ class ContactSubmissionsManager {
     if (modalDeployment) modalDeployment.textContent = sub.deploymentModel || 'On-Premise';
     if (modalBudget) modalBudget.textContent = sub.estimatedBudget;
     if (modalSira) {
-      modalSira.textContent = sub.siraCompliant ? 'Required (Official SIRA/MCC Stamped)' : 'Not Required';
+      modalSira.textContent = sub.siraCompliant ? 'Required (Enterprise Security Spec)' : 'Not Required';
       modalSira.className = sub.siraCompliant ? 'text-emerald-400 font-bold' : 'text-slate-400';
     }
     if (modalFile) {
@@ -475,7 +475,7 @@ class ContactSubmissionsManager {
       return;
     }
 
-    const headers = ['Inquiry ID', 'Date', 'Full Name', 'Email', 'Phone', 'Company', 'Solution Domain', 'Scale', 'Deployment', 'Budget', 'SIRA Required', 'reCAPTCHA Verified', 'Notes', 'Status'];
+    const headers = ['Inquiry ID', 'Date', 'Full Name', 'Email', 'Phone', 'Company', 'Solution Domain', 'Scale', 'Deployment', 'Budget', 'Security Spec', 'reCAPTCHA Verified', 'Notes', 'Status'];
     const rows = this.submissions.map(s => [
       s.id,
       s.timestamp,

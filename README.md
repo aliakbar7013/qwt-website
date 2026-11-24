@@ -5,14 +5,14 @@
 
 [![License: Proprietary](https://img.shields.io/badge/License-Proprietary-gold.svg)](LICENSE)
 [![Status: Production Ready](https://img.shields.io/badge/Status-Production%20Ready-emerald.svg)](https://qwt.ae)
-[![Compliance: UAE PDPL & SIRA](https://img.shields.io/badge/Compliance-UAE%20PDPL%20%7C%20SIRA-blue.svg)](https://qwt.ae/about.html)
+[![Compliance: UAE PDPL](https://img.shields.io/badge/Compliance-UAE%20PDPL-blue.svg)](https://qwt.ae/about.html)
 [![Theme: Sovereign Dark & Executive White](https://img.shields.io/badge/UI-Dual%20Mode%20%28WCAG%20AAA%29-purple.svg)](https://qwt.ae/admin-crm.html)
 
 ---
 
 ## 🏛️ Executive Overview
 
-**Quad Wise Technologies L.L.C-FZ (QWT.AE)** is a UAE-headquartered sovereign enterprise systems integrator operating from Dubai Silicon Oasis (DSO), DIFC, and ADGM. We architect, deploy, and support air-gapped on-premises computing clusters, high-density GPU supercomputing enclaves, critical physical security, and regulatory data protection solutions strictly under **UAE Federal Decree No. 45 (PDPL)**, **Dubai SIRA**, and **Abu Dhabi MCC** mandates.
+**Quad Wise Technologies L.L.C-FZ (QWT.AE)** is a UAE-headquartered sovereign enterprise systems integrator operating from Dubai Silicon Oasis (DSO), DIFC, and ADGM. We architect, deploy, and support air-gapped on-premises computing clusters, high-density GPU supercomputing enclaves, critical physical security, and regulatory data protection solutions strictly under **UAE Federal Decree No. 45 (PDPL)**.
 
 This repository houses the complete, self-contained, high-performance static web platform and internal sovereign operations console.
 
@@ -28,17 +28,17 @@ This repository houses the complete, self-contained, high-performance static web
 2. **Enterprise Storage & HCI Architecture**:
    - NVMe-over-Fabrics (NVMe-oF) high-throughput parallel file systems and Tier-IV hybrid SAN/NAS.
    - Metro-synchronous zero-RPO/RTO replication across Dubai, Abu Dhabi, and GCC data centers.
-   - Immutable WORM storage for 31-day SIRA CCTV archival and long-term regulatory audit trails.
+   - Immutable WORM storage for 31-day enterprise CCTV archival and long-term regulatory audit trails.
 
-3. **ELV & SIRA Physical Security Infrastructure**:
-   - Dubai SIRA-audited VMS surveillance and Abu Dhabi MCC-certified physical security enclaves.
+3. **ELV & Physical Security Infrastructure**:
+   - High-density VMS surveillance and physical security enclaves.
    - Multi-biometric access control, perimeter intrusion detection, and structured fiber cabling.
    - Integrated Building Management Systems (BMS) with environmental telemetry.
 
 4. **Cybersecurity & Sovereign SOC**:
    - Air-gapped 24/7 Security Operations Center (SOC) monitoring with automated threat hunting.
    - Micro-segmented zero-trust architecture (ZTA) and hardware security modules (HSM).
-   - Penetration testing, vulnerability assessments, and UAE NESA/PDPL governance assurance.
+   - Penetration testing, vulnerability assessments, and UAE PDPL governance assurance.
 
 5. **Sovereign Cloud & Regulatory Compliance**:
    - Onshore data enclave tenancy under UAE Federal Decree-Law No. 45 on Personal Data Protection.
@@ -57,12 +57,12 @@ This repository houses the complete, self-contained, high-performance static web
 ### 🛡️ Sovereign Operations Console (`/admin-crm.html`)
 - **Dual-Mode Theme Engine**: Instant switching between *Sovereign Dark* and *Executive White* with complete WCAG AAA contrast compliance.
 - **Strict Role-Based Access Control (RBAC)**: Secure operator authentication screen (`Super Admin`, `Ops Admin`, `Triage Officer`) with isolated session storage.
-- **Tender & RFP Telemetry**: Real-time BOQ pipeline ingestion, budget triage, SIRA audit tracking, and CSV/JSON export.
+- **Tender & RFP Telemetry**: Real-time BOQ pipeline ingestion, budget triage, security SLA tracking, and CSV/JSON export.
 - **Dedicated Itemized RFP Dossier (`/admin-rfp-detail.html`)**: Deep-dive Bill of Quantities (BOQ) audit, verbatim scope inspection, and lifecycle status workflow (`NEW TRIAGE`, `IN AUDIT`, `OEM APPROVED`, `CLOSED / WON`).
 - **Commercial Document Management Suite**: In-browser document generator for **Quotes**, **Invoices**, **Purchase Orders**, and **Delivery Notes** with automated 5% UAE FTA VAT calculations, itemized registers, standalone HTML export, and pixel-perfect A4 PDF printing.
 - **Autonomous SEO Blog Studio & Publisher**: Daily 5-blog AI generation engine with strict **Sovereign Review Guardrail** (zero auto-publish to public website without manual sign-off).
 - **Social Media Marketing Desk**: Caption synthesis, multi-angle generator, and live canvas preview cards for LinkedIn, Instagram, and Facebook.
-- **Contact Form Triage**: Direct lead ingestion with domain classification, SIRA tagging, and status management.
+- **Contact Form Triage**: Direct lead ingestion with domain classification, security domain tagging, and status management.
 
 ---
 
@@ -76,7 +76,7 @@ qwt-website/
 ├── case-studies.html            # Verified UAE Enterprise Deployments & Metrics
 ├── insights.html                # Technical Thought Leadership & Compliance Advisories
 ├── about.html                   # Corporate Profile, Governance & Leadership
-├── contact.html                 # Procurement Desk, SIRA RFP Ingestion & Inquiries
+├── contact.html                 # Procurement Desk, RFP Ingestion & Inquiries
 ├── admin-crm.html               # Sovereign CRM, Commercial Docs & SEO Studio
 ├── admin-rfp-detail.html        # Dedicated BOQ Dossier & Lifecycle Workflow
 ├── 404.html                     # Custom High-Availability Error Fallback Page
@@ -159,7 +159,7 @@ vercel --prod
 
 - **Commercial Registration**: Quad Wise Technologies L.L.C-FZ, Dubai Silicon Oasis, UAE.
 - **Federal Tax Authority (FTA) TRN**: 100482910300003
-- **Dubai SIRA**: Certified Physical & Cyber Electronic Security Practice
+- **Enterprise Physical Security**: High-Density IP Surveillance & Access Control Practice
 - **Data Protection Mandate**: UAE Federal Decree-Law No. 45 of 2021 on Personal Data Protection (PDPL)
 
 &copy; 2026 Quad Wise Technologies L.L.C-FZ. All Sovereign Rights Reserved.

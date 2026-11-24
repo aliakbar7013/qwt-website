@@ -37,12 +37,12 @@ class QwtRadarEngine {
         telemetry: 'Dual Active-Active Substations | N+2 Gens'
       },
       {
-        id: 'node-sira',
-        name: '31-Day SIRA / MCC CCTV',
+        id: 'node-cctv',
+        name: '31-Day Enterprise IP CCTV',
         sub: '4K Ultra-HD 120-Day Archival Mesh',
         rRatio: 0.52,
         theta: 4.05,
-        status: 'CERTIFIED',
+        status: 'VALIDATED',
         pingColor: '#C9A24D',
         metric: '4.8 PB Raw VMS',
         telemetry: 'Tamper-Evident SHA-256 Watermarking'
@@ -56,7 +56,7 @@ class QwtRadarEngine {
         status: 'FORTIFIED',
         pingColor: '#10B981',
         metric: 'Zero Exfiltration',
-        telemetry: 'NESA & UAE PDPL Isolation Enclave'
+        telemetry: 'UAE PDPL Isolation Enclave'
       },
       {
         id: 'node-pure',

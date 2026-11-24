@@ -676,11 +676,11 @@
 
           <div class="p-5 rounded-2xl bg-[#0F141C] border border-slate-800 space-y-2">
             <div class="flex items-center justify-between text-xs font-mono text-slate-400">
-              <span>SIRA / MCC COMPLIANT</span>
+              <span>SECURITY ARCHITECTURE</span>
               <i data-lucide="file-check-2" class="w-4 h-4 text-[#C9A24D]"></i>
             </div>
             <div id="contact-count-sira" class="text-3xl font-extrabold font-mono text-[#C9A24D]">0</div>
-            <div class="text-[10px] font-mono text-slate-400">Requires Regulatory Sign-Off</div>
+            <div class="text-[10px] font-mono text-slate-400">Enterprise Physical Security Spec</div>
           </div>
         </div>
 
@@ -767,7 +767,7 @@
                 <span>Sovereign Commercial Governance &bull; FTA TRN 100482910300003</span>
               </div>
               <h2 class="text-2xl font-bold font-heading text-white mt-1">Commercial Document Suite</h2>
-              <p class="text-xs text-slate-400 mt-0.5">Author, audit, and dispatch B2B Quotations, UAE FTA 5% Tax Invoices, Procurement Purchase Orders, and SIRA Delivery Notes.</p>
+              <p class="text-xs text-slate-400 mt-0.5">Author, audit, and dispatch B2B Quotations, UAE FTA 5% Tax Invoices, Procurement Purchase Orders, and Enterprise Delivery Notes.</p>
             </div>
 
             <!-- Quick Document Creator Buttons -->
@@ -859,7 +859,7 @@
                 <i data-lucide="truck" class="w-4 h-4 text-purple-400"></i>
               </div>
               <div id="docs-stat-deliveries" class="text-2xl font-bold font-mono text-purple-400 mt-2">0 Active</div>
-              <div class="text-[10px] text-slate-400 mt-1">SIRA Inspections &amp; OEM Dispatch</div>
+              <div class="text-[10px] text-slate-400 mt-1">Engineering Inspections &amp; OEM Dispatch</div>
             </div>
           </div>
 
@@ -883,7 +883,7 @@
                 <option value="ISSUED">Issued / Sent</option>
                 <option value="PAID">Paid / Cleared</option>
                 <option value="CLIENT_ACCEPTED">Client Accepted</option>
-                <option value="DELIVERED_SIGNED">Delivered &amp; SIRA Signed</option>
+                <option value="DELIVERED_SIGNED">Delivered &amp; Handover Signed</option>
                 <option value="OVERDUE">Overdue</option>
               </select>
 
@@ -969,11 +969,11 @@
                     <div class="text-[10px] text-slate-400">32 GPUs + 800G InfiniBand</div>
                   </button>
                   <button type="button" onclick="window.qwtDocs.loadPreset('sira')" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-800 text-slate-200">
-                    <div class="font-bold text-white">Dubai SIRA CCTV 31-Day</div>
+                    <div class="font-bold text-white">Enterprise CCTV 31-Day</div>
                     <div class="text-[10px] text-slate-400">NetApp E-Series + 4K Cameras</div>
                   </button>
                   <button type="button" onclick="window.qwtDocs.loadPreset('cyber')" class="w-full text-left px-3 py-2 rounded-lg text-xs hover:bg-slate-800 text-slate-200">
-                    <div class="font-bold text-white">Fortinet 3700F NESA Pair</div>
+                    <div class="font-bold text-white">Fortinet 3700F Enterprise Pair</div>
                     <div class="text-[10px] text-slate-400">Next-Gen Sovereign HA Firewalls</div>
                   </button>
                 </div>
@@ -1106,7 +1106,7 @@
                 <option value="IT Infrastructure & Data Centre">IT Infrastructure &amp; Data Centre</option>
                 <option value="AI Compute & GPU">AI Compute &amp; GPU</option>
                 <option value="Cyber Security">Cyber Security</option>
-                <option value="ELV & SIRA Physical Security">ELV &amp; SIRA Physical Security</option>
+                <option value="ELV & Physical Security">ELV &amp; Physical Security</option>
                 <option value="ERPNext & Frappe">ERPNext &amp; Frappe</option>
               </select>
             </div>
@@ -1118,7 +1118,7 @@
                 <option value="ISSUED">Issued / Active</option>
                 <option value="PAID">Paid (Cleared)</option>
                 <option value="CLIENT_ACCEPTED">Client Accepted</option>
-                <option value="DELIVERED_SIGNED">Delivered &amp; SIRA Signed</option>
+                <option value="DELIVERED_SIGNED">Delivered &amp; Handover Signed</option>
                 <option value="OVERDUE">Overdue</option>
                 <option value="REJECTED">Rejected</option>
               </select>
@@ -1135,7 +1135,7 @@
           <div id="editor-delivery-box" class="p-4 rounded-xl bg-purple-950/20 border border-purple-500/40 text-xs space-y-3 hidden">
             <div class="flex items-center gap-2 font-mono text-[11px] text-purple-300 font-bold uppercase">
               <i data-lucide="truck" class="w-4 h-4"></i>
-              <span>Delivery Note Proof of Delivery (POD) &amp; SIRA Physical Custody</span>
+              <span>Delivery Note Proof of Delivery (POD) &amp; Physical Custody Handover</span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div>
@@ -1153,7 +1153,7 @@
             </div>
             <label class="flex items-center gap-2 font-mono text-purple-200 cursor-pointer pt-1">
               <input type="checkbox" id="doc-edit-sira-check" class="rounded border-purple-400 text-purple-600 focus:ring-0">
-              <span>SIRA / MCC Physical Chain of Custody &amp; Tamper-Evident Seals Inspected</span>
+              <span>Physical Chain of Custody &amp; Tamper-Evident Seals Inspected</span>
             </label>
           </div>
 
@@ -1471,7 +1471,7 @@
                   </label>
                   <span id="title-char-counter" class="text-[10px] font-mono text-slate-500">0/65 chars</span>
                 </div>
-                <input id="blog-title" oninput="window.qwtStudio.handleTitleInput()" type="text" class="w-full bg-[#0D0A2E] border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white font-heading font-bold focus:outline-none focus:border-[#C9A24D]" placeholder="e.g. Navigating Dubai SIRA CCTV Standards: 31-Day Video Retention">
+                <input id="blog-title" oninput="window.qwtStudio.handleTitleInput()" type="text" class="w-full bg-[#0D0A2E] border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white font-heading font-bold focus:outline-none focus:border-[#C9A24D]" placeholder="e.g. Enterprise Video Retention & 31-Day Storage Architecture">
               </div>
 
               <!-- Slug & Category -->
@@ -1480,7 +1480,7 @@
                   <label class="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-1.5">
                     URL Slug
                   </label>
-                  <input id="blog-slug" type="text" class="w-full bg-[#0D0A2E] border border-slate-700 rounded-xl px-3.5 py-2 text-xs text-slate-300 font-mono focus:outline-none focus:border-[#C9A24D]" placeholder="dubai-sira-cctv-guidelines">
+                  <input id="blog-slug" type="text" class="w-full bg-[#0D0A2E] border border-slate-700 rounded-xl px-3.5 py-2 text-xs text-slate-300 font-mono focus:outline-none focus:border-[#C9A24D]" placeholder="enterprise-cctv-guidelines">
                 </div>
                 <div>
                   <label class="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-1.5">
@@ -1493,7 +1493,7 @@
                     <option value="ERPNext & Frappe GCC">ERPNext &amp; Frappe GCC</option>
                     <option value="Digital Business Cards & NFC">Digital Business Cards &amp; NFC</option>
                     <option value="AI Supercomputing & GPU">AI Supercomputing &amp; GPU</option>
-                    <option value="ELV & SIRA Physical Security">ELV &amp; SIRA Physical Security</option>
+                    <option value="ELV & Physical Security">ELV &amp; Physical Security</option>
                     <option value="Sovereign Cloud & PDPL">Sovereign Cloud &amp; PDPL</option>
                   </select>
                 </div>
@@ -1505,7 +1505,7 @@
                   <label class="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-1.5">
                     Target SEO Focus Keywords (comma-separated)
                   </label>
-                  <input id="blog-keywords" oninput="window.qwtStudio.updateSeoAudit()" type="text" class="w-full bg-[#0D0A2E] border border-slate-700 rounded-xl px-3.5 py-2 text-xs text-emerald-400 font-mono focus:outline-none focus:border-[#C9A24D]" placeholder="SIRA CCTV, 31-day video, RAID-6 VMS, Dubai security">
+                  <input id="blog-keywords" oninput="window.qwtStudio.updateSeoAudit()" type="text" class="w-full bg-[#0D0A2E] border border-slate-700 rounded-xl px-3.5 py-2 text-xs text-emerald-400 font-mono focus:outline-none focus:border-[#C9A24D]" placeholder="Enterprise CCTV, 31-day video, RAID-6 VMS, storage sizing">
                 </div>
                 <div>
                   <label class="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-1.5">
@@ -1621,7 +1621,7 @@ Dual-homed network isolating camera ingest VLANs"></textarea>
                   </div>
                   <div class="flex items-center justify-between py-1">
                     <span class="text-slate-400">Regional UAE Alignment:</span>
-                    <span class="text-[#C9A24D] flex items-center gap-1"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> SIRA/NESA/GCC Matched</span>
+                    <span class="text-[#C9A24D] flex items-center gap-1"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Enterprise Architecture Matched</span>
                   </div>
                 </div>
               </div>
@@ -1669,7 +1669,7 @@ Dual-homed network isolating camera ingest VLANs"></textarea>
                 </div>
                 <h2 class="text-2xl font-extrabold font-heading text-white">Daily 5-Blog Autonomous AI Engine</h2>
                 <p class="text-xs text-slate-400 mt-1 max-w-2xl leading-relaxed">
-                  Our system synthesizes 5 comprehensive, SEO-optimized technical blogs daily, customized across Tier-IV data centres, sovereign AI supercomputing, SIRA CCTV regulations, and ERPNext implementations.
+                  Our system synthesizes 5 comprehensive, SEO-optimized technical blogs daily, customized across Tier-IV data centres, sovereign AI supercomputing, Enterprise CCTV architectures, and ERPNext implementations.
                 </p>
               </div>
               <button onclick="window.qwtStudio.triggerDailyGeneration()" class="btn-gold px-6 py-3 rounded-xl text-xs font-bold text-black flex items-center gap-2.5 shadow-xl shadow-[#C9A24D]/25 whitespace-nowrap">
@@ -1700,12 +1700,12 @@ Dual-homed network isolating camera ingest VLANs"></textarea>
                 </div>
                 <div class="p-3.5 rounded-xl bg-[#0D0A2E] border border-slate-800 space-y-1">
                   <div class="text-[10px] font-mono text-emerald-400 font-bold">PILLAR 2</div>
-                  <div class="text-xs font-bold text-white">SIRA &amp; ELV Compliance</div>
+                  <div class="text-xs font-bold text-white">Physical Security &amp; ELV</div>
                   <div class="text-[11px] text-slate-400">31-day video storage, RAID-6 VMS, Dubai audit pass rates.</div>
                 </div>
                 <div class="p-3.5 rounded-xl bg-[#0D0A2E] border border-slate-800 space-y-1">
                   <div class="text-[10px] font-mono text-purple-400 font-bold">PILLAR 3</div>
-                  <div class="text-xs font-bold text-white">Air-Gapped SOC &amp; NESA</div>
+                  <div class="text-xs font-bold text-white">Air-Gapped SOC &amp; Threat Defense</div>
                   <div class="text-[11px] text-slate-400">Zero egress data diodes, UAE PDPL, 24/7 Dubai SOC triage.</div>
                 </div>
                 <div class="p-3.5 rounded-xl bg-[#0D0A2E] border border-slate-800 space-y-1">
@@ -2235,8 +2235,8 @@ Dual-homed network isolating camera ingest VLANs"></textarea>
             <span id="modal-cnt-budget" class="text-[#C9A24D] font-bold">AED 5,000,000+</span>
           </div>
           <div>
-            <span class="text-slate-500 block text-[10px]">SIRA / MCC COMPLIANCE</span>
-            <span id="modal-cnt-sira" class="text-emerald-400 font-bold">Required (SIRA Audit)</span>
+            <span class="text-slate-500 block text-[10px]">SECURITY SPECIFICATION</span>
+            <span id="modal-cnt-sira" class="text-emerald-400 font-bold">Standard Specification</span>
           </div>
           <div>
             <span class="text-slate-500 block text-[10px]">RFP ATTACHMENT</span>
@@ -2418,7 +2418,7 @@ Dual-homed network isolating camera ingest VLANs"></textarea>
       <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-6 print-hide">
         <div class="flex items-center gap-2">
           <span class="px-2.5 py-1 rounded bg-[#B38E3F]/15 text-[#B38E3F] text-xs font-mono font-bold">A4 PRINT READY</span>
-          <span class="text-xs text-slate-500 font-mono">FTA TRN 100482910300003 &bull; SIRA Compliant</span>
+          <span class="text-xs text-slate-500 font-mono">FTA TRN 100482910300003 &bull; Enterprise SLA Compliant</span>
         </div>
         <div class="flex items-center gap-3">
           <button id="doc-modal-download-btn" onclick="window.qwtDocs.downloadCurrentModalDoc()" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs font-heading flex items-center gap-1.5 shadow-sm transition-all border border-slate-300" title="Download standalone client-ready A4 document">

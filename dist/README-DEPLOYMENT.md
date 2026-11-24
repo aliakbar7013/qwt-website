@@ -14,7 +14,7 @@ This distribution package is fully self-contained, statically pre-rendered, SEO-
   - `hardware.html` - High-Density OEM Hardware & Systems Catalog
   - `case-studies.html` - UAE Sovereign Deployments & Benchmark Dossiers
   - `insights.html` - Technical Thought Leadership & PDPL Bulletins
-  - `about.html` - Corporate Profile, UAE Enclaves, SIRA/MCC Accreditations
+  - `about.html` - Corporate Profile, UAE Enclaves, Turnkey Security Standards
   - `contact.html` - Sovereign Procurement Desk & RFP Telemetry Ingestion
   - `admin-crm.html` - Sovereign CRM, Invoicing Suite & SEO AI Publisher
   - `admin-rfp-detail.html` - Dedicated Itemized BOQ Dossier & Lifecycle Workflow
@@ -112,4 +112,4 @@ firebase deploy --only hosting
 ## 🔒 Enterprise Security & Verification
 - All telemetry and CRM lead submissions operate autonomously on client-side encrypted local storage (`localStorage`) with full export capabilities to CSV and JSON.
 - Commercial Invoicing Suite generates standalone offline client-ready documents with A4 PDF Print and HTML Download support.
-- Fully compliant with UAE Federal Decree No. 45 (PDPL) and Dubai SIRA/MCC requirements.
+- Fully compliant with UAE Federal Decree No. 45 (PDPL) requirements.

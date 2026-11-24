@@ -10,24 +10,24 @@ const INITIAL_BLOG_ARTICLES = [
   // 1. Foundational Published Article
   {
     id: 'QWT-ART-01',
-    title: 'Navigating Dubai SIRA CCTV Standards: 31-Day Video Retention & VMS Integrity',
-    category: 'ELV & SIRA Physical Security',
-    slug: 'dubai-sira-cctv-31-day-storage-guidelines',
+    title: 'Enterprise IP CCTV Architectures: 31-Day Video Retention & VMS Integrity',
+    category: 'ELV & Physical Security',
+    slug: 'enterprise-cctv-31-day-storage-guidelines',
     metric: '31-Day Retention • RAID-6 Validated',
-    excerpt: 'Technical architectural blueprint for passing first-time Dubai SIRA surveillance audits. Covers 31-day RAID-6 retention, watermarking, and network isolation.',
-    keywords: 'Dubai SIRA CCTV compliance, SIRA 31-day video retention, RAID-6 VMS storage, SIRA audit pass, ELV contractor UAE',
+    excerpt: 'Technical architectural blueprint for enterprise surveillance systems. Covers 31-day RAID-6 retention, watermarking, and network isolation.',
+    keywords: 'enterprise CCTV, 31-day video retention, RAID-6 VMS storage, surveillance, ELV contractor UAE',
     takeaways: [
       'RAID-6 dual-parity erasure coding on primary VMS storage arrays',
       'Zero-tamper SHA-256 cryptographic watermarking on exported video footage',
       'Dual-homed network architecture isolating camera ingest VLANs from corporate LAN'
     ],
-    content: `## Executive Regulatory Overview
-The Security Industry Regulatory Agency (SIRA) in Dubai mandates that all commercial buildings, banks, hotels, and enterprise data facilities maintain continuous 31-day video surveillance recordings without loss of frames or compression degradation below approved thresholds.
+    content: `## Executive Overview
+Enterprise commercial buildings, financial institutions, and data centres require resilient 31-day video surveillance storage with zero frame dropping and robust VMS integrity.
 
 ## Core Architectural Guardrails
-To guarantee first-pass sign-off on Dubai commercial permits, the physical storage fabric must adhere to three non-negotiable criteria:
+To ensure continuous uptime and high reliability, the physical video surveillance fabric adheres to three core architectural criteria:
 - **RAID-6 Dual-Parity Disaggregated Storage:** Survives two simultaneous drive failures during heavy 4K camera write bursts.
-- **SHA-256 Cryptographic Watermarking:** Exported evidence footage must possess tamper-proof timestamp hashes verifiable by Dubai Police forensics.
+- **SHA-256 Cryptographic Watermarking:** Exported evidence footage possesses tamper-proof cryptographic hashes for audit verification.
 - **Dual-Homed Network Isolation:** Camera ingest traffic must run on physically air-gapped VLANs with zero route leakage into corporate subnets.
 
 ## Validated Hardware Bill of Materials (BOQ)
@@ -79,7 +79,7 @@ In field tests across our Dubai staging facility, tail latency variance was cut 
     slug: 'uae-pdpl-sovereign-data-enclave-architecture',
     metric: '100% UAE Onshore • Zero Egress',
     excerpt: 'How UAE financial institutions and healthcare leaders maintain complete residency compliance while training generative AI on local premises.',
-    keywords: 'NESA IA compliance UAE, air-gapped SOC Dubai, sovereign cybersecurity GCC, data diode hardware, UAE PDPL Federal Decree 45',
+    keywords: 'sovereign cybersecurity UAE, air-gapped SOC Dubai, cybersecurity GCC, data diode hardware, UAE PDPL Federal Decree 45',
     takeaways: [
       'Quantized on-premise models (Llama 3 70B, Falcon 180B) on dedicated GPU clusters',
       'Hardware Security Modules (HSMs) for localized envelope key generation and encryption',
@@ -174,29 +174,29 @@ Before issuing an RFP for AI accelerators, calculate power availability at your 
   // Daily Blog 2 (Pending Review)
   {
     id: 'QWT-DAILY-02',
-    title: 'Complete 2026 Dubai SIRA CCTV & VMS Audit Compliance Guide: 31-Day RAID-6 Standards',
-    category: 'ELV & SIRA Physical Security',
-    slug: 'complete-2026-dubai-sira-cctv-audit-compliance-guide',
-    metric: '100% SIRA First-Pass • 31-Day Retention',
-    excerpt: 'Master the Dubai Security Industry Regulatory Agency (SIRA) technical mandates. Calculations for storage retention, camera watermarking, and network separation.',
-    keywords: 'Dubai SIRA CCTV compliance, SIRA 31-day video retention, RAID-6 VMS storage, SIRA audit pass, ELV contractor UAE',
+    title: 'Enterprise IP CCTV & VMS Architecture Guide: 31-Day RAID-6 Standards',
+    category: 'ELV & Physical Security',
+    slug: 'enterprise-cctv-vms-architecture-guide-31-day-storage',
+    metric: '100% SLA Guarantee • 31-Day Retention',
+    excerpt: 'Technical architectural blueprint for enterprise video surveillance. Calculations for storage retention, camera watermarking, and network separation.',
+    keywords: 'enterprise CCTV, 31-day video retention, RAID-6 VMS storage, surveillance, ELV contractor UAE',
     takeaways: [
-      'SIRA-certified RAID-6 capacity sizing ensuring true 31-day continuous 4K video retention',
+      'High-density RAID-6 capacity sizing ensuring true 31-day continuous 4K video retention',
       'SHA-256 cryptographic frame hashing required for police admissible evidence exports',
       'Separation of surveillance traffic onto air-gapped VLANs with zero internet default routes'
     ],
-    content: `## SIRA Compliance: What Changed in 2026?
-The Security Industry Regulatory Agency (SIRA) in Dubai has tightened surveillance audit protocols for all commercial properties, hospitality resorts, and corporate office parks. Failure to achieve compliance blocks issuance of initial trade licenses and building completion certificates.
+    content: `## Enterprise Surveillance Architecture
+Enterprise facilities, hospitality properties, and corporate office parks require robust surveillance infrastructure designed for 24/7 continuous operation, long-term retention, and zero data loss.
 
-## Technical Mandates for First-Time SIRA Sign-Off
-Auditors evaluate four critical points during the on-site physical inspection:
-1. **True 31-Day Video Retention:** The storage array must hold 31 complete days of 24/7 video per camera at 1080p or 4K with a minimum frame rate of 25 FPS without motion-based throttling on key ingress zones.
-2. **RAID-6 Dual Parity Requirement:** Simple RAID-5 or JBOD configurations are rejected immediately. Disaggregated dual-parity erasure coding is mandatory.
-3. **Cryptographic Watermark Verification:** The Video Management Software (Milestone XProtect Corporate or Genetec) must embed irreversible cryptographic stamps on exported evidence.
-4. **UPS Runtime:** The ELV equipment room must feature true on-line double-conversion UPS backup capable of supporting the full camera and NVR load for a minimum of 20 minutes during main grid disruption.
+## Technical Architectural Criteria
+High-reliability surveillance deployments rely on four critical engineering pillars:
+1. **True 31-Day Video Retention:** The storage array holds 31 complete days of 24/7 video per camera at 1080p or 4K with high frame rates on key ingress zones.
+2. **RAID-6 Dual Parity Requirement:** Dual-parity erasure coding prevents data loss during simultaneous drive failures.
+3. **Cryptographic Watermark Verification:** The Video Management Software (Milestone XProtect Corporate or Genetec) embeds irreversible cryptographic stamps on exported evidence.
+4. **UPS Runtime:** The ELV equipment room features true on-line double-conversion UPS backup supporting the full camera and NVR load during main grid disruption.
 
 ## Turnkey BOQ Implementation
-QWT provides turnkey SIRA and Abu Dhabi MCC approved hardware installations with 100% first-pass audit guarantees. Our certified engineers handle all liaison with SIRA inspection officers.`,
+QWT provides turnkey enterprise physical security and ELV infrastructure with guaranteed handover SLAs. Our senior engineers handle system design, integration, and deployment.`,
     author: 'ELV Security Directorate • DSO Campus',
     status: 'PENDING_REVIEW',
     seoScore: 98,
@@ -208,12 +208,12 @@ QWT provides turnkey SIRA and Abu Dhabi MCC approved hardware installations with
   // Daily Blog 3 (Pending Review)
   {
     id: 'QWT-DAILY-03',
-    title: 'Air-Gapped Sovereign SOC Architecture: Complying with UAE NESA IA Standards & PDPL',
+    title: 'Air-Gapped Sovereign SOC Architecture: Aligning with UAE Cybersecurity & PDPL Standards',
     category: 'Cyber Security & Threat Operations',
-    slug: 'air-gapped-sovereign-soc-architecture-uae-nesa-pdpl',
+    slug: 'air-gapped-sovereign-soc-architecture-uae-pdpl',
     metric: '<8 Min Triage SLA • Zero Egress Diodes',
-    excerpt: 'Detailed architectural blueprint for building an air-gapped 24/7 Security Operations Center complying with UAE National Electronic Security Authority decrees.',
-    keywords: 'NESA IA compliance UAE, air-gapped SOC Dubai, sovereign cybersecurity GCC, data diode hardware, UAE PDPL Federal Decree 45',
+    excerpt: 'Detailed architectural blueprint for building an air-gapped 24/7 Security Operations Center complying with UAE sovereign cybersecurity decrees.',
+    keywords: 'sovereign cybersecurity UAE, air-gapped SOC Dubai, cybersecurity GCC, data diode hardware, UAE PDPL Federal Decree 45',
     takeaways: [
       'Hardware data diodes enforcing physical one-way telemetry from SCADA and banking enclaves',
       'Localized SIEM correlation engine operating with zero cloud telemetry dependencies',
@@ -226,7 +226,7 @@ Critical infrastructure entities—including utilities, sovereign wealth funds, 
 QWT designs and operates air-gapped Security Operations Centers located inside sovereign UAE data bunkers:
 - **Physical Unidirectional Data Diodes:** Telemetry logs enter the SIEM platform via single-strand fiber optical diodes that physically prevent any return signals.
 - **On-Premise SIEM & SOAR:** Correlation rules run on local Dell PowerEdge multi-socket compute nodes using post-quantum encryption protocols.
-- **NESA Information Assurance (IA) Alignment:** 100% of controls mapped to the UAE National Electronic Security Authority standard across management, technical, operational, and physical security domains.
+- **Sovereign Cybersecurity Alignment:** Rigorous security controls mapped across management, technical, operational, and physical security domains.
 
 ## Achieving Sub-8-Minute Incident Triage
 Our 24/7 onshore SOC analysts leverage automated containment playbooks that isolate compromised network segments and revoke Active Directory credentials within 8 minutes of behavioral anomaly detection.`,
@@ -323,26 +323,26 @@ const DAILY_GENERATOR_TEMPLATES = [
     bodyPrefix: 'Sovereign AI supercomputing requires meticulous fabric tuning to eliminate packet loss and maintain linear scaling efficiency across distributed GPU nodes.'
   },
   {
-    title: 'Complete 2026 Dubai SIRA CCTV & VMS Audit Compliance Guide: 31-Day RAID-6 Standards',
-    category: 'ELV & SIRA Physical Security',
-    metric: '100% SIRA First-Pass • 31-Day Retention',
-    excerpt: 'Master the Dubai Security Industry Regulatory Agency (SIRA) technical mandates. Calculations for storage retention, camera watermarking, and network separation.',
-    keywords: 'Dubai SIRA CCTV compliance, SIRA 31-day video retention, RAID-6 VMS storage, SIRA audit pass, ELV contractor UAE',
+    title: 'Enterprise IP CCTV & VMS Architecture Guide: 31-Day RAID-6 Standards',
+    category: 'ELV & Physical Security',
+    metric: '100% SLA Guarantee • 31-Day Retention',
+    excerpt: 'Technical architectural blueprint for enterprise video surveillance. Calculations for storage retention, camera watermarking, and network separation.',
+    keywords: 'enterprise CCTV, 31-day video retention, RAID-6 VMS storage, surveillance, ELV contractor UAE',
     author: 'ELV Security Directorate • DSO Campus',
     readTime: '6 min read',
     takeaways: [
-      'SIRA-certified RAID-6 capacity sizing ensuring true 31-day continuous 4K video retention',
+      'High-density RAID-6 capacity sizing ensuring true 31-day continuous 4K video retention',
       'SHA-256 cryptographic frame hashing required for police admissible evidence exports',
       'Separation of surveillance traffic onto air-gapped VLANs with zero internet default routes'
     ],
-    bodyPrefix: 'Passing Dubai SIRA commercial audits on the first pass demands hardware-enforced RAID-6 storage redundancy, SHA-256 cryptographic watermarking, and dedicated power runtime envelopes.'
+    bodyPrefix: 'Enterprise surveillance deployments demand hardware-enforced RAID-6 storage redundancy, SHA-256 cryptographic watermarking, and dedicated power runtime envelopes.'
   },
   {
-    title: 'Air-Gapped Sovereign SOC Architecture: Complying with UAE NESA IA Standards & PDPL',
+    title: 'Air-Gapped Sovereign SOC Architecture: Aligning with UAE Cybersecurity & PDPL Standards',
     category: 'Cyber Security & Threat Operations',
     metric: '<8 Min Triage SLA • Zero Egress Diodes',
-    excerpt: 'Detailed architectural blueprint for building an air-gapped 24/7 Security Operations Center complying with UAE National Electronic Security Authority decrees.',
-    keywords: 'NESA IA compliance UAE, air-gapped SOC Dubai, sovereign cybersecurity GCC, data diode hardware, UAE PDPL Federal Decree 45',
+    excerpt: 'Detailed architectural blueprint for building an air-gapped 24/7 Security Operations Center complying with UAE sovereign cybersecurity decrees.',
+    keywords: 'sovereign cybersecurity UAE, air-gapped SOC Dubai, cybersecurity GCC, data diode hardware, UAE PDPL Federal Decree 45',
     author: 'Cybersecurity Directorate • Dubai Silicon Oasis',
     readTime: '7 min read',
     takeaways: [
@@ -811,7 +811,7 @@ class QwtSocialCampaignStudio {
         excerpt: tmpl.excerpt,
         keywords: tmpl.keywords,
         takeaways: tmpl.takeaways,
-        content: `## Executive Technical Summary\n${tmpl.bodyPrefix}\n\n## Architecture & Component Topologies\nIn mission-critical enterprise environments across the UAE and GCC, standard off-the-shelf configurations introduce downtime risks. QWT deploys certified Tier-1 OEM hardware with zero grey-market intermediaries.\n\n- **Primary Compute & Accelerator Fabric:** Factory-authorized enterprise nodes with redundant power pathing.\n- **High-Throughput Low-Latency Fabric:** Optimized spine-leaf architecture with zero-drop packet transport.\n- **Data Sovereignty Enclave:** Full regulatory isolation conforming strictly with UAE Federal Decree No. 45 and NESA IA mandates.\n\n## UAE Regulatory Alignment Matrix\nDeployments include full engineering documentation and sign-off support for Dubai SIRA, Abu Dhabi MCC, and national data residency compliance.\n\n## Actionable Implementation Recommendations\n1. Conduct comprehensive power and cooling envelope analysis before procurement.\n2. Specify dual-parity RAID-6 or Metro Synchronous storage replication for all transactional tiers.\n3. Engage QWT senior architects at Dubai Silicon Oasis for bill-of-materials validation.`,
+        content: `## Executive Technical Summary\n${tmpl.bodyPrefix}\n\n## Architecture & Component Topologies\nIn mission-critical enterprise environments across the UAE and GCC, standard off-the-shelf configurations introduce downtime risks. QWT deploys certified Tier-1 OEM hardware with zero grey-market intermediaries.\n\n- **Primary Compute & Accelerator Fabric:** Factory-authorized enterprise nodes with redundant power pathing.\n- **High-Throughput Low-Latency Fabric:** Optimized spine-leaf architecture with zero-drop packet transport.\n- **Data Sovereignty Enclave:** Full regulatory isolation conforming strictly with UAE Federal Decree No. 45 data residency mandates.\n\n## UAE Regulatory Alignment Matrix\nDeployments include comprehensive engineering documentation, rigorous QA validation, and national data residency compliance.\n\n## Actionable Implementation Recommendations\n1. Conduct comprehensive power and cooling envelope analysis before procurement.\n2. Specify dual-parity RAID-6 or Metro Synchronous storage replication for all transactional tiers.\n3. Engage QWT senior architects at Dubai Silicon Oasis for bill-of-materials validation.`,
         author: tmpl.author,
         status: 'PENDING_REVIEW', // STRICTLY PENDING REVIEW - NEVER AUTO PUBLISHED
         seoScore: 97 + Math.floor(Math.random() * 3), // 97-99%
@@ -868,7 +868,7 @@ Write your technical overview here.
 - Technical Point 3
 
 ## Regulatory & Operational Compliance
-Detail SIRA, MCC, or NESA alignment here.`;
+Detail sovereign governance and data residency alignment here.`;
 
     const modeText = document.getElementById('editor-mode-text');
     if (modeText) modeText.textContent = 'Writing New Manual Blog';
@@ -1416,7 +1416,7 @@ Detail SIRA, MCC, or NESA alignment here.`;
     if (angle === 'executive') {
       linkedinText = `Enterprise Leadership Briefing | ${art.category}\n\n"${art.title}"\n\nIn highly regulated environments across the UAE and GCC, mission-critical execution leaves zero margin for infrastructure compromise.\n\nKey Executive Highlights:\n${(art.takeaways || []).map(t => `• ${t}`).join('\n')}\n\nValidated Benchmark: ${art.metric || 'Tier-IV SLA Guaranteed'}\n\nRead the full technical whitepaper at Quad Wise Technologies (QWT.AE):\nhttps://qwt.ae/insights/${art.slug}\n\n#UAEEnterprise #CIO #DataCentre #Cybersecurity #SovereignIT #QWT`;
 
-      instaText = `Sovereign Enterprise Infrastructure in the UAE 🇦🇪\n\n${art.title}\n\n${art.excerpt}\n\nKey Highlights:\n${(art.takeaways || []).map(t => `✓ ${t}`).join('\n')}\n\nBenchmark: ${art.metric}\n\nTap the link in bio to read the full architectural briefing at qwt.ae/insights\n\n#DubaiTech #AbuDhabi #EnterpriseIT #NVIDIA #SIRA #QWT`;
+      instaText = `Sovereign Enterprise Infrastructure in the UAE 🇦🇪\n\n${art.title}\n\n${art.excerpt}\n\nKey Highlights:\n${(art.takeaways || []).map(t => `✓ ${t}`).join('\n')}\n\nBenchmark: ${art.metric}\n\nTap the link in bio to read the full architectural briefing at qwt.ae/insights\n\n#DubaiTech #AbuDhabi #EnterpriseIT #NVIDIA #EnterpriseSecurity #QWT`;
 
       fbText = `Technical Advisory from Quad Wise Technologies (QWT.AE)\n\n${art.title}\n\n${art.excerpt}\n\nSpecification: ${art.metric}\n\nRead complete engineering documentation: https://qwt.ae/insights/${art.slug}\n\n#EnterpriseTechnology #UAE #DubaiBusiness #ITInfrastructure`;
     } else if (angle === 'technical') {
@@ -1424,8 +1424,8 @@ Detail SIRA, MCC, or NESA alignment here.`;
       instaText = `Inside the Architecture ⚙️\n\n${art.title}\n\n${art.metric}\n\n${(art.takeaways || []).map(t => `▸ ${t}`).join('\n')}\n\nFull engineering specs at qwt.ae/insights\n\n#SysAdmin #NetworkEngineering #DataCenterLife #QWT`;
       fbText = `Technical Deep Dive: ${art.title}\n\n${art.excerpt}\n\nHardware Parameters: ${art.metric}\n\nFull article: https://qwt.ae/insights/${art.slug}`;
     } else {
-      linkedinText = `Regulatory & Compliance Directive | UAE Sovereign Standards\n\n${art.title}\n\nGuaranteed alignment with Dubai SIRA, Abu Dhabi MCC, and UAE PDPL Federal Decree No. 45 decrees.\n\nCompliance Framework:\n${(art.takeaways || []).map(t => `• ${t}`).join('\n')}\n\nSign-Off Metric: ${art.metric}\n\nConsult with QWT regulatory engineers: https://qwt.ae/insights/${art.slug}\n\n#SIRADubai #MCCAbuDhabi #NESA #Compliance #CyberGovernance`;
-      instaText = `100% SIRA & NESA Audit Pass Guarantees 🛡️\n\n${art.title}\n\n${art.metric}\n\n${(art.takeaways || []).map(t => `✓ ${t}`).join('\n')}\n\nRead the full advisory at qwt.ae/insights\n\n#SIRALicense #DubaiRegulations #EnterpriseSecurity #QWT`;
+      linkedinText = `Regulatory & Compliance Directive | UAE Sovereign Standards\n\n${art.title}\n\nGuaranteed alignment with UAE Sovereign Data Residency and UAE PDPL Federal Decree No. 45 mandates.\n\nCompliance Framework:\n${(art.takeaways || []).map(t => `• ${t}`).join('\n')}\n\nSign-Off Metric: ${art.metric}\n\nConsult with QWT enterprise engineers: https://qwt.ae/insights/${art.slug}\n\n#DataResidency #EnterpriseSecurity #UAECompliance #CyberGovernance`;
+      instaText = `Sovereign Security & Governance Standards 🛡️\n\n${art.title}\n\n${art.metric}\n\n${(art.takeaways || []).map(t => `✓ ${t}`).join('\n')}\n\nRead the full advisory at qwt.ae/insights\n\n#EnterpriseSecurity #DataResidency #SovereignCloud #QWT`;
       fbText = `Compliance Bulletin: ${art.title}\n\nEnsuring 100% compliance with UAE regulatory security mandates.\n\nMetric: ${art.metric}\n\nFull advisory: https://qwt.ae/insights/${art.slug}`;
     }
 
